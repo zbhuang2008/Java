@@ -1,0 +1,1843 @@
+"${OUTPUT_PATH}" -cp "/home/zbhuang/OpenJDK/javaapps/" -Xcomp -XX:+PrintCompilation Hello
+    360    1   !b  3       java.lang.invoke.MethodHandle::<clinit> (45 bytes)
+    374    2   !b  4       java.lang.invoke.MethodHandle::<clinit> (45 bytes)
+    376    1   !   3       java.lang.invoke.MethodHandle::<clinit> (45 bytes)   made not entrant
+    376    3   !b  3       java.lang.Class::desiredAssertionStatus (54 bytes)
+    403    4   !b  4       java.lang.Class::desiredAssertionStatus (54 bytes)
+    414    3   !   3       java.lang.Class::desiredAssertionStatus (54 bytes)   made not entrant
+    415    5     n 0       java.lang.Class::desiredAssertionStatus0 (native)   (static)
+    418    6    b  3       java.lang.invoke.MethodHandleImpl::<clinit> (110 bytes)
+    433    7    b  4       java.lang.invoke.MethodHandleImpl::<clinit> (110 bytes)
+    436    6       3       java.lang.invoke.MethodHandleImpl::<clinit> (110 bytes)   made not entrant
+    437    8    b  2       java.lang.Class::getClassLoader (28 bytes)
+    444    9    b  3       java.lang.invoke.MethodHandleImpl$1::<init> (10 bytes)
+    446   10    b  4       java.lang.invoke.MethodHandleImpl$1::<init> (10 bytes)
+    447    9       3       java.lang.invoke.MethodHandleImpl$1::<init> (10 bytes)   made not entrant
+    448   11     n 0       java.security.AccessController::doPrivileged (native)   (static)
+    448   12    b  3       java.lang.invoke.MethodHandleImpl$1::run (5 bytes)
+    450   13    b  4       java.lang.invoke.MethodHandleImpl$1::run (5 bytes)
+    452   12       3       java.lang.invoke.MethodHandleImpl$1::run (5 bytes)   made not entrant
+    452   14    b  3       java.lang.invoke.MethodHandleImpl$1::run (37 bytes)
+    480   15    b  4       java.lang.invoke.MethodHandleImpl$1::run (37 bytes)
+    481   14       3       java.lang.invoke.MethodHandleImpl$1::run (37 bytes)   made not entrant
+    481   16     n 0       java.lang.Class::getName0 (native)   
+    481   17    b  3       java.lang.AbstractStringBuilder::append (50 bytes)
+    500   18    b  4       java.lang.AbstractStringBuilder::append (50 bytes)
+    508   17       3       java.lang.AbstractStringBuilder::append (50 bytes)   made not entrant
+    508   19    b  3       java.lang.AbstractStringBuilder::newCapacity (39 bytes)
+    514   20    b  4       java.lang.AbstractStringBuilder::newCapacity (39 bytes)
+    518   19       3       java.lang.AbstractStringBuilder::newCapacity (39 bytes)   made not entrant
+    518   21    b  3       java.lang.String::getChars (62 bytes)
+    527   22    b  4       java.lang.String::getChars (62 bytes)
+    531   21       3       java.lang.String::getChars (62 bytes)   made not entrant
+    532   23    b  2       java.lang.AbstractStringBuilder::ensureCapacityInternal (27 bytes)
+    536   24    b  3       java.lang.String::<init> (82 bytes)
+    543   25    b  4       java.lang.String::<init> (82 bytes)
+    548   24       3       java.lang.String::<init> (82 bytes)   made not entrant
+    548   26    b  3       java.util.Arrays::copyOfRange (63 bytes)
+    563   27    b  4       java.util.Arrays::copyOfRange (63 bytes)
+    577   26       3       java.util.Arrays::copyOfRange (63 bytes)   made not entrant
+    581   28    b  3       java.lang.System::checkKey (34 bytes)
+    585   29    b  4       java.lang.System::checkKey (34 bytes)
+    597   28       3       java.lang.System::checkKey (34 bytes)   made not entrant
+    597   30    b  3       java.lang.String::equals (81 bytes)
+    603   31    b  4       java.lang.String::equals (81 bytes)
+    619   30       3       java.lang.String::equals (81 bytes)   made not entrant
+    619   32    b  3       java.util.Properties::getProperty (46 bytes)
+    628   33    b  4       java.util.Properties::getProperty (46 bytes)
+    644   32       3       java.util.Properties::getProperty (46 bytes)   made not entrant
+    645   34  s b  3       java.util.Hashtable::get (69 bytes)
+    651   35  s b  4       java.util.Hashtable::get (69 bytes)
+    673   34  s    3       java.util.Hashtable::get (69 bytes)   made not entrant
+    673   36    b  3       java.lang.String::hashCode (55 bytes)
+    677   37    b  4       java.lang.String::hashCode (55 bytes)
+    695   36       3       java.lang.String::hashCode (55 bytes)   made not entrant
+    695   38    b  2       java.lang.Integer::valueOf (32 bytes)
+    699   39    b  3       java.lang.invoke.MethodHandleImpl$2::<init> (5 bytes)
+    701   40    b  4       java.lang.invoke.MethodHandleImpl$2::<init> (5 bytes)
+    703   39       3       java.lang.invoke.MethodHandleImpl$2::<init> (5 bytes)   made not entrant
+    703   41    b  3       java.lang.invoke.MethodHandleImpl$3::<init> (5 bytes)
+    705   42    b  4       java.lang.invoke.MethodHandleImpl$3::<init> (5 bytes)
+    706   41       3       java.lang.invoke.MethodHandleImpl$3::<init> (5 bytes)   made not entrant
+    707   43    b  3       java.lang.ClassValue::<clinit> (32 bytes)
+    712   44    b  4       java.lang.ClassValue::<clinit> (32 bytes)
+    712   43       3       java.lang.ClassValue::<clinit> (32 bytes)   made not entrant
+    713   45    b  3       java.lang.invoke.MethodHandleImpl$4::<init> (5 bytes)
+    715   46    b  4       java.lang.invoke.MethodHandleImpl$4::<init> (5 bytes)
+    718   45       3       java.lang.invoke.MethodHandleImpl$4::<init> (5 bytes)   made not entrant
+    718   47    b  3       java.lang.ClassValue::<init> (43 bytes)
+    728   48    b  4       java.lang.ClassValue::<init> (43 bytes)
+    732   47       3       java.lang.ClassValue::<init> (43 bytes)   made not entrant
+    736   49    b  3       java.lang.ClassValue$Identity::<init> (5 bytes)
+    744   50    b  4       java.lang.ClassValue$Identity::<init> (5 bytes)
+    745   49       3       java.lang.ClassValue$Identity::<init> (5 bytes)   made not entrant
+    749   51    b  3       java.lang.ClassValue$Version::<init> (22 bytes)
+    753   52    b  4       java.lang.ClassValue$Version::<init> (22 bytes)
+    754   51       3       java.lang.ClassValue$Version::<init> (22 bytes)   made not entrant
+    754   53    b  3       java.lang.ClassValue$Entry::<clinit> (29 bytes)
+    757   54    b  4       java.lang.ClassValue$Entry::<clinit> (29 bytes)
+    759   53       3       java.lang.ClassValue$Entry::<clinit> (29 bytes)   made not entrant
+    759   55    b  3       java.lang.ClassValue$Entry::<init> (11 bytes)
+    768   56    b  4       java.lang.ClassValue$Entry::<init> (11 bytes)
+    770   55       3       java.lang.ClassValue$Entry::<init> (11 bytes)   made not entrant
+    770   57    b  3       java.lang.ClassValue$Entry::<init> (11 bytes)
+    774   58    b  4       java.lang.ClassValue$Entry::<init> (11 bytes)
+    776   57       3       java.lang.ClassValue$Entry::<init> (11 bytes)   made not entrant
+    776   59    b  3       java.lang.invoke.MethodHandleImpl::initStatics (8 bytes)
+    777   60    b  4       java.lang.invoke.MethodHandleImpl::initStatics (8 bytes)
+    778   59       3       java.lang.invoke.MethodHandleImpl::initStatics (8 bytes)   made not entrant
+    780   61    b  3       java.lang.invoke.MemberName$Factory::<clinit> (32 bytes)
+    784   62    b  4       java.lang.invoke.MemberName$Factory::<clinit> (32 bytes)
+    786   61       3       java.lang.invoke.MemberName$Factory::<clinit> (32 bytes)   made not entrant
+    786   63    b  3       java.lang.invoke.MemberName$Factory::<init> (5 bytes)
+    793   64    b  4       java.lang.invoke.MemberName$Factory::<init> (5 bytes)
+    794   63       3       java.lang.invoke.MemberName$Factory::<init> (5 bytes)   made not entrant
+    796   65    b  3       java.lang.invoke.MethodHandleStatics::<clinit> (157 bytes)
+    833   66    b  4       java.lang.invoke.MethodHandleStatics::<clinit> (157 bytes)
+    836   65       3       java.lang.invoke.MethodHandleStatics::<clinit> (157 bytes)   made not entrant
+    836   67     n 0       sun.reflect.Reflection::getCallerClass (native)   (static)
+    839   68    b  3       java.lang.invoke.MethodHandleStatics$1::<init> (10 bytes)
+    842   69    b  4       java.lang.invoke.MethodHandleStatics$1::<init> (10 bytes)
+    844   68       3       java.lang.invoke.MethodHandleStatics$1::<init> (10 bytes)   made not entrant
+    844   70    b  3       java.lang.invoke.MethodHandleStatics$1::run (5 bytes)
+    846   71    b  4       java.lang.invoke.MethodHandleStatics$1::run (5 bytes)
+    847   70       3       java.lang.invoke.MethodHandleStatics$1::run (5 bytes)   made not entrant
+    850   72    b  3       java.lang.invoke.MethodHandleStatics$1::run (130 bytes)
+   1193   73    b  4       java.lang.invoke.MethodHandleStatics$1::run (130 bytes)
+   1221   72       3       java.lang.invoke.MethodHandleStatics$1::run (130 bytes)   made not entrant
+   1221   33       4       java.util.Properties::getProperty (46 bytes)   made not entrant
+   1222   74    b  2       java.util.Properties::getProperty (46 bytes)
+   1226   75    b  3       java.lang.String::equalsIgnoreCase (48 bytes)
+   1230   76    b  4       java.lang.String::equalsIgnoreCase (48 bytes)
+   1233   75       3       java.lang.String::equalsIgnoreCase (48 bytes)   made not entrant
+   1234   77    b  3       java.lang.Class::checkMemberAccess (49 bytes)
+   1241   78    b  4       java.lang.Class::checkMemberAccess (49 bytes)
+   1245   77       3       java.lang.Class::checkMemberAccess (49 bytes)   made not entrant
+   1245   79    b  3       java.lang.Class::privateGetDeclaredFields (67 bytes)
+   1259   80    b  4       java.lang.Class::privateGetDeclaredFields (67 bytes)
+   1266   79       3       java.lang.Class::privateGetDeclaredFields (67 bytes)   made not entrant
+   1266   81    b  3       java.lang.Class::reflectionData (49 bytes)
+   1272   82    b  4       java.lang.Class::reflectionData (49 bytes)
+   1277   81       3       java.lang.Class::reflectionData (49 bytes)   made not entrant
+   1278   83    b  3       java.lang.Class::newReflectionData (74 bytes)
+   1298   84    b  4       java.lang.Class::newReflectionData (74 bytes)
+   1321   83       3       java.lang.Class::newReflectionData (74 bytes)   made not entrant
+   1323   85     n 0       java.lang.Class::getDeclaredFields0 (native)   
+   1323   86    b  3       java.util.HashMap::get (23 bytes)
+   1328   87    b  4       java.util.HashMap::get (23 bytes)
+   1330   86       3       java.util.HashMap::get (23 bytes)   made not entrant
+   1331   88     n 0       java.lang.Object::hashCode (native)   
+   1331   89    b  3       java.util.HashMap::getNode (148 bytes)
+   1347   90    b  4       java.util.HashMap::getNode (148 bytes)
+   1359   89       3       java.util.HashMap::getNode (148 bytes)   made not entrant
+   1359   91    b  3       sun.reflect.Reflection::filter (220 bytes)
+   1385   92    b  4       sun.reflect.Reflection::filter (220 bytes)
+   1397   91       3       sun.reflect.Reflection::filter (220 bytes)   made not entrant
+   1397   93    b  3       java.lang.Class::searchFields (41 bytes)
+   1416   94    b  4       java.lang.Class::searchFields (41 bytes)
+   1433   93       3       java.lang.Class::searchFields (41 bytes)   made not entrant
+   1434   95     n 0       java.lang.String::intern (native)   
+   1434   96    b  3       java.lang.reflect.Field::copy (76 bytes)
+   1439   97    b  4       java.lang.reflect.Field::copy (76 bytes)
+   1450   96       3       java.lang.reflect.Field::copy (76 bytes)   made not entrant
+   1450   98    b  3       java.lang.reflect.Field::<init> (44 bytes)
+   1455   99    b  4       java.lang.reflect.Field::<init> (44 bytes)
+   1457   98       3       java.lang.reflect.Field::<init> (44 bytes)   made not entrant
+   1458  100     n 0       sun.misc.Unsafe::objectFieldOffset (native)   
+   1458  101    b  3       java.lang.invoke.MemberName::<clinit> (17 bytes)
+   1461  102    b  4       java.lang.invoke.MemberName::<clinit> (17 bytes)
+   1463  101       3       java.lang.invoke.MemberName::<clinit> (17 bytes)   made not entrant
+   1464  103    b  3       java.lang.invoke.MethodHandleNatives::<clinit> (115 bytes)
+   1477  104    b  4       java.lang.invoke.MethodHandleNatives::<clinit> (115 bytes)
+   1484  103       3       java.lang.invoke.MethodHandleNatives::<clinit> (115 bytes)   made not entrant
+   1496  105     n 0       java.lang.invoke.MethodHandleNatives::registerNatives (native)   (static)
+   1519  106     n 0       java.lang.invoke.MethodHandleNatives::getConstant (native)   (static)
+   1519  107    b  3       java.lang.Thread::<init> (49 bytes)
+   1523  108    b  4       java.lang.Thread::<init> (49 bytes)
+   1528  107       3       java.lang.Thread::<init> (49 bytes)   made not entrant
+   1529  109    b  3       java.lang.Thread::init (214 bytes)
+   1601  110    b  4       java.lang.Thread::init (214 bytes)
+   1626  109       3       java.lang.Thread::init (214 bytes)   made not entrant
+   1626  111   !b  3       java.lang.ThreadGroup::addUnstarted (40 bytes)
+   1635  112   !b  4       java.lang.ThreadGroup::addUnstarted (40 bytes)
+   1640  111   !   3       java.lang.ThreadGroup::addUnstarted (40 bytes)   made not entrant
+   1641  113     n 0       java.security.AccessController::getStackAccessControlContext (native)   (static)
+   1641  114    b  3       java.security.AccessControlContext::optimize (318 bytes)
+   1725  115    b  4       java.security.AccessControlContext::optimize (318 bytes)
+   1748  114       3       java.security.AccessControlContext::optimize (318 bytes)   made not entrant
+   1748  116     n 0       java.security.AccessController::getInheritedAccessControlContext (native)   (static)
+   1748  117    b  3       java.security.AccessControlContext::calculateFields (89 bytes)
+   1763  118    b  4       java.security.AccessControlContext::calculateFields (89 bytes)
+   1779  117       3       java.security.AccessControlContext::calculateFields (89 bytes)   made not entrant
+   1779  119    b  3       java.security.AccessControlContext::combine (205 bytes)
+   1799  120    b  4       java.security.AccessControlContext::combine (205 bytes)
+   1841  119       3       java.security.AccessControlContext::combine (205 bytes)   made not entrant
+   1841  121    b  3       java.lang.Thread::setPriority (56 bytes)
+   1849  122    b  4       java.lang.Thread::setPriority (56 bytes)
+   1852  121       3       java.lang.Thread::setPriority (56 bytes)   made not entrant
+   1853  123     n 0       java.lang.Thread::setPriority0 (native)   
+   1858  124    b  2       java.lang.System::getProperty (25 bytes)
+   1865  125    b  3       sun.launcher.LauncherHelper::<clinit> (67 bytes)
+   1907  126    b  4       sun.launcher.LauncherHelper::<clinit> (67 bytes)
+   1908  125       3       sun.launcher.LauncherHelper::<clinit> (67 bytes)   made not entrant
+   1909  127    b  3       sun.launcher.LauncherHelper::<init> (7 bytes)
+   1912  128    b  4       sun.launcher.LauncherHelper::<init> (7 bytes)
+   1913  127       3       sun.launcher.LauncherHelper::<init> (7 bytes)   made not entrant
+   1913  129  s!b  3       java.lang.ClassLoader::initSystemClassLoader (109 bytes)
+   1928  130  s!b  4       java.lang.ClassLoader::initSystemClassLoader (109 bytes)
+   1940  129  s!   3       java.lang.ClassLoader::initSystemClassLoader (109 bytes)   made not entrant
+   1942  131   !b  3       sun.launcher.LauncherHelper::makePlatformString (70 bytes)
+   1965  132   !b  4       sun.launcher.LauncherHelper::makePlatformString (70 bytes)
+   1969  131   !   3       sun.launcher.LauncherHelper::makePlatformString (70 bytes)   made not entrant
+   1970  133    b  3       java.nio.charset.Charset::lookup (44 bytes)
+   1975  134    b  4       java.nio.charset.Charset::lookup (44 bytes)
+   1982  133       3       java.nio.charset.Charset::lookup (44 bytes)   made not entrant
+   1984  135    b  3       java.lang.String::<init> (38 bytes)
+   1989  136    b  4       java.lang.String::<init> (38 bytes)
+   1992  135       3       java.lang.String::<init> (38 bytes)   made not entrant
+   1993  137    b  3       java.lang.String::checkBounds (46 bytes)
+   1997  138    b  4       java.lang.String::checkBounds (46 bytes)
+   2001  137       3       java.lang.String::checkBounds (46 bytes)   made not entrant
+   2001  139   !b  3       java.lang.StringCoding::decode (120 bytes)
+   2053  140   !b  4       java.lang.StringCoding::decode (120 bytes)
+   2074  139   !   3       java.lang.StringCoding::decode (120 bytes)   made not entrant
+   2074  141    b  3       java.lang.ThreadLocal::get (38 bytes)
+   2080  142    b  4       java.lang.ThreadLocal::get (38 bytes)
+   2084  141       3       java.lang.ThreadLocal::get (38 bytes)   made not entrant
+   2086  143    b  3       java.lang.ThreadLocal$ThreadLocalMap::getEntry (42 bytes)
+   2096  144    b  4       java.lang.ThreadLocal$ThreadLocalMap::getEntry (42 bytes)
+   2101  143       3       java.lang.ThreadLocal$ThreadLocalMap::getEntry (42 bytes)   made not entrant
+   2105  145   !b  3       java.lang.StringCoding$StringDecoder::decode (179 bytes)
+   2163  146   !b  4       java.lang.StringCoding$StringDecoder::decode (179 bytes)
+   2173  145   !   3       java.lang.StringCoding$StringDecoder::decode (179 bytes)   made not entrant
+   2173  147    b  3       sun.nio.cs.UTF_8$Decoder::decode (779 bytes)
+   2590  148    b  4       sun.nio.cs.UTF_8$Decoder::decode (779 bytes)
+   2709  147       3       sun.nio.cs.UTF_8$Decoder::decode (779 bytes)   made not entrant
+   2723  149   !b  3       sun.launcher.LauncherHelper::checkAndLoadMain (220 bytes)
+   2797  150   !b  4       sun.launcher.LauncherHelper::checkAndLoadMain (220 bytes)
+   2810  149   !   3       sun.launcher.LauncherHelper::checkAndLoadMain (220 bytes)   made not entrant
+   2811  151    b  3       java.lang.String::replace (127 bytes)
+   2820  152    b  4       java.lang.String::replace (127 bytes)
+   2865  151       3       java.lang.String::replace (127 bytes)   made not entrant
+   2865  153    b  3       sun.misc.Launcher$AppClassLoader::loadClass (85 bytes)
+   2889  154    b  4       sun.misc.Launcher$AppClassLoader::loadClass (85 bytes)
+   2897  153       3       sun.misc.Launcher$AppClassLoader::loadClass (85 bytes)   made not entrant
+   2897  155    b  3       java.lang.String::lastIndexOf (52 bytes)
+   2902  156    b  4       java.lang.String::lastIndexOf (52 bytes)
+   2919  155       3       java.lang.String::lastIndexOf (52 bytes)   made not entrant
+   2919  157   !b  3       java.lang.ClassLoader::loadClass (122 bytes)
+   2949  158   !b  4       java.lang.ClassLoader::loadClass (122 bytes)
+   2964  157   !   3       java.lang.ClassLoader::loadClass (122 bytes)   made not entrant
+   2964  159   !b  3       java.util.concurrent.ConcurrentHashMap::putVal (362 bytes)
+   3023  160   !b  4       java.util.concurrent.ConcurrentHashMap::putVal (362 bytes)
+   3075  159   !   3       java.util.concurrent.ConcurrentHashMap::putVal (362 bytes)   made not entrant
+   3075  161   !b  3       java.util.concurrent.ConcurrentHashMap::initTable (115 bytes)
+   3084  162   !b  4       java.util.concurrent.ConcurrentHashMap::initTable (115 bytes)
+   3101  161   !   3       java.util.concurrent.ConcurrentHashMap::initTable (115 bytes)   made not entrant
+   3105  163    b  3       java.util.concurrent.ConcurrentHashMap::addCount (292 bytes)
+   3134  164    b  4       java.util.concurrent.ConcurrentHashMap::addCount (292 bytes)
+   3150  163       3       java.util.concurrent.ConcurrentHashMap::addCount (292 bytes)   made not entrant
+   3150  165    b  3       java.lang.ClassLoader::checkName (43 bytes)
+   3159  166    b  4       java.lang.ClassLoader::checkName (43 bytes)
+   3163  165       3       java.lang.ClassLoader::checkName (43 bytes)   made not entrant
+   3163  167    b  3       java.lang.String::indexOf (70 bytes)
+   3168  168    b  4       java.lang.String::indexOf (70 bytes)
+   3180  167       3       java.lang.String::indexOf (70 bytes)   made not entrant
+   3180  169     n 0       java.lang.ClassLoader::findLoadedClass0 (native)   
+   3180  170    b  2       java.lang.ClassLoader::getClassLoadingLock (35 bytes)
+   3183  171    b  2       java.util.concurrent.ConcurrentHashMap::spread (10 bytes)
+   3186  172    b  2       java.util.concurrent.ConcurrentHashMap::tabAt (21 bytes)
+   3188  173    b  2       java.util.concurrent.ConcurrentHashMap::casTabAt (20 bytes)
+   3194  174    b  2       java.lang.ClassLoader::findLoadedClass (16 bytes)
+   3197  175    b  2       java.lang.String::indexOf (7 bytes)
+   3199  176    b  2       sun.misc.VM::allowArraySyntax (4 bytes)
+   3200  177    b  2       java.lang.String::charAt (29 bytes)
+   3203  178    b  3       java.lang.ClassLoader::findBootstrapClassOrNull (16 bytes)
+   3209  179    b  4       java.lang.ClassLoader::findBootstrapClassOrNull (16 bytes)
+   3211  178       3       java.lang.ClassLoader::findBootstrapClassOrNull (16 bytes)   made not entrant
+   3211  180     n 0       java.lang.ClassLoader::findBootstrapClass (native)   
+   3211  181   !b  3       java.net.URLClassLoader::findClass (47 bytes)
+   3216  182   !b  4       java.net.URLClassLoader::findClass (47 bytes)
+   3217  181   !   3       java.net.URLClassLoader::findClass (47 bytes)   made not entrant
+   3218  183    b  3       java.net.URLClassLoader$1::<init> (15 bytes)
+   3220  184    b  4       java.net.URLClassLoader$1::<init> (15 bytes)
+   3221  183       3       java.net.URLClassLoader$1::<init> (15 bytes)   made not entrant
+   3223  185   !b  3       java.lang.ClassLoader::findNative (86 bytes)
+   3233  186   !b  4       java.lang.ClassLoader::findNative (86 bytes)
+   3252  185   !   3       java.lang.ClassLoader::findNative (86 bytes)   made not entrant
+   3254  187  s b  3       java.util.Vector::elementAt (48 bytes)
+   3267  188  s b  4       java.util.Vector::elementAt (48 bytes)
+   3272  187  s    3       java.util.Vector::elementAt (48 bytes)   made not entrant
+   3272  189     n 0       java.lang.ClassLoader$NativeLibrary::find (native)   
+   3272  190     n 0       java.security.AccessController::doPrivileged (native)   (static)
+   3273  191    b  3       java.net.URLClassLoader$1::run (5 bytes)
+   3277  192    b  4       java.net.URLClassLoader$1::run (5 bytes)
+   3278  191       3       java.net.URLClassLoader$1::run (5 bytes)   made not entrant
+   3278  193   !b  3       java.net.URLClassLoader$1::run (63 bytes)
+   3288  194   !b  4       java.net.URLClassLoader$1::run (63 bytes)
+   3293  193   !   3       java.net.URLClassLoader$1::run (63 bytes)   made not entrant
+   3293  195    b  3       java.lang.String::concat (47 bytes)
+   3302  196    b  4       java.lang.String::concat (47 bytes)
+   3309  195       3       java.lang.String::concat (47 bytes)   made not entrant
+   3309  197    b  3       sun.misc.URLClassPath::getResource (83 bytes)
+   3318  198    b  4       sun.misc.URLClassPath::getResource (83 bytes)
+   3321  197       3       sun.misc.URLClassPath::getResource (83 bytes)   made not entrant
+   3325  199  s b  3       sun.misc.URLClassPath::getLookupCache (98 bytes)
+   3331  200  s b  4       sun.misc.URLClassPath::getLookupCache (98 bytes)
+   3341  199  s    3       sun.misc.URLClassPath::getLookupCache (98 bytes)   made not entrant
+   3341  201  s b  3       sun.misc.URLClassPath::getNextLoader (88 bytes)
+   3353  202  s b  4       sun.misc.URLClassPath::getNextLoader (88 bytes)
+   3364  201  s    3       sun.misc.URLClassPath::getNextLoader (88 bytes)   made not entrant
+   3364  203  s!b  3       sun.misc.URLClassPath::getLoader (243 bytes)
+   3485  204  s!b  4       sun.misc.URLClassPath::getLoader (243 bytes)
+   3520  203  s!   3       sun.misc.URLClassPath::getLoader (243 bytes)   made not entrant
+   3525  205    b  2       java.util.Vector::elementData (7 bytes)
+   3527  206  s b  3       java.util.Vector::removeElementAt (115 bytes)
+   3542  207  s b  4       java.util.Vector::removeElementAt (115 bytes)
+   3554  206  s    3       java.util.Vector::removeElementAt (115 bytes)   made not entrant
+   3555  208    b  3       sun.net.util.URLUtil::urlNoFragString (114 bytes)
+   3588  209    b  4       sun.net.util.URLUtil::urlNoFragString (114 bytes)
+   3589  208       3       sun.net.util.URLUtil::urlNoFragString (114 bytes)   made not entrant
+   3589  210    b  3       java.lang.String::toLowerCase (439 bytes)
+   3652  211    b  4       java.lang.String::toLowerCase (439 bytes)
+   3729  210       3       java.lang.String::toLowerCase (439 bytes)   made not entrant
+   3729  212    b  3       java.lang.CharacterData::of (120 bytes)
+   3733  213    b  4       java.lang.CharacterData::of (120 bytes)
+   3735  212       3       java.lang.CharacterData::of (120 bytes)   made not entrant
+   3735  214    b  3       java.lang.CharacterDataLatin1::toLowerCase (39 bytes)
+   3739  215    b  4       java.lang.CharacterDataLatin1::toLowerCase (39 bytes)
+   3741  214       3       java.lang.CharacterDataLatin1::toLowerCase (39 bytes)   made not entrant
+   3744  216    b  2       java.lang.CharacterDataLatin1::getProperties (11 bytes)
+   3747  217    b  3       sun.misc.URLClassPath$3::<init> (15 bytes)
+   3749  218    b  4       sun.misc.URLClassPath$3::<init> (15 bytes)
+   3753  217       3       sun.misc.URLClassPath$3::<init> (15 bytes)   made not entrant
+   3753  219    b  3       sun.misc.URLClassPath$3::run (5 bytes)
+   3755  220    b  4       sun.misc.URLClassPath$3::run (5 bytes)
+   3756  219       3       sun.misc.URLClassPath$3::run (5 bytes)   made not entrant
+   3757  221    b  3       sun.misc.URLClassPath$3::run (93 bytes)
+   3767  222    b  4       sun.misc.URLClassPath$3::run (93 bytes)
+   3785  221       3       sun.misc.URLClassPath$3::run (93 bytes)   made not entrant
+   3788  223    b  3       java.lang.String::startsWith (72 bytes)
+   3793  224    b  4       java.lang.String::startsWith (72 bytes)
+   3805  223       3       java.lang.String::startsWith (72 bytes)   made not entrant
+   3807  202  s    4       sun.misc.URLClassPath::getNextLoader (88 bytes)   made not entrant
+   3807  204  s!   4       sun.misc.URLClassPath::getLoader (243 bytes)   made not entrant
+   3807  225    b  3       sun.misc.URLClassPath$JarLoader::<clinit> (7 bytes)
+   3811  226    b  4       sun.misc.URLClassPath$JarLoader::<clinit> (7 bytes)
+   3812  225       3       sun.misc.URLClassPath$JarLoader::<clinit> (7 bytes)   made not entrant
+   3814  227     n 0       sun.misc.Unsafe::ensureClassInitialized (native)   
+   3817  228    b  3       java.util.zip.ZipFile::<clinit> (75 bytes)
+   3839  229    b  4       java.util.zip.ZipFile::<clinit> (75 bytes)
+   3844  228       3       java.util.zip.ZipFile::<clinit> (75 bytes)   made not entrant
+   3845  230     n 0       java.util.zip.ZipFile::initIDs (native)   (static)
+   3846  231    b  3       java.util.zip.ZipFile$1::<init> (5 bytes)
+   3848  232    b  4       java.util.zip.ZipFile$1::<init> (5 bytes)
+   3849  231       3       java.util.zip.ZipFile$1::<init> (5 bytes)   made not entrant
+   3850  233    b  3       sun.misc.URLClassPath$JarLoader::<init> (147 bytes)
+   3901  234    b  4       sun.misc.URLClassPath$JarLoader::<init> (147 bytes)
+   3902  233       3       sun.misc.URLClassPath$JarLoader::<init> (147 bytes)   made not entrant
+   3905  235    b  3       java.net.URLStreamHandler::toExternalForm (219 bytes)
+   4016  236    b  4       java.net.URLStreamHandler::toExternalForm (219 bytes)
+   4028  235       3       java.net.URLStreamHandler::toExternalForm (219 bytes)   made not entrant
+   4029  237  s b  3       java.lang.StringBuffer::toString (36 bytes)
+   4033  238  s b  4       java.lang.StringBuffer::toString (36 bytes)
+   4042  237  s    3       java.lang.StringBuffer::toString (36 bytes)   made not entrant
+   4043  239    b  3       java.net.URL::<init> (386 bytes)
+   4252  240    b  4       java.net.URL::<init> (386 bytes)
+   4389  239       3       java.net.URL::<init> (386 bytes)   made not entrant
+   4390  241    b  3       java.net.Parts::<init> (87 bytes)
+   4401  242    b  4       java.net.Parts::<init> (87 bytes)
+   4410  241       3       java.net.Parts::<init> (87 bytes)   made not entrant
+   4411  243    b  3       sun.net.util.IPAddressUtil::checkExternalForm (69 bytes)
+   4430  244    b  4       sun.net.util.IPAddressUtil::checkExternalForm (69 bytes)
+   4433  243       3       sun.net.util.IPAddressUtil::checkExternalForm (69 bytes)   made not entrant
+   4434  245    b  3       sun.net.util.IPAddressUtil::scan (62 bytes)
+   4444  246    b  4       sun.net.util.IPAddressUtil::scan (62 bytes)
+   4456  245       3       sun.net.util.IPAddressUtil::scan (62 bytes)   made not entrant
+   4456  247    b  3       sun.net.util.IPAddressUtil::checkHostString (53 bytes)
+   4471  248    b  4       sun.net.util.IPAddressUtil::checkHostString (53 bytes)
+   4474  247       3       sun.net.util.IPAddressUtil::checkHostString (53 bytes)   made not entrant
+   4474  249    b  3       sun.net.util.IPAddressUtil::scan (92 bytes)
+   4489  250    b  4       sun.net.util.IPAddressUtil::scan (92 bytes)
+   4499  249       3       sun.net.util.IPAddressUtil::scan (92 bytes)   made not entrant
+   4500  251    b  3       java.lang.String::regionMatches (149 bytes)
+   4526  252    b  4       java.lang.String::regionMatches (149 bytes)
+   4553  251       3       java.lang.String::regionMatches (149 bytes)   made not entrant
+   4553  253    b  3       java.lang.CharacterDataLatin1::toUpperCase (53 bytes)
+   4557  254    b  4       java.lang.CharacterDataLatin1::toUpperCase (53 bytes)
+   4560  253       3       java.lang.CharacterDataLatin1::toUpperCase (53 bytes)   made not entrant
+   4560  255   !b  3       sun.net.www.ParseUtil::decode (316 bytes)
+   4700  256   !b  4       sun.net.www.ParseUtil::decode (316 bytes)
+   4708  255   !   3       sun.net.www.ParseUtil::decode (316 bytes)   made not entrant
+   4708  257    b  3       java.io.File::<init> (47 bytes)
+   4718  258    b  4       java.io.File::<init> (47 bytes)
+   4722  257       3       java.io.File::<init> (47 bytes)   made not entrant
+   4722  259    b  3       java.io.UnixFileSystem::normalize (75 bytes)
+   4732  260    b  4       java.io.UnixFileSystem::normalize (75 bytes)
+   4739  259       3       java.io.UnixFileSystem::normalize (75 bytes)   made not entrant
+   4739  261   !b  3       sun.misc.MetaIndex::getJarMap (61 bytes)
+   4748  262   !b  4       sun.misc.MetaIndex::getJarMap (61 bytes)
+   4752  261   !   3       sun.misc.MetaIndex::getJarMap (61 bytes)   made not entrant
+   4752  263    b  2       java.util.HashMap::hash (20 bytes)
+   4754  264    b  3       java.io.File::hashCode (8 bytes)
+   4757  265    b  4       java.io.File::hashCode (8 bytes)
+   4759  264       3       java.io.File::hashCode (8 bytes)   made not entrant
+   4759  266   !b  3       sun.misc.URLClassPath$JarLoader::ensureOpen (36 bytes)
+   4764  267   !b  4       sun.misc.URLClassPath$JarLoader::ensureOpen (36 bytes)
+   4765  266   !   3       sun.misc.URLClassPath$JarLoader::ensureOpen (36 bytes)   made not entrant
+   4766  268    b  3       sun.misc.URLClassPath$JarLoader$1::<init> (10 bytes)
+   4768  269    b  4       sun.misc.URLClassPath$JarLoader$1::<init> (10 bytes)
+   4772  268       3       sun.misc.URLClassPath$JarLoader$1::<init> (10 bytes)   made not entrant
+   4773  270    b  3       sun.misc.URLClassPath$JarLoader$1::run (5 bytes)
+   4778  271    b  4       sun.misc.URLClassPath$JarLoader$1::run (5 bytes)
+   4780  270       3       sun.misc.URLClassPath$JarLoader$1::run (5 bytes)   made not entrant
+   4780  272   !b  3       sun.misc.URLClassPath$JarLoader$1::run (184 bytes)
+   4813  273   !b  4       sun.misc.URLClassPath$JarLoader$1::run (184 bytes)
+   4819  272   !   3       sun.misc.URLClassPath$JarLoader$1::run (184 bytes)   made not entrant
+   4820  274    b  3       sun.misc.URLClassPath$JarLoader::getJarFile (81 bytes)
+   4834  275    b  4       sun.misc.URLClassPath$JarLoader::getJarFile (81 bytes)
+   4837  274       3       sun.misc.URLClassPath$JarLoader::getJarFile (81 bytes)   made not entrant
+   4838  276    b  3       sun.misc.FileURLMapper::<init> (10 bytes)
+   4840  277    b  4       sun.misc.FileURLMapper::<init> (10 bytes)
+   4842  276       3       sun.misc.FileURLMapper::<init> (10 bytes)   made not entrant
+   4842  278    b  3       sun.misc.FileURLMapper::exists (25 bytes)
+   4845  279    b  4       sun.misc.FileURLMapper::exists (25 bytes)
+   4847  278       3       sun.misc.FileURLMapper::exists (25 bytes)   made not entrant
+   4847  280    b  3       sun.misc.FileURLMapper::getPath (69 bytes)
+   4857  281    b  4       sun.misc.FileURLMapper::getPath (69 bytes)
+   4864  280       3       sun.misc.FileURLMapper::getPath (69 bytes)   made not entrant
+   4864  282    b  2       java.io.UnixFileSystem::prefixLength (25 bytes)
+   4868  283    b  3       java.io.File::exists (43 bytes)
+   4873  284    b  4       java.io.File::exists (43 bytes)
+   4876  283       3       java.io.File::exists (43 bytes)   made not entrant
+   4877  285    b  3       java.io.File::isInvalid (47 bytes)
+   4882  286    b  4       java.io.File::isInvalid (47 bytes)
+   4886  285       3       java.io.File::isInvalid (47 bytes)   made not entrant
+   4886  287    b  3       java.io.UnixFileSystem::getBooleanAttributes (49 bytes)
+   4895  288    b  4       java.io.UnixFileSystem::getBooleanAttributes (49 bytes)
+   4900  287       3       java.io.UnixFileSystem::getBooleanAttributes (49 bytes)   made not entrant
+   4900  289     n 0       java.io.UnixFileSystem::getBooleanAttributes0 (native)   
+   4900  290    b  3       java.lang.String::getBytes (27 bytes)
+   4903  291    b  4       java.lang.String::getBytes (27 bytes)
+   4906  290       3       java.lang.String::getBytes (27 bytes)   made not entrant
+   4907  292   !b  3       java.lang.StringCoding::encode (120 bytes)
+   4956  293   !b  4       java.lang.StringCoding::encode (120 bytes)
+   4982  292   !   3       java.lang.StringCoding::encode (120 bytes)   made not entrant
+   4982  294   !b  3       java.lang.StringCoding$StringEncoder::encode (179 bytes)
+   5038  295   !b  4       java.lang.StringCoding$StringEncoder::encode (179 bytes)
+   5046  294   !   3       java.lang.StringCoding$StringEncoder::encode (179 bytes)   made not entrant
+   5048  296    b  3       sun.nio.cs.UTF_8$Encoder::encode (359 bytes)
+   5079  297    b  4       sun.nio.cs.UTF_8$Encoder::encode (359 bytes)
+   5108  296       3       sun.nio.cs.UTF_8$Encoder::encode (359 bytes)   made not entrant
+   5108  298    b  3       java.io.File::getName (42 bytes)
+   5116  299    b  4       java.io.File::getName (42 bytes)
+   5120  298       3       java.io.File::getName (42 bytes)   made not entrant
+   5121  300    b  3       java.lang.String::substring (56 bytes)
+   5126  301    b  4       java.lang.String::substring (56 bytes)
+   5135  300       3       java.lang.String::substring (56 bytes)   made not entrant
+   5137  302    b  3       java.util.jar.JarFile::<clinit> (176 bytes)
+   5146  303    b  4       java.util.jar.JarFile::<clinit> (176 bytes)
+   5147  302       3       java.util.jar.JarFile::<clinit> (176 bytes)   made not entrant
+   5148  304    b  3       java.util.jar.JavaUtilJarAccessImpl::<init> (5 bytes)
+   5150  305    b  4       java.util.jar.JavaUtilJarAccessImpl::<init> (5 bytes)
+   5151  304       3       java.util.jar.JavaUtilJarAccessImpl::<init> (5 bytes)   made not entrant
+   5151  306    b  3       java.util.jar.JarFile::<init> (15 bytes)
+   5155  307    b  4       java.util.jar.JarFile::<init> (15 bytes)
+   5157  306       3       java.util.jar.JarFile::<init> (15 bytes)   made not entrant
+   5158  308    b  3       java.nio.charset.StandardCharsets::<clinit> (49 bytes)
+   5175  309    b  4       java.nio.charset.StandardCharsets::<clinit> (49 bytes)
+   5180  308       3       java.nio.charset.StandardCharsets::<clinit> (49 bytes)   made not entrant
+   5180  310    b  3       java.nio.charset.Charset::lookup2 (78 bytes)
+   5193  311    b  4       java.nio.charset.Charset::lookup2 (78 bytes)
+   5205  310       3       java.nio.charset.Charset::lookup2 (78 bytes)   made not entrant
+   5206  312   !b  3       sun.nio.cs.FastCharsetProvider::charsetForName (21 bytes)
+   5211  313   !b  4       sun.nio.cs.FastCharsetProvider::charsetForName (21 bytes)
+   5217  312   !   3       sun.nio.cs.FastCharsetProvider::charsetForName (21 bytes)   made not entrant
+   5217  314    b  3       sun.util.PreHashedMap::get (73 bytes)
+   5227  315    b  4       sun.util.PreHashedMap::get (73 bytes)
+   5245  314       3       sun.util.PreHashedMap::get (73 bytes)   made not entrant
+   5245  316   !b  3       sun.nio.cs.FastCharsetProvider::lookup (150 bytes)
+   5304  317   !b  4       sun.nio.cs.FastCharsetProvider::lookup (150 bytes)
+   5309  316   !   3       sun.nio.cs.FastCharsetProvider::lookup (150 bytes)   made not entrant
+   5309  318    b  3       sun.nio.cs.FastCharsetProvider::toLower (122 bytes)
+   5331  319    b  4       sun.nio.cs.FastCharsetProvider::toLower (122 bytes)
+   5361  318       3       sun.nio.cs.FastCharsetProvider::toLower (122 bytes)   made not entrant
+   5361  315       4       sun.util.PreHashedMap::get (73 bytes)   made not entrant
+   5362  320    b  2       sun.util.PreHashedMap::get (73 bytes)
+   5368  134       4       java.nio.charset.Charset::lookup (44 bytes)   made not entrant
+   5368  140   !   4       java.lang.StringCoding::decode (120 bytes)   made not entrant
+   5368  146   !   4       java.lang.StringCoding$StringDecoder::decode (179 bytes)   made not entrant
+   5368  293   !   4       java.lang.StringCoding::encode (120 bytes)   made not entrant
+   5368  295   !   4       java.lang.StringCoding$StringEncoder::encode (179 bytes)   made not entrant
+   5368  309       4       java.nio.charset.StandardCharsets::<clinit> (49 bytes)   made not entrant
+   5368  311       4       java.nio.charset.Charset::lookup2 (78 bytes)   made not entrant
+   5368  317   !   4       sun.nio.cs.FastCharsetProvider::lookup (150 bytes)   made not entrant
+   5368  313   !   4       sun.nio.cs.FastCharsetProvider::charsetForName (21 bytes)   made not entrant
+   5369  321    b  3       sun.nio.cs.US_ASCII::<init> (10 bytes)
+   5371  322    b  4       sun.nio.cs.US_ASCII::<init> (10 bytes)
+   5372  321       3       sun.nio.cs.US_ASCII::<init> (10 bytes)   made not entrant
+   5372  323    b  3       java.nio.charset.Charset::<init> (60 bytes)
+   5380  324    b  4       java.nio.charset.Charset::<init> (60 bytes)
+   5396  323       3       java.nio.charset.Charset::<init> (60 bytes)   made not entrant
+   5396  325    b  3       java.nio.charset.Charset::checkName (165 bytes)
+   5418  326    b  4       java.nio.charset.Charset::checkName (165 bytes)
+   5428  325       3       java.nio.charset.Charset::checkName (165 bytes)   made not entrant
+   5428  327    b  3       java.nio.charset.Charset::atBugLevel (44 bytes)
+   5435  328    b  4       java.nio.charset.Charset::atBugLevel (44 bytes)
+   5447  327       3       java.nio.charset.Charset::atBugLevel (44 bytes)   made not entrant
+   5447  329    b  3       sun.security.action.GetPropertyAction::run (5 bytes)
+   5455  330    b  4       sun.security.action.GetPropertyAction::run (5 bytes)
+   5457  329       3       sun.security.action.GetPropertyAction::run (5 bytes)   made not entrant
+   5460  331    b  3       sun.util.PreHashedMap::put (10 bytes)
+   5463  332    b  4       sun.util.PreHashedMap::put (10 bytes)
+   5465  331       3       sun.util.PreHashedMap::put (10 bytes)   made not entrant
+   5465  333    b  3       sun.util.PreHashedMap::put (103 bytes)
+   5476  334    b  4       sun.util.PreHashedMap::put (103 bytes)
+   5492  333       3       sun.util.PreHashedMap::put (103 bytes)   made not entrant
+   5493  335    b  2       java.nio.charset.Charset::lookup (44 bytes)
+   5497  336    b  2       java.nio.charset.Charset::lookup2 (78 bytes)
+   5505  337   !b  2       sun.nio.cs.FastCharsetProvider::charsetForName (21 bytes)
+   5509  338   !b  2       sun.nio.cs.FastCharsetProvider::lookup (150 bytes)
+   5532  339    b  3       java.lang.Class::forName (53 bytes)
+   5542  340    b  4       java.lang.Class::forName (53 bytes)
+   5547  339       3       java.lang.Class::forName (53 bytes)   made not entrant
+   5547  341     n 0       java.lang.Class::forName0 (native)   (static)
+   5548  342   !b  3       java.lang.Class::newInstance (155 bytes)
+   5589  343   !b  4       java.lang.Class::newInstance (155 bytes)
+   5609  342   !   3       java.lang.Class::newInstance (155 bytes)   made not entrant
+   5609  344    b  3       java.lang.Class::getConstructor0 (103 bytes)
+   5652  345    b  4       java.lang.Class::getConstructor0 (103 bytes)
+   5661  344       3       java.lang.Class::getConstructor0 (103 bytes)   made not entrant
+   5661  346    b  3       java.lang.Class::privateGetDeclaredConstructors (85 bytes)
+   5676  347    b  4       java.lang.Class::privateGetDeclaredConstructors (85 bytes)
+   5685  346       3       java.lang.Class::privateGetDeclaredConstructors (85 bytes)   made not entrant
+   5685  348    b  2       java.lang.Class$Atomic::casReflectionData (13 bytes)
+   5687  349     n 0       java.lang.Class::isInterface (native)   
+   5687  350     n 0       java.lang.Class::getDeclaredConstructors0 (native)   
+   5687  351     n 0       java.lang.Object::clone (native)   
+   5687  352    b  3       java.lang.Class::arrayContentsEq (70 bytes)
+   5693  353    b  4       java.lang.Class::arrayContentsEq (70 bytes)
+   5705  352       3       java.lang.Class::arrayContentsEq (70 bytes)   made not entrant
+   5705  354    b  3       java.lang.reflect.Constructor::copy (72 bytes)
+   5718  355    b  4       java.lang.reflect.Constructor::copy (72 bytes)
+   5726  354       3       java.lang.reflect.Constructor::copy (72 bytes)   made not entrant
+   5726  356    b  3       java.lang.reflect.Constructor::<init> (50 bytes)
+   5730  357    b  4       java.lang.reflect.Constructor::<init> (50 bytes)
+   5736  356       3       java.lang.reflect.Constructor::<init> (50 bytes)   made not entrant
+   5736  358    b  3       java.lang.Class$1::run (5 bytes)
+   5741  359    b  4       java.lang.Class$1::run (5 bytes)
+   5742  358       3       java.lang.Class$1::run (5 bytes)   made not entrant
+   5743  360    b  3       java.lang.reflect.AccessibleObject::setAccessible0 (42 bytes)
+   5747  361    b  4       java.lang.reflect.AccessibleObject::setAccessible0 (42 bytes)
+   5750  360       3       java.lang.reflect.AccessibleObject::setAccessible0 (42 bytes)   made not entrant
+   5750  362     n 0       sun.reflect.Reflection::getClassAccessFlags (native)   (static)
+   5750  363    b  3       sun.reflect.Reflection::ensureMemberAccess (86 bytes)
+   5778  364    b  4       sun.reflect.Reflection::ensureMemberAccess (86 bytes)
+   5782  363       3       sun.reflect.Reflection::ensureMemberAccess (86 bytes)   made not entrant
+   5782  365    b  3       sun.reflect.Reflection::verifyMemberAccess (172 bytes)
+   5944  366    b  4       sun.reflect.Reflection::verifyMemberAccess (172 bytes)
+   5958  365       3       sun.reflect.Reflection::verifyMemberAccess (172 bytes)   made not entrant
+   5958  367    b  3       sun.reflect.Reflection::isSameClassPackage (216 bytes)
+   6037  368    b  4       sun.reflect.Reflection::isSameClassPackage (216 bytes)
+   6054  367       3       sun.reflect.Reflection::isSameClassPackage (216 bytes)   made not entrant
+   6054  369    b  3       java.lang.reflect.Constructor::newInstance (87 bytes)
+   6065  370    b  4       java.lang.reflect.Constructor::newInstance (87 bytes)
+   6072  369       3       java.lang.reflect.Constructor::newInstance (87 bytes)   made not entrant
+   6072  371     n 0       java.lang.Class::getModifiers (native)   
+   6073  372    b  3       java.lang.reflect.Constructor::acquireConstructorAccessor (44 bytes)
+   6080  373    b  4       java.lang.reflect.Constructor::acquireConstructorAccessor (44 bytes)
+   6085  372       3       java.lang.reflect.Constructor::acquireConstructorAccessor (44 bytes)   made not entrant
+   6085  374    b  3       sun.reflect.ReflectionFactory::newConstructorAccessor (132 bytes)
+   6137  375    b  4       sun.reflect.ReflectionFactory::newConstructorAccessor (132 bytes)
+   6151  374       3       sun.reflect.ReflectionFactory::newConstructorAccessor (132 bytes)   made not entrant
+   6152  376     n 0       java.lang.Class::getSuperclass (native)   
+   6152  377    b  3       sun.reflect.DelegatingConstructorAccessorImpl::newInstance (9 bytes)
+   6154  378    b  4       sun.reflect.DelegatingConstructorAccessorImpl::newInstance (9 bytes)
+   6156  377       3       sun.reflect.DelegatingConstructorAccessorImpl::newInstance (9 bytes)   made not entrant
+   6157  379    b  3       sun.reflect.NativeConstructorAccessorImpl::newInstance (89 bytes)
+   6179  380    b  4       sun.reflect.NativeConstructorAccessorImpl::newInstance (89 bytes)
+   6183  379       3       sun.reflect.NativeConstructorAccessorImpl::newInstance (89 bytes)   made not entrant
+   6183  381     n 0       sun.reflect.NativeConstructorAccessorImpl::newInstance0 (native)   (static)
+   6183  382    b  3       sun.nio.cs.ISO_8859_1::<init> (10 bytes)
+   6185  383    b  4       sun.nio.cs.ISO_8859_1::<init> (10 bytes)
+   6186  382       3       sun.nio.cs.ISO_8859_1::<init> (10 bytes)   made not entrant
+   6187  384    b  2       java.lang.Class::checkInitted (19 bytes)
+   6190  385    b  2       java.lang.reflect.Constructor::getParameterTypes (11 bytes)
+   6192  386    b  2       java.lang.Class::getReflectionFactory (26 bytes)
+   6194  387    b  2       sun.reflect.ReflectionFactory::copyConstructor (10 bytes)
+   6199  388    b  2       java.lang.Class$1::run (10 bytes)
+   6209  389    b  2       sun.reflect.Reflection::quickCheckMemberAccess (10 bytes)
+   6211  390    b  2       java.lang.reflect.Modifier::isPublic (12 bytes)
+   6212  391    b  2       sun.reflect.Reflection::isSameClassPackage (20 bytes)
+   6232  392    b  2       java.lang.String::lastIndexOf (13 bytes)
+   6234  393    b  2       sun.reflect.ReflectionFactory::checkInitted (19 bytes)
+   6236  394    b  2       java.lang.reflect.Modifier::isAbstract (14 bytes)
+   6237  395    b  2       sun.reflect.Reflection::isSubclassOf (21 bytes)
+   6240  396    b  2       java.lang.reflect.Constructor::setConstructorAccessor (21 bytes)
+   6243  397    b  3       sun.nio.cs.UTF_16BE::<init> (10 bytes)
+   6245  398    b  4       sun.nio.cs.UTF_16BE::<init> (10 bytes)
+   6246  397       3       sun.nio.cs.UTF_16BE::<init> (10 bytes)   made not entrant
+   6247  399    b  3       sun.nio.cs.UTF_16LE::<init> (10 bytes)
+   6249  400    b  4       sun.nio.cs.UTF_16LE::<init> (10 bytes)
+   6251  399       3       sun.nio.cs.UTF_16LE::<init> (10 bytes)   made not entrant
+   6252  401    b  3       sun.nio.cs.UTF_16::<init> (10 bytes)
+   6255  402    b  4       sun.nio.cs.UTF_16::<init> (10 bytes)
+   6256  401       3       sun.nio.cs.UTF_16::<init> (10 bytes)   made not entrant
+   6257  403    b  3       java.util.zip.ZipFile::<init> (197 bytes)
+   6301  404    b  4       java.util.zip.ZipFile::<init> (197 bytes)
+   6303  403       3       java.util.zip.ZipFile::<init> (197 bytes)   made not entrant
+   6303  405    b  3       java.lang.ref.Finalizer::register (10 bytes)
+   6309  406    b  4       java.lang.ref.Finalizer::register (10 bytes)
+   6319  405       3       java.lang.ref.Finalizer::register (10 bytes)   made not entrant
+   6320  407   !b  3       java.lang.ref.Finalizer::add (41 bytes)
+   6323  408   !b  4       java.lang.ref.Finalizer::add (41 bytes)
+   6328  407   !   3       java.lang.ref.Finalizer::add (41 bytes)   made not entrant
+   6328  409    b  3       java.util.WeakHashMap::<init> (133 bytes)
+   6370  410    b  4       java.util.WeakHashMap::<init> (133 bytes)
+   6389  409       3       java.util.WeakHashMap::<init> (133 bytes)   made not entrant
+   6393  411    b  3       java.util.ArrayDeque::<clinit> (17 bytes)
+   6396  412    b  4       java.util.ArrayDeque::<clinit> (17 bytes)
+   6397  411       3       java.util.ArrayDeque::<clinit> (17 bytes)   made not entrant
+   6404  413    b  3       java.util.ArrayDeque::<init> (14 bytes)
+   6408  414    b  4       java.util.ArrayDeque::<init> (14 bytes)
+   6411  413       3       java.util.ArrayDeque::<init> (14 bytes)   made not entrant
+   6412  415    b  3       java.util.zip.ZipCoder::get (9 bytes)
+   6417  416    b  4       java.util.zip.ZipCoder::get (9 bytes)
+   6418  415       3       java.util.zip.ZipCoder::get (9 bytes)   made not entrant
+   6418  417     n 0       java.io.UnixFileSystem::getLastModifiedTime (native)   
+   6418  418   !b  2       java.lang.StringCoding::encode (120 bytes)
+   6439  419   !b  2       java.lang.StringCoding$StringEncoder::encode (179 bytes)
+   6462  420     n 0       java.util.zip.ZipFile::open (native)   (static)
+   6463  421    b  3       sun.misc.PerfCounter::<clinit> (17 bytes)
+   6465  422    b  4       sun.misc.PerfCounter::<clinit> (17 bytes)
+   6466  421       3       sun.misc.PerfCounter::<clinit> (17 bytes)   made not entrant
+   6467  423    b  3       sun.misc.Perf$GetPerfAction::<init> (5 bytes)
+   6469  424    b  4       sun.misc.Perf$GetPerfAction::<init> (5 bytes)
+   6471  423       3       sun.misc.Perf$GetPerfAction::<init> (5 bytes)   made not entrant
+   6471  425    b  3       sun.misc.Perf$GetPerfAction::run (5 bytes)
+   6473  426    b  4       sun.misc.Perf$GetPerfAction::run (5 bytes)
+   6475  425       3       sun.misc.Perf$GetPerfAction::run (5 bytes)   made not entrant
+   6476  427    b  3       sun.misc.Perf::<clinit> (14 bytes)
+   6479  428    b  4       sun.misc.Perf::<clinit> (14 bytes)
+   6480  427       3       sun.misc.Perf::<clinit> (14 bytes)   made not entrant
+   6489  429     n 0       sun.misc.Perf::registerNatives (native)   (static)
+   6492  430    b  3       sun.misc.Perf::<init> (5 bytes)
+   6494  431    b  4       sun.misc.Perf::<init> (5 bytes)
+   6498  430       3       sun.misc.Perf::<init> (5 bytes)   made not entrant
+   6498  432    b  3       sun.misc.Perf::getPerf (27 bytes)
+   6504  433    b  4       sun.misc.Perf::getPerf (27 bytes)
+   6506  432       3       sun.misc.Perf::getPerf (27 bytes)   made not entrant
+   6513  434    b  3       sun.misc.PerfCounter::getZipFileOpenTime (4 bytes)
+   6516  435    b  1       sun.misc.PerfCounter::getZipFileOpenTime (4 bytes)
+   6517  434       3       sun.misc.PerfCounter::getZipFileOpenTime (4 bytes)   made not entrant
+   6518  436    b  3       sun.misc.PerfCounter$CoreCounters::<clinit> (49 bytes)
+   6533  437    b  4       sun.misc.PerfCounter$CoreCounters::<clinit> (49 bytes)
+   6539  436       3       sun.misc.PerfCounter$CoreCounters::<clinit> (49 bytes)   made not entrant
+   6539  438    b  3       sun.misc.PerfCounter::<init> (37 bytes)
+   6546  439    b  4       sun.misc.PerfCounter::<init> (37 bytes)
+   6552  438       3       sun.misc.PerfCounter::<init> (37 bytes)   made not entrant
+   6552  440     n 0       sun.misc.Perf::createLong (native)   
+   6555  148       4       sun.nio.cs.UTF_8$Decoder::decode (779 bytes)   made not entrant
+   6555  256   !   4       sun.net.www.ParseUtil::decode (316 bytes)   made not entrant
+   6555  439       4       sun.misc.PerfCounter::<init> (37 bytes)   made not entrant
+   6558  441    b  3       java.nio.DirectByteBuffer::<clinit> (41 bytes)
+   6563  442    b  4       java.nio.DirectByteBuffer::<clinit> (41 bytes)
+   6567  441       3       java.nio.DirectByteBuffer::<clinit> (41 bytes)   made not entrant
+   6567  443     n 0       sun.misc.Unsafe::arrayBaseOffset (native)   
+   6568  444    b  3       java.nio.Bits::unaligned (96 bytes)
+   6579  445    b  4       java.nio.Bits::unaligned (96 bytes)
+   6580  444       3       java.nio.Bits::unaligned (96 bytes)   made not entrant
+   6580  446    b  2       sun.security.action.GetPropertyAction::run (21 bytes)
+   6584  447    b  3       java.nio.DirectByteBuffer::<init> (24 bytes)
+   6588  448    b  4       java.nio.DirectByteBuffer::<init> (24 bytes)
+   6590  447       3       java.nio.DirectByteBuffer::<init> (24 bytes)   made not entrant
+   6592  449    b  3       java.nio.ByteBuffer::<init> (45 bytes)
+   6598  450    b  4       java.nio.ByteBuffer::<init> (45 bytes)
+   6605  449       3       java.nio.ByteBuffer::<init> (45 bytes)   made not entrant
+   6606  451    b  3       java.nio.Buffer::<init> (121 bytes)
+   6636  452    b  4       java.nio.Buffer::<init> (121 bytes)
+   6639  451       3       java.nio.Buffer::<init> (121 bytes)   made not entrant
+   6640  453    b  3       java.nio.Buffer::limit (62 bytes)
+   6644  454    b  4       java.nio.Buffer::limit (62 bytes)
+   6646  453       3       java.nio.Buffer::limit (62 bytes)   made not entrant
+   6646  455    b  3       java.nio.Buffer::position (43 bytes)
+   6650  456    b  4       java.nio.Buffer::position (43 bytes)
+   6652  455       3       java.nio.Buffer::position (43 bytes)   made not entrant
+   6653  457    b  3       java.nio.ByteBuffer::order (48 bytes)
+   6656  458    b  4       java.nio.ByteBuffer::order (48 bytes)
+   6659  457       3       java.nio.ByteBuffer::order (48 bytes)   made not entrant
+   6660  459    b  3       java.nio.DirectByteBuffer::asLongBuffer (151 bytes)
+   6667  460    b  4       java.nio.DirectByteBuffer::asLongBuffer (151 bytes)
+   6669  459       3       java.nio.DirectByteBuffer::asLongBuffer (151 bytes)   made not entrant
+   6671  461    b  3       java.nio.DirectLongBufferU::<clinit> (41 bytes)
+   6675  462    b  4       java.nio.DirectLongBufferU::<clinit> (41 bytes)
+   6684  461       3       java.nio.DirectLongBufferU::<clinit> (41 bytes)   made not entrant
+   6684  463    b  3       java.nio.DirectLongBufferU::<init> (30 bytes)
+   6690  464    b  4       java.nio.DirectLongBufferU::<init> (30 bytes)
+   6693  463       3       java.nio.DirectLongBufferU::<init> (30 bytes)   made not entrant
+   6694  465    b  3       java.nio.DirectByteBuffer::address (5 bytes)
+   6696  466    b  1       java.nio.DirectByteBuffer::address (5 bytes)
+   6697  465       3       java.nio.DirectByteBuffer::address (5 bytes)   made not entrant
+   6697  467    b  2       sun.misc.PerfCounter::<init> (37 bytes)
+   6700  468    b  2       java.nio.MappedByteBuffer::<init> (15 bytes)
+   6703  469    b  2       java.nio.Bits::byteOrder (20 bytes)
+   6703  460       4       java.nio.DirectByteBuffer::asLongBuffer (151 bytes)   made not entrant
+   6704  470    b  2       java.nio.LongBuffer::<init> (12 bytes)
+   6707  471    b  3       java.nio.DirectByteBuffer::asLongBuffer (151 bytes)
+   6716  472    b  4       java.nio.DirectByteBuffer::asLongBuffer (151 bytes)
+   6729  471       3       java.nio.DirectByteBuffer::asLongBuffer (151 bytes)   made not entrant
+   6729  473    b  2       java.nio.LongBuffer::<init> (22 bytes)
+   6732  474    b  3       sun.misc.PerfCounter::addElapsedTimeFrom (10 bytes)
+   6739  475    b  4       sun.misc.PerfCounter::addElapsedTimeFrom (10 bytes)
+   6741  474       3       sun.misc.PerfCounter::addElapsedTimeFrom (10 bytes)   made not entrant
+   6741  476    b  3       java.nio.DirectLongBufferU::get (16 bytes)
+   6748  477    b  4       java.nio.DirectLongBufferU::get (16 bytes)
+   6750  476       3       java.nio.DirectLongBufferU::get (16 bytes)   made not entrant
+   6750  478    b  3       java.nio.DirectLongBufferU::put (18 bytes)
+   6753  479    b  4       java.nio.DirectLongBufferU::put (18 bytes)
+   6755  478       3       java.nio.DirectLongBufferU::put (18 bytes)   made not entrant
+   6755  480    b  3       sun.misc.PerfCounter::getZipFileCount (4 bytes)
+   6756  481    b  1       sun.misc.PerfCounter::getZipFileCount (4 bytes)
+   6756  480       3       sun.misc.PerfCounter::getZipFileCount (4 bytes)   made not entrant
+   6756  482    b  3       sun.misc.PerfCounter::increment (6 bytes)
+   6764  483    b  4       sun.misc.PerfCounter::increment (6 bytes)
+   6767  482       3       sun.misc.PerfCounter::increment (6 bytes)   made not entrant
+   6768  484    b  3       java.nio.Buffer::checkIndex (22 bytes)
+   6770  485    b  4       java.nio.Buffer::checkIndex (22 bytes)
+   6772  484       3       java.nio.Buffer::checkIndex (22 bytes)   made not entrant
+   6772  486    b  2       java.nio.DirectLongBufferU::ix (10 bytes)
+   6774  487     n 0       java.util.zip.ZipFile::getTotal (native)   (static)
+   6774  488     n 0       java.util.zip.ZipFile::startsWithLOC (native)   (static)
+   6774  489   !b  3       sun.misc.URLClassPath$JarLoader::checkJar (51 bytes)
+   6784  490   !b  4       sun.misc.URLClassPath$JarLoader::checkJar (51 bytes)
+   6793  489   !   3       sun.misc.URLClassPath$JarLoader::checkJar (51 bytes)   made not entrant
+   6796  491    b  3       sun.misc.JarIndex::<clinit> (21 bytes)
+   6800  492    b  4       sun.misc.JarIndex::<clinit> (21 bytes)
+   6802  491       3       sun.misc.JarIndex::<clinit> (21 bytes)   made not entrant
+   6802   31       4       java.lang.String::equals (81 bytes)   made not entrant
+   6802  493    b  3       sun.misc.JarIndex::getJarIndex (43 bytes)
+   6822  494    b  4       sun.misc.JarIndex::getJarIndex (43 bytes)
+   6829  493       3       sun.misc.JarIndex::getJarIndex (43 bytes)   made not entrant
+   6830  495   !b  3       java.util.zip.ZipFile::getEntry (101 bytes)
+   6839  496   !b  4       java.util.zip.ZipFile::getEntry (101 bytes)
+   6851  495   !   3       java.util.zip.ZipFile::getEntry (101 bytes)   made not entrant
+   6852  497    b  3       java.util.zip.ZipFile::ensureOpen (37 bytes)
+   6857  498    b  4       java.util.zip.ZipFile::ensureOpen (37 bytes)
+   6858  497       3       java.util.zip.ZipFile::ensureOpen (37 bytes)   made not entrant
+   6859  499    b  3       java.util.zip.ZipCoder::getBytes (192 bytes)
+   6913  500    b  4       java.util.zip.ZipCoder::getBytes (192 bytes)
+   6925  499       3       java.util.zip.ZipCoder::getBytes (192 bytes)   made not entrant
+   6925  501    b  3       sun.nio.cs.UTF_8::newEncoder (10 bytes)
+   6930  502    b  4       sun.nio.cs.UTF_8::newEncoder (10 bytes)
+   6933  501       3       sun.nio.cs.UTF_8::newEncoder (10 bytes)   made not entrant
+   6933  503    b  3       java.nio.charset.CharsetEncoder::<init> (113 bytes)
+   6944  504    b  4       java.nio.charset.CharsetEncoder::<init> (113 bytes)
+   6949  503       3       java.nio.charset.CharsetEncoder::<init> (113 bytes)   made not entrant
+   6950  505    b  3       java.nio.charset.CharsetEncoder::replaceWith (89 bytes)
+   6961  506    b  4       java.nio.charset.CharsetEncoder::replaceWith (89 bytes)
+   6966  505       3       java.nio.charset.CharsetEncoder::replaceWith (89 bytes)   made not entrant
+   6966  507    b  3       sun.nio.cs.UTF_8$Encoder::isLegalReplacement (26 bytes)
+   6973  508    b  4       sun.nio.cs.UTF_8$Encoder::isLegalReplacement (26 bytes)
+   6976  507       3       sun.nio.cs.UTF_8$Encoder::isLegalReplacement (26 bytes)   made not entrant
+   6976  509    b  3       sun.nio.cs.UTF_8$Encoder::implReplaceWith (8 bytes)
+   6981  510    b  1       sun.nio.cs.UTF_8$Encoder::implReplaceWith (8 bytes)
+   6982  509       3       sun.nio.cs.UTF_8$Encoder::implReplaceWith (8 bytes)   made not entrant
+   6982  511     n 0       java.util.zip.ZipFile::getEntry (native)   (static)
+   6982  512    b  3       sun.misc.URLClassPath$JarLoader::getClassPath (86 bytes)
+   6999  513    b  4       sun.misc.URLClassPath$JarLoader::getClassPath (86 bytes)
+   7004  512       3       sun.misc.URLClassPath$JarLoader::getClassPath (86 bytes)   made not entrant
+   7004  267   !   4       sun.misc.URLClassPath$JarLoader::ensureOpen (36 bytes)   made not entrant
+   7006  514   !b  3       sun.misc.ExtensionDependency::checkExtensionsDependencies (32 bytes)
+   7011  515   !b  4       sun.misc.ExtensionDependency::checkExtensionsDependencies (32 bytes)
+   7013  514   !   3       sun.misc.ExtensionDependency::checkExtensionsDependencies (32 bytes)   made not entrant
+   7013  516    b  3       java.util.jar.JarFile::checkForSpecialAttributes (58 bytes)
+   7018  517    b  4       java.util.jar.JarFile::checkForSpecialAttributes (58 bytes)
+   7022  516       3       java.util.jar.JarFile::checkForSpecialAttributes (58 bytes)   made not entrant
+   7022  518    b  3       java.util.jar.JarFile::isKnownNotToHaveSpecialAttributes (358 bytes)
+   7285  519    b  4       java.util.jar.JarFile::isKnownNotToHaveSpecialAttributes (358 bytes)
+   7294  518       3       java.util.jar.JarFile::isKnownNotToHaveSpecialAttributes (358 bytes)   made not entrant
+   7295  520    b  2       java.lang.String::equals (81 bytes)
+   7302  521    b  3       java.util.jar.JarFile::getManEntry (83 bytes)
+   7319  522    b  4       java.util.jar.JarFile::getManEntry (83 bytes)
+   7338  521       3       java.util.jar.JarFile::getManEntry (83 bytes)   made not entrant
+   7339  523    b  2       java.util.zip.ZipCoder::encoder (35 bytes)
+   7342  524    b  2       java.nio.charset.CharsetEncoder::reset (11 bytes)
+   7343  525    b  2       java.lang.String::toCharArray (25 bytes)
+   7345  526    b  2       java.nio.charset.CharsetEncoder::maxBytesPerChar (5 bytes)
+   7346  527    b  2       java.util.Arrays::copyOf (19 bytes)
+   7349  528    b  3       java.util.zip.ZipFile::getZipEntry (251 bytes)
+   7370  529    b  4       java.util.zip.ZipFile::getZipEntry (251 bytes)
+   7372  528       3       java.util.zip.ZipFile::getZipEntry (251 bytes)   made not entrant
+   7381  530    b  3       java.util.zip.ZipEntry::<init> (43 bytes)
+   7384  531    b  4       java.util.zip.ZipEntry::<init> (43 bytes)
+   7386  530       3       java.util.zip.ZipEntry::<init> (43 bytes)   made not entrant
+   7386  532     n 0       java.util.zip.ZipFile::getEntryFlag (native)   (static)
+   7386  533     n 0       java.util.zip.ZipFile::getEntryBytes (native)   (static)
+   7387  534    b  3       java.util.zip.ZipCoder::toString (190 bytes)
+   7434  535    b  4       java.util.zip.ZipCoder::toString (190 bytes)
+   7460  534       3       java.util.zip.ZipCoder::toString (190 bytes)   made not entrant
+   7461  536    b  3       sun.nio.cs.UTF_8::newDecoder (10 bytes)
+   7465  537    b  4       sun.nio.cs.UTF_8::newDecoder (10 bytes)
+   7468  536       3       sun.nio.cs.UTF_8::newDecoder (10 bytes)   made not entrant
+   7468  538    b  3       java.nio.charset.CharsetDecoder::<init> (108 bytes)
+   7480  539    b  4       java.nio.charset.CharsetDecoder::<init> (108 bytes)
+   7488  538       3       java.nio.charset.CharsetDecoder::<init> (108 bytes)   made not entrant
+   7494  540    b  3       java.nio.charset.CharsetDecoder::replaceWith (68 bytes)
+   7503  541    b  4       java.nio.charset.CharsetDecoder::replaceWith (68 bytes)
+   7507  540       3       java.nio.charset.CharsetDecoder::replaceWith (68 bytes)   made not entrant
+   7507  542    b  2       sun.nio.cs.UTF_8$Decoder::decode (779 bytes)
+   7664  543     n 0       java.util.zip.ZipFile::getEntryTime (native)   (static)
+   7664  544     n 0       java.util.zip.ZipFile::getEntryCrc (native)   (static)
+   7665  545     n 0       java.util.zip.ZipFile::getEntrySize (native)   (static)
+   7665  546     n 0       java.util.zip.ZipFile::getEntryCSize (native)   (static)
+   7665  547     n 0       java.util.zip.ZipFile::getEntryMethod (native)   (static)
+   7665  548    b  3       java.util.zip.ZipEntry::setExtra0 (360 bytes)
+   7710  549    b  4       java.util.zip.ZipEntry::setExtra0 (360 bytes)
+   7712  548       3       java.util.zip.ZipEntry::setExtra0 (360 bytes)   made not entrant
+   7713  550     n 0       java.util.zip.ZipFile::freeEntry (native)   (static)
+   7714  551    b  3       java.util.jar.JarFile$JarFileEntry::<init> (11 bytes)
+   7716  552    b  4       java.util.jar.JarFile$JarFileEntry::<init> (11 bytes)
+   7718  551       3       java.util.jar.JarFile$JarFileEntry::<init> (11 bytes)   made not entrant
+   7718  553    b  3       java.util.zip.ZipEntry::<init> (146 bytes)
+   7736  554    b  4       java.util.zip.ZipEntry::<init> (146 bytes)
+   7746  553       3       java.util.zip.ZipEntry::<init> (146 bytes)   made not entrant
+   7748  555   !b  3       java.util.jar.JarFile::getBytes (96 bytes)
+   7757  556   !b  4       java.util.jar.JarFile::getBytes (96 bytes)
+   7762  555   !   3       java.util.jar.JarFile::getBytes (96 bytes)   made not entrant
+   7763  557   !b  3       java.util.zip.ZipFile::getInputStream (304 bytes)
+   7792  558   !b  4       java.util.zip.ZipFile::getInputStream (304 bytes)
+   7803  557   !   3       java.util.zip.ZipFile::getInputStream (304 bytes)   made not entrant
+   7805  559    b  3       java.util.zip.ZipFile$ZipFileInputStream::<init> (41 bytes)
+   7812  560    b  4       java.util.zip.ZipFile$ZipFileInputStream::<init> (41 bytes)
+   7816  559       3       java.util.zip.ZipFile$ZipFileInputStream::<init> (41 bytes)   made not entrant
+   7816  561   !b  3       java.util.zip.ZipFile::getInflater (56 bytes)
+   7823  562   !b  4       java.util.zip.ZipFile::getInflater (56 bytes)
+   7833  561   !   3       java.util.zip.ZipFile::getInflater (56 bytes)   made not entrant
+   7834  563    b  3       java.util.ArrayDeque::poll (5 bytes)
+   7836  564    b  4       java.util.ArrayDeque::poll (5 bytes)
+   7837  563       3       java.util.ArrayDeque::poll (5 bytes)   made not entrant
+   7838  565    b  3       java.util.ArrayDeque::pollFirst (42 bytes)
+   7842  566    b  4       java.util.ArrayDeque::pollFirst (42 bytes)
+   7845  565       3       java.util.ArrayDeque::pollFirst (42 bytes)   made not entrant
+   7845  567    b  3       java.util.zip.Inflater::<clinit> (26 bytes)
+   7850  568    b  4       java.util.zip.Inflater::<clinit> (26 bytes)
+   7854  567       3       java.util.zip.Inflater::<clinit> (26 bytes)   made not entrant
+   7854  569     n 0       java.util.zip.Inflater::initIDs (native)   (static)
+   7855  570    b  3       java.util.zip.Inflater::<init> (27 bytes)
+   7859  571    b  4       java.util.zip.Inflater::<init> (27 bytes)
+   7860  570       3       java.util.zip.Inflater::<init> (27 bytes)   made not entrant
+   7862  572     n 0       java.util.zip.Inflater::init (native)   (static)
+   7862  573    b  3       java.util.zip.ZStreamRef::<init> (10 bytes)
+   7864  574    b  4       java.util.zip.ZStreamRef::<init> (10 bytes)
+   7865  573       3       java.util.zip.ZStreamRef::<init> (10 bytes)   made not entrant
+   7867  575    b  3       java.util.zip.ZipFile$ZipFileInflaterInputStream::<init> (29 bytes)
+   7870  576    b  4       java.util.zip.ZipFile$ZipFileInflaterInputStream::<init> (29 bytes)
+   7872  575       3       java.util.zip.ZipFile$ZipFileInflaterInputStream::<init> (29 bytes)   made not entrant
+   7873  577    b  3       java.util.zip.InflaterInputStream::<init> (79 bytes)
+   7881  578    b  4       java.util.zip.InflaterInputStream::<init> (79 bytes)
+   7892  577       3       java.util.zip.InflaterInputStream::<init> (79 bytes)   made not entrant
+   7893  579    b  3       java.util.WeakHashMap::put (162 bytes)
+   7922  580    b  4       java.util.WeakHashMap::put (162 bytes)
+   7949  579       3       java.util.WeakHashMap::put (162 bytes)   made not entrant
+   7950  581   !b  3       java.util.WeakHashMap::expungeStaleEntries (139 bytes)
+   7964  582   !b  4       java.util.WeakHashMap::expungeStaleEntries (139 bytes)
+   7981  581   !   3       java.util.WeakHashMap::expungeStaleEntries (139 bytes)   made not entrant
+   7982  583    b  3       sun.misc.IOUtils::readFully (138 bytes)
+   8001  584    b  4       sun.misc.IOUtils::readFully (138 bytes)
+   8012  583       3       sun.misc.IOUtils::readFully (138 bytes)   made not entrant
+   8013  585   !b  3       java.util.zip.InflaterInputStream::read (138 bytes)
+   8044  586   !b  4       java.util.zip.InflaterInputStream::read (138 bytes)
+   8062  585   !   3       java.util.zip.InflaterInputStream::read (138 bytes)   made not entrant
+   8062  587   !b  3       java.util.zip.Inflater::inflate (113 bytes)
+   8077  588   !b  4       java.util.zip.Inflater::inflate (113 bytes)
+   8092  587   !   3       java.util.zip.Inflater::inflate (113 bytes)   made not entrant
+   8092  589    b  3       java.util.zip.Inflater::ensureOpen (47 bytes)
+   8105  590    b  4       java.util.zip.Inflater::ensureOpen (47 bytes)
+   8107  589       3       java.util.zip.Inflater::ensureOpen (47 bytes)   made not entrant
+   8108  591     n 0       java.util.zip.Inflater::inflateBytes (native)   
+   8108  592    b  3       java.util.zip.ZipFile$ZipFileInflaterInputStream::fill (80 bytes)
+   8113  593    b  4       java.util.zip.ZipFile$ZipFileInflaterInputStream::fill (80 bytes)
+   8119  592       3       java.util.zip.ZipFile$ZipFileInflaterInputStream::fill (80 bytes)   made not entrant
+   8121  594   !b  3       java.util.zip.ZipFile$ZipFileInputStream::read (131 bytes)
+   8139  595   !b  4       java.util.zip.ZipFile$ZipFileInputStream::read (131 bytes)
+   8153  594   !   3       java.util.zip.ZipFile$ZipFileInputStream::read (131 bytes)   made not entrant
+   8153  596     n 0       java.util.zip.ZipFile::read (native)   (static)
+   8153  597   !b  3       java.util.zip.ZipFile$ZipFileInputStream::close (110 bytes)
+   8163  598   !b  4       java.util.zip.ZipFile$ZipFileInputStream::close (110 bytes)
+   8180  597   !   3       java.util.zip.ZipFile$ZipFileInputStream::close (110 bytes)   made not entrant
+   8180  599    b  3       java.util.WeakHashMap::remove (133 bytes)
+   8203  600    b  4       java.util.WeakHashMap::remove (133 bytes)
+   8214  599       3       java.util.WeakHashMap::remove (133 bytes)   made not entrant
+   8214  601   !b  2       java.lang.ref.ReferenceQueue::poll (28 bytes)
+   8217  602   !b  3       java.util.zip.Inflater::setInput (74 bytes)
+   8223  603   !b  4       java.util.zip.Inflater::setInput (74 bytes)
+   8230  602   !   3       java.util.zip.Inflater::setInput (74 bytes)   made not entrant
+   8230  604   !b  3       java.util.zip.ZipFile$ZipFileInflaterInputStream::close (67 bytes)
+   8242  605   !b  4       java.util.zip.ZipFile$ZipFileInflaterInputStream::close (67 bytes)
+   8252  604   !   3       java.util.zip.ZipFile$ZipFileInflaterInputStream::close (67 bytes)   made not entrant
+   8253  606    b  2       java.util.WeakHashMap::maskNull (12 bytes)
+   8254  607    b  2       java.util.WeakHashMap::hash (28 bytes)
+   8256  608    b  2       java.util.WeakHashMap::getTable (9 bytes)
+   8258  609    b  3       java.util.WeakHashMap::eq (19 bytes)
+   8266  610    b  4       java.util.WeakHashMap::eq (19 bytes)
+   8268  609       3       java.util.WeakHashMap::eq (19 bytes)   made not entrant
+   8268  611   !b  3       java.util.zip.ZipFile::releaseInflater (41 bytes)
+   8278  612   !b  4       java.util.zip.ZipFile::releaseInflater (41 bytes)
+   8286  611   !   3       java.util.zip.ZipFile::releaseInflater (41 bytes)   made not entrant
+   8287  613   !b  3       java.util.zip.Inflater::reset (69 bytes)
+   8293  614   !b  4       java.util.zip.Inflater::reset (69 bytes)
+   8301  613   !   3       java.util.zip.Inflater::reset (69 bytes)   made not entrant
+   8302  615     n 0       java.util.zip.Inflater::reset (native)   (static)
+   8302  616    b  3       java.util.ArrayDeque::add (7 bytes)
+   8304  617    b  4       java.util.ArrayDeque::add (7 bytes)
+   8305  616       3       java.util.ArrayDeque::add (7 bytes)   made not entrant
+   8305  618    b  3       java.util.ArrayDeque::addLast (53 bytes)
+   8311  619    b  4       java.util.ArrayDeque::addLast (53 bytes)
+   8316  618       3       java.util.ArrayDeque::addLast (53 bytes)   made not entrant
+   8316  620    b  3       java.util.jar.JarFile::match (116 bytes)
+   8325  621    b  4       java.util.jar.JarFile::match (116 bytes)
+   8346  620       3       java.util.jar.JarFile::match (116 bytes)   made not entrant
+   8346  622    b  3       java.util.ArrayList::size (5 bytes)
+   8348  623  s b  3       sun.misc.URLClassPath::validateLookupCache (80 bytes)
+   8354  624  s b  4       sun.misc.URLClassPath::validateLookupCache (80 bytes)
+   8368  623  s    3       sun.misc.URLClassPath::validateLookupCache (80 bytes)   made not entrant
+   8368  625    b  3       java.util.HashMap::put (13 bytes)
+   8374  626    b  4       java.util.HashMap::put (13 bytes)
+   8377  625       3       java.util.HashMap::put (13 bytes)   made not entrant
+   8377  627    b  3       java.util.HashMap::putVal (300 bytes)
+   8412  628    b  4       java.util.HashMap::putVal (300 bytes)
+   8454  627       3       java.util.HashMap::putVal (300 bytes)   made not entrant
+   8455  629    b  3       java.util.HashMap::resize (359 bytes)
+   8491  630    b  4       java.util.HashMap::resize (359 bytes)
+   8519  629       3       java.util.HashMap::resize (359 bytes)   made not entrant
+   8520  631    b  3       java.util.HashMap::newNode (13 bytes)
+   8523  632    b  4       java.util.HashMap::newNode (13 bytes)
+   8527  631       3       java.util.HashMap::newNode (13 bytes)   made not entrant
+   8527  633    b  3       java.util.HashMap::afterNodeInsertion (1 bytes)
+   8534  634    b  1       java.util.HashMap::afterNodeInsertion (1 bytes)
+   8535  633       3       java.util.HashMap::afterNodeInsertion (1 bytes)   made not entrant
+   8535  635    b  3       java.util.ArrayList::get (11 bytes)
+   8541  636    b  4       java.util.ArrayList::get (11 bytes)
+   8543  635       3       java.util.ArrayList::get (11 bytes)   made not entrant
+   8544  637   !b  3       sun.misc.URLClassPath$JarLoader::getResource (85 bytes)
+   8559  638   !b  4       sun.misc.URLClassPath$JarLoader::getResource (85 bytes)
+   8565  637   !   3       sun.misc.URLClassPath$JarLoader::getResource (85 bytes)   made not entrant
+   8566  639   !b  2       sun.misc.URLClassPath$JarLoader::ensureOpen (36 bytes)
+   8569  640  s b  2       sun.misc.URLClassPath::getNextLoader (88 bytes)
+   8576  641  s!b  2       sun.misc.URLClassPath::getLoader (243 bytes)
+   8629  209       4       sun.net.util.URLUtil::urlNoFragString (114 bytes)   made not entrant
+   8630  642    b  2       java.lang.StringBuilder::<init> (7 bytes)
+   8631  643    b  3       java.net.URL::getProtocol (5 bytes)
+   8632  644    b  2       java.lang.String::toLowerCase (8 bytes)
+   8633  645    b  2       java.lang.StringBuilder::append (8 bytes)
+   8635  646    b  3       java.net.URL::getHost (5 bytes)
+   8636  647    b  3       java.net.URL::getPort (5 bytes)
+   8636  648    b  2       java.net.URL::getDefaultPort (8 bytes)
+   8638  649    b  3       java.net.URL::getFile (5 bytes)
+   8639  650    b  2       java.lang.StringBuilder::toString (17 bytes)
+   8644  651    b  2       java.lang.String::endsWith (17 bytes)
+   8646  222       4       sun.misc.URLClassPath$3::run (93 bytes)   made not entrant
+   8647  652    b  3       sun.misc.URLClassPath::access$200 (5 bytes)
+   8648  653    b  3       sun.misc.URLClassPath::access$300 (5 bytes)
+   8648  234       4       sun.misc.URLClassPath$JarLoader::<init> (147 bytes)   made not entrant
+   8649  654    b  2       java.lang.StringBuilder::append (9 bytes)
+   8651  655    b  2       java.net.URL::toString (5 bytes)
+   8653  656    b  2       java.lang.String::length (6 bytes)
+   8654  657    b  3       java.net.URL::getAuthority (5 bytes)
+   8655  658    b  3       java.net.URL::getPath (5 bytes)
+   8656  659    b  3       java.net.URL::getQuery (5 bytes)
+   8657  660    b  3       java.net.URL::getRef (5 bytes)
+   8658  236       4       java.net.URLStreamHandler::toExternalForm (219 bytes)   made not entrant
+   8658  661    b  2       java.lang.StringBuffer::<init> (6 bytes)
+   8661  662  s b  2       java.lang.StringBuffer::append (13 bytes)
+   8664  663    b  2       java.lang.System::getSecurityManager (4 bytes)
+   8665  664    b  2       java.net.URL::isBuiltinStreamHandler (12 bytes)
+   8669  665    b  2       sun.net.www.protocol.jar.Handler::checkNestedProtocol (18 bytes)
+   8671  666    b  2       sun.misc.URLClassPath$Loader::<init> (10 bytes)
+   8672  667    b  2       sun.misc.URLClassPath$JarLoader::isOptimizable (10 bytes)
+   8674  668   !b  2       sun.net.www.ParseUtil::decode (316 bytes)
+   8723  669    b  2       sun.misc.MetaIndex::forJar (13 bytes)
+   8726  670    b  2       java.io.UnixFileSystem::hashCode (11 bytes)
+   8728  671    b  2       sun.misc.URLClassPath::access$500 (4 bytes)
+   8729  672    b  3       sun.misc.URLClassPath$JarLoader::access$600 (5 bytes)
+   8729  673    b  2       sun.misc.URLClassPath$JarLoader::access$800 (6 bytes)
+   8731  275       4       sun.misc.URLClassPath$JarLoader::getJarFile (81 bytes)   made not entrant
+   8731  674    b  2       java.lang.Object::<init> (1 bytes)
+   8732  279       4       sun.misc.FileURLMapper::exists (25 bytes)   made not entrant
+   8733  307       4       java.util.jar.JarFile::<init> (15 bytes)   made not entrant
+   8733  675    b  2       java.util.jar.JarFile::<init> (12 bytes)
+   8735  404       4       java.util.zip.ZipFile::<init> (197 bytes)   made not entrant
+   8735  676    b  2       java.util.WeakHashMap::<init> (9 bytes)
+   8736  677    b  2       java.lang.ref.ReferenceQueue$Lock::<init> (5 bytes)
+   8737  678    b  2       java.lang.Float::isNaN (12 bytes)
+   8739  679    b  2       java.util.WeakHashMap::newTable (8 bytes)
+   8741  680    b  2       java.util.AbstractCollection::<init> (5 bytes)
+   8742  681    b  3       java.io.File::getPath (5 bytes)
+   8743  416       4       java.util.zip.ZipCoder::get (9 bytes)   made not entrant
+   8743  682    b  2       java.util.zip.ZipCoder::<init> (27 bytes)
+   8755  683     n 0       java.lang.System::nanoTime (native)   (static)
+   8756  684    b  2       java.io.File::lastModified (33 bytes)
+   8759  685  s b  2       sun.misc.PerfCounter::add (18 bytes)
+   8768  273   !   4       sun.misc.URLClassPath$JarLoader$1::run (184 bytes)   made not entrant
+   8768  686    b  2       sun.misc.URLClassPath$JarLoader::access$702 (7 bytes)
+   8769  687    b  3       sun.misc.URLClassPath$JarLoader::access$700 (5 bytes)
+   8770  688    b  3       sun.misc.URLClassPath$JarLoader::access$1000 (5 bytes)
+   8771  689    b  2       java.util.jar.JarFile::getJarEntry (9 bytes)
+   8775  690    b  2       sun.nio.cs.UTF_8$Encoder::<init> (6 bytes)
+   8777  691    b  2       sun.misc.URLClassPath$JarLoader::access$902 (7 bytes)
+   8779  692    b  3       sun.misc.URLClassPath$JarLoader::access$900 (5 bytes)
+   8779  693    b  2       sun.misc.URLClassPath$JarLoader::parseExtensionsDependencies (9 bytes)
+   8783  694    b  2       sun.misc.SharedSecrets::javaUtilJarAccess (18 bytes)
+   8785  695    b  2       java.util.jar.JavaUtilJarAccessImpl::jarFileHasClassPathAttribute (5 bytes)
+   8786  696    b  2       java.lang.String::startsWith (7 bytes)
+   8794  529       4       java.util.zip.ZipFile::getZipEntry (251 bytes)   made not entrant
+   8794  697    b  3       java.util.zip.ZipCoder::isUTF8 (5 bytes)
+   8795  698    b  2       java.util.zip.ZipCoder::decoder (35 bytes)
+   8799  699    b  2       sun.nio.cs.UTF_8$Decoder::<init> (6 bytes)
+   8801  700    b  2       java.nio.charset.CharsetDecoder::reset (11 bytes)
+   8803  701    b  2       java.nio.charset.CharsetDecoder::maxCharsPerByte (5 bytes)
+   8804  702    b  2       java.util.Objects::requireNonNull (15 bytes)
+   8806  517       4       java.util.jar.JarFile::checkForSpecialAttributes (58 bytes)   made not entrant
+   8807  558   !   4       java.util.zip.ZipFile::getInputStream (304 bytes)   made not entrant
+   8807  703    b  2       java.io.InputStream::<init> (5 bytes)
+   8809  704    b  2       java.util.zip.ZipFile::access$1100 (5 bytes)
+   8810  705    b  2       java.util.zip.ZipFile::access$1200 (5 bytes)
+   8811  562   !   4       java.util.zip.ZipFile::getInflater (56 bytes)   made not entrant
+   8812  571       4       java.util.zip.Inflater::<init> (27 bytes)   made not entrant
+   8812  706    b  2       java.io.FilterInputStream::<init> (10 bytes)
+   8814  707    b  2       java.util.zip.ZipEntry::getSize (5 bytes)
+   8815  556   !   4       java.util.jar.JarFile::getBytes (96 bytes)   made not entrant
+   8815  708    b  2       java.util.zip.InflaterInputStream::ensureOpen (18 bytes)
+   8817  709   !b  2       java.util.zip.Inflater::finished (19 bytes)
+   8819  710   !b  2       java.util.zip.Inflater::needsDictionary (19 bytes)
+   8821  711   !b  2       java.util.zip.Inflater::needsInput (27 bytes)
+   8823  712    b  2       java.util.zip.ZipFile::access$1300 (5 bytes)
+   8826  713    b  2       java.util.zip.ZipFile::access$400 (5 bytes)
+   8827  714    b  2       java.util.zip.ZipFile::access$1400 (14 bytes)
+   8829  715    b  2       java.util.zip.ZipFile::access$1000 (6 bytes)
+   8830  716    b  3       java.util.zip.ZipFile::access$000 (5 bytes)
+   8831  717    b  2       java.util.zip.InflaterInputStream::close (34 bytes)
+   8833  718    b  2       java.util.zip.ZipFile::access$100 (6 bytes)
+   8835  719   !b  2       java.util.zip.Inflater::ended (32 bytes)
+   8837  720    b  3       sun.net.util.URLUtil::urlNoFragString (114 bytes)
+   8866  721    b  4       sun.net.util.URLUtil::urlNoFragString (114 bytes)
+   8903  720       3       sun.net.util.URLUtil::urlNoFragString (114 bytes)   made not entrant
+   8904  722    b  3       sun.misc.URLClassPath$3::run (93 bytes)
+   8916  723    b  4       sun.misc.URLClassPath$3::run (93 bytes)
+   9092  722       3       sun.misc.URLClassPath$3::run (93 bytes)   made not entrant
+   9092  724    b  3       sun.misc.URLClassPath$JarLoader::<init> (147 bytes)
+   9139  725    b  4       sun.misc.URLClassPath$JarLoader::<init> (147 bytes)
+   9269  724       3       sun.misc.URLClassPath$JarLoader::<init> (147 bytes)   made not entrant
+   9270  726    b  3       java.net.URLStreamHandler::toExternalForm (219 bytes)
+   9379  727    b  4       java.net.URLStreamHandler::toExternalForm (219 bytes)
+   9425  726       3       java.net.URLStreamHandler::toExternalForm (219 bytes)   made not entrant
+   9426  728   !b  2       sun.misc.URLClassPath$JarLoader$1::run (184 bytes)
+   9441  729    b  3       sun.misc.URLClassPath$JarLoader::getJarFile (81 bytes)
+   9462  730    b  4       sun.misc.URLClassPath$JarLoader::getJarFile (81 bytes)
+   9577  729       3       sun.misc.URLClassPath$JarLoader::getJarFile (81 bytes)   made not entrant
+   9579  731    b  3       java.util.zip.ZipFile::<init> (197 bytes)
+   9673  732    b  4       java.util.zip.ZipFile::<init> (197 bytes)
+   9749  731       3       java.util.zip.ZipFile::<init> (197 bytes)   made not entrant
+   9750  733    b  2       java.util.jar.JarFile::checkForSpecialAttributes (58 bytes)
+   9753  734    b  3       java.util.zip.ZipFile::getZipEntry (251 bytes)
+   9774  735    b  4       java.util.zip.ZipFile::getZipEntry (251 bytes)
+   9799  734       3       java.util.zip.ZipFile::getZipEntry (251 bytes)   made not entrant
+   9800  736   !b  3       java.util.jar.JarFile::getBytes (96 bytes)
+   9808  737   !b  4       java.util.jar.JarFile::getBytes (96 bytes)
+   9824  736   !   3       java.util.jar.JarFile::getBytes (96 bytes)   made not entrant
+   9824  738   !b  3       java.util.zip.ZipFile::getInputStream (304 bytes)
+   9853  739   !b  4       java.util.zip.ZipFile::getInputStream (304 bytes)
+   9921  738   !   3       java.util.zip.ZipFile::getInputStream (304 bytes)   made not entrant
+   9923  740   !b  2       java.util.zip.ZipFile::getInflater (56 bytes)
+   9934  741    b  3       java.lang.ClassNotFoundException::<init> (7 bytes)
+   9937  742    b  4       java.lang.ClassNotFoundException::<init> (7 bytes)
+   9938  741       3       java.lang.ClassNotFoundException::<init> (7 bytes)   made not entrant
+   9938  743    b  3       java.lang.Throwable::<init> (39 bytes)
+   9946  744    b  4       java.lang.Throwable::<init> (39 bytes)
+   9949  743       3       java.lang.Throwable::<init> (39 bytes)   made not entrant
+   9949  745     n 0       java.lang.Throwable::fillInStackTrace (native)   
+   9950  182   !   4       java.net.URLClassLoader::findClass (47 bytes)   made not entrant
+   9950  746    b  2       java.util.Arrays::copyOf (19 bytes)
+   9954  747    b  2       java.lang.String::getChars (16 bytes)
+   9956  748    b  3       java.net.URLClassLoader::access$000 (5 bytes)
+   9958  723       4       sun.misc.URLClassPath$3::run (93 bytes)   made not entrant
+   9959  749    b  3       sun.misc.URLClassPath$FileLoader::<init> (61 bytes)
+   9999  750    b  4       sun.misc.URLClassPath$FileLoader::<init> (61 bytes)
+  10004  749       3       sun.misc.URLClassPath$FileLoader::<init> (61 bytes)   made not entrant
+  10005  751    b  3       java.io.UnixFileSystem::normalize (132 bytes)
+  10066  752    b  4       java.io.UnixFileSystem::normalize (132 bytes)
+  10084  751       3       java.io.UnixFileSystem::normalize (132 bytes)   made not entrant
+  10084  753    b  3       java.lang.String::substring (79 bytes)
+  10091  754    b  4       java.lang.String::substring (79 bytes)
+  10104  753       3       java.lang.String::substring (79 bytes)   made not entrant
+  10105  755    b  3       java.io.UnixFileSystem::canonicalize (232 bytes)
+  10207  756    b  4       java.io.UnixFileSystem::canonicalize (232 bytes)
+  10268  755       3       java.io.UnixFileSystem::canonicalize (232 bytes)   made not entrant
+  10269  757  s b  3       java.io.ExpiringCache::get (39 bytes)
+  10273  758  s b  4       java.io.ExpiringCache::get (39 bytes)
+  10281  757  s    3       java.io.ExpiringCache::get (39 bytes)   made not entrant
+  10281  759    b  3       java.io.ExpiringCache::entryFor (57 bytes)
+  10287  760    b  4       java.io.ExpiringCache::entryFor (57 bytes)
+  10291  759       3       java.io.ExpiringCache::entryFor (57 bytes)   made not entrant
+  10291  761    b  3       java.util.LinkedHashMap::get (33 bytes)
+  10297  762    b  4       java.util.LinkedHashMap::get (33 bytes)
+  10301  761       3       java.util.LinkedHashMap::get (33 bytes)   made not entrant
+  10302  763    b  3       sun.misc.URLClassPath$Loader::getClassPath (2 bytes)
+  10304  764    b  1       sun.misc.URLClassPath$Loader::getClassPath (2 bytes)
+  10305  763       3       sun.misc.URLClassPath$Loader::getClassPath (2 bytes)   made not entrant
+  10305  765    b  2       java.util.ArrayList::grow (45 bytes)
+  10309  766    b  3       java.util.Arrays::copyOf (46 bytes)
+  10314  767    b  4       java.util.Arrays::copyOf (46 bytes)
+  10324  766       3       java.util.Arrays::copyOf (46 bytes)   made not entrant
+  10324  198       4       sun.misc.URLClassPath::getResource (83 bytes)   made not entrant
+  10325  768   !b  3       sun.misc.URLClassPath$FileLoader::getResource (164 bytes)
+  10404  769   !b  4       sun.misc.URLClassPath$FileLoader::getResource (164 bytes)
+  10406  768   !   3       sun.misc.URLClassPath$FileLoader::getResource (164 bytes)   made not entrant
+  10406  770   !b  3       java.net.URL::<init> (543 bytes)
+  10598  771   !b  4       java.net.URL::<init> (543 bytes)
+  10673  770   !   3       java.net.URL::<init> (543 bytes)   made not entrant
+  10673  772    b  3       sun.net.www.protocol.file.Handler::parseURL (18 bytes)
+  10677  773    b  4       sun.net.www.protocol.file.Handler::parseURL (18 bytes)
+  10681  772       3       sun.net.www.protocol.file.Handler::parseURL (18 bytes)   made not entrant
+  10683  774    b  3       java.net.URLStreamHandler::parseURL (1193 bytes)
+  11740  775    b  4       java.net.URLStreamHandler::parseURL (1193 bytes)
+  11823  774       3       java.net.URLStreamHandler::parseURL (1193 bytes)   made not entrant
+  11824  776    b  3       java.lang.String::indexOf (166 bytes)
+  11836  777    b  4       java.lang.String::indexOf (166 bytes)
+  11916  776       3       java.lang.String::indexOf (166 bytes)   made not entrant
+  11917  778    b  3       java.net.URLStreamHandler::setURL (73 bytes)
+  11931  779    b  4       java.net.URLStreamHandler::setURL (73 bytes)
+  11939  778       3       java.net.URLStreamHandler::setURL (73 bytes)   made not entrant
+  11940  780   !b  3       java.net.URL::set (114 bytes)
+  11958  781   !b  4       java.net.URL::set (114 bytes)
+  11982  780   !   3       java.net.URL::set (114 bytes)   made not entrant
+  11985  782    b  3       sun.net.www.ParseUtil::encodePath (336 bytes)
+  12021  783    b  4       sun.net.www.ParseUtil::encodePath (336 bytes)
+  12108  782       3       sun.net.www.ParseUtil::encodePath (336 bytes)   made not entrant
+  12109  784    b  3       java.util.BitSet::get (69 bytes)
+  12122  785    b  4       java.util.BitSet::get (69 bytes)
+  12125  784       3       java.util.BitSet::get (69 bytes)   made not entrant
+  12126  786    b  3       java.util.BitSet::checkInvariants (111 bytes)
+  12127  787    b  4       java.util.BitSet::checkInvariants (111 bytes)
+  12128  786       3       java.util.BitSet::checkInvariants (111 bytes)   made not entrant
+  12128  775       4       java.net.URLStreamHandler::parseURL (1193 bytes)   made not entrant
+  12128  788    b  2       java.lang.String::indexOf (7 bytes)
+  12131  789    b  2       java.lang.String::indexOf (25 bytes)
+  12133  790    b  3       java.io.File::<init> (113 bytes)
+  12153  791    b  4       java.io.File::<init> (113 bytes)
+  12164  790       3       java.io.File::<init> (113 bytes)   made not entrant
+  12164  792    b  3       java.io.UnixFileSystem::resolve (103 bytes)
+  12219  793    b  4       java.io.UnixFileSystem::resolve (103 bytes)
+  12261  792       3       java.io.UnixFileSystem::resolve (103 bytes)   made not entrant
+  12263  794    b  3       sun.misc.URLClassPath$FileLoader$1::<init> (26 bytes)
+  12266  795    b  4       sun.misc.URLClassPath$FileLoader$1::<init> (26 bytes)
+  12268  794       3       sun.misc.URLClassPath$FileLoader$1::<init> (26 bytes)   made not entrant
+  12269  194   !   4       java.net.URLClassLoader$1::run (63 bytes)   made not entrant
+  12269  796    b  3       java.net.URLClassLoader::access$100 (7 bytes)
+  12273  797    b  4       java.net.URLClassLoader::access$100 (7 bytes)
+  12278  796       3       java.net.URLClassLoader::access$100 (7 bytes)   made not entrant
+  12278  798    b  3       java.net.URLClassLoader::defineClass (142 bytes)
+  12340  799    b  4       java.net.URLClassLoader::defineClass (142 bytes)
+  12352  798       3       java.net.URLClassLoader::defineClass (142 bytes)   made not entrant
+  12352  800    b  3       sun.misc.URLClassPath$FileLoader$1::getCodeSourceURL (8 bytes)
+  12356  801    b  4       sun.misc.URLClassPath$FileLoader$1::getCodeSourceURL (8 bytes)
+  12358  800       3       sun.misc.URLClassPath$FileLoader$1::getCodeSourceURL (8 bytes)   made not entrant
+  12358  802    b  3       sun.misc.URLClassPath$FileLoader$1::getInputStream (12 bytes)
+  12360  803    b  4       sun.misc.URLClassPath$FileLoader$1::getInputStream (12 bytes)
+  12361  802       3       sun.misc.URLClassPath$FileLoader$1::getInputStream (12 bytes)   made not entrant
+  12362  804    b  3       java.io.FileInputStream::<init> (110 bytes)
+  12384  805    b  4       java.io.FileInputStream::<init> (110 bytes)
+  12399  804       3       java.io.FileInputStream::<init> (110 bytes)   made not entrant
+  12399  806  s b  3       java.io.FileDescriptor::attach (73 bytes)
+  12418  807  s b  4       java.io.FileDescriptor::attach (73 bytes)
+  12424  806  s    3       java.io.FileDescriptor::attach (73 bytes)   made not entrant
+  12424  808     n 0       java.io.FileInputStream::open0 (native)   
+  12426  809   !b  3       sun.misc.Resource::getBytes (242 bytes)
+  12474  810   !b  4       sun.misc.Resource::getBytes (242 bytes)
+  12495  809   !   3       sun.misc.Resource::getBytes (242 bytes)   made not entrant
+  12495  811     n 0       java.lang.Thread::isInterrupted (native)   
+  12495  812    b  3       sun.misc.URLClassPath$FileLoader$1::getContentLength (9 bytes)
+  12501  813    b  4       sun.misc.URLClassPath$FileLoader$1::getContentLength (9 bytes)
+  12503  812       3       sun.misc.URLClassPath$FileLoader$1::getContentLength (9 bytes)   made not entrant
+  12504  814     n 0       java.io.UnixFileSystem::getLength (native)   
+  12504  815    b  3       java.io.FileInputStream::read (8 bytes)
+  12506  816    b  4       java.io.FileInputStream::read (8 bytes)
+  12508  815       3       java.io.FileInputStream::read (8 bytes)   made not entrant
+  12508  817     n 0       java.io.FileInputStream::readBytes (native)   
+  12508  818   !b  3       java.io.FileInputStream::close (62 bytes)
+  12517  819   !b  4       java.io.FileInputStream::close (62 bytes)
+  12523  818   !   3       java.io.FileInputStream::close (62 bytes)   made not entrant
+  12525  820    b  3       java.io.FileInputStream$1::<init> (10 bytes)
+  12527  821    b  4       java.io.FileInputStream$1::<init> (10 bytes)
+  12528  820       3       java.io.FileInputStream$1::<init> (10 bytes)   made not entrant
+  12528  822  s!b  3       java.io.FileDescriptor::closeAll (215 bytes)
+  12547  823  s!b  4       java.io.FileDescriptor::closeAll (215 bytes)
+  12571  822  s!   3       java.io.FileDescriptor::closeAll (215 bytes)   made not entrant
+  12572  824    b  3       java.io.FileInputStream$1::close (8 bytes)
+  12574  825    b  4       java.io.FileInputStream$1::close (8 bytes)
+  12576  824       3       java.io.FileInputStream$1::close (8 bytes)   made not entrant
+  12577  826     n 0       java.io.FileInputStream::close0 (native)   
+  12577  827    b  3       java.security.CodeSource::<init> (40 bytes)
+  12582  828    b  4       java.security.CodeSource::<init> (40 bytes)
+  12588  827       3       java.security.CodeSource::<init> (40 bytes)   made not entrant
+  12588  829   !b  3       java.security.SecureClassLoader::getProtectionDomain (114 bytes)
+  12604  830   !b  4       java.security.SecureClassLoader::getProtectionDomain (114 bytes)
+  12612  829   !   3       java.security.SecureClassLoader::getProtectionDomain (114 bytes)   made not entrant
+  12613  831    b  3       java.security.CodeSource::hashCode (17 bytes)
+  12617  832    b  4       java.security.CodeSource::hashCode (17 bytes)
+  12620  831       3       java.security.CodeSource::hashCode (17 bytes)   made not entrant
+  12620  833    b  3       java.net.URLStreamHandler::hashCode (128 bytes)
+  12636  834    b  4       java.net.URLStreamHandler::hashCode (128 bytes)
+  12645  833       3       java.net.URLStreamHandler::hashCode (128 bytes)   made not entrant
+  12646  835  s!b  3       java.net.URLStreamHandler::getHostAddress (54 bytes)
+  12654  836  s!b  4       java.net.URLStreamHandler::getHostAddress (54 bytes)
+  12667  835  s!   3       java.net.URLStreamHandler::getHostAddress (54 bytes)   made not entrant
+  12669  837    b  3       sun.misc.Launcher$AppClassLoader::getPermissions (21 bytes)
+  12676  838    b  4       sun.misc.Launcher$AppClassLoader::getPermissions (21 bytes)
+  12682  837       3       sun.misc.Launcher$AppClassLoader::getPermissions (21 bytes)   made not entrant
+  12683  839   !b  3       java.net.URLClassLoader::getPermissions (287 bytes)
+  12758  840   !b  4       java.net.URLClassLoader::getPermissions (287 bytes)
+  12762  839   !   3       java.net.URLClassLoader::getPermissions (287 bytes)   made not entrant
+  12763  841    b  3       java.security.Permissions::<clinit> (36 bytes)
+  12769  842    b  4       java.security.Permissions::<clinit> (36 bytes)
+  12770  841       3       java.security.Permissions::<clinit> (36 bytes)   made not entrant
+  12770  843    b  3       java.io.ObjectStreamField::<init> (53 bytes)
+  12775  844    b  4       java.io.ObjectStreamField::<init> (53 bytes)
+  12779  843       3       java.io.ObjectStreamField::<init> (53 bytes)   made not entrant
+  12780  845    b  3       java.io.ObjectStreamField::getClassSignature (242 bytes)
+  13199  846    b  4       java.io.ObjectStreamField::getClassSignature (242 bytes)
+  13232  845       3       java.io.ObjectStreamField::getClassSignature (242 bytes)   made not entrant
+  13233  847     n 0       java.lang.Class::isArray (native)   
+  13233  848     n 0       java.lang.Class::isPrimitive (native)   
+  13236  849    b  2       java.lang.StringBuilder::append (8 bytes)
+  13247  850    b  2       java.lang.Class::getName (21 bytes)
+  13257  851    b  3       java.security.Permissions::<init> (28 bytes)
+  13262  852    b  4       java.security.Permissions::<init> (28 bytes)
+  13263  851       3       java.security.Permissions::<init> (28 bytes)   made not entrant
+  13264  853    b  3       java.util.HashMap::<init> (98 bytes)
+  13298  854    b  4       java.util.HashMap::<init> (98 bytes)
+  13302  853       3       java.util.HashMap::<init> (98 bytes)   made not entrant
+  13303  855    b  3       java.util.HashMap::tableSizeFor (59 bytes)
+  13305  856    b  4       java.util.HashMap::tableSizeFor (59 bytes)
+  13307  855       3       java.util.HashMap::tableSizeFor (59 bytes)   made not entrant
+  13307  857  s b  3       sun.net.www.protocol.file.Handler::openConnection (7 bytes)
+  13312  858  s b  4       sun.net.www.protocol.file.Handler::openConnection (7 bytes)
+  13317  857  s    3       sun.net.www.protocol.file.Handler::openConnection (7 bytes)   made not entrant
+  13317  859  s!b  3       sun.net.www.protocol.file.Handler::openConnection (194 bytes)
+  13388  860  s!b  4       sun.net.www.protocol.file.Handler::openConnection (194 bytes)
+  13400  859  s!   3       sun.net.www.protocol.file.Handler::openConnection (194 bytes)   made not entrant
+  13403  861    b  3       java.net.URLConnection::<clinit> (23 bytes)
+  13407  862    b  4       java.net.URLConnection::<clinit> (23 bytes)
+  13408  861       3       java.net.URLConnection::<clinit> (23 bytes)   made not entrant
+  13408  863    b  3       java.util.Hashtable::<init> (114 bytes)
+  13440  864    b  4       java.util.Hashtable::<init> (114 bytes)
+  13448  863       3       java.util.Hashtable::<init> (114 bytes)   made not entrant
+  13449  865    b  3       java.lang.Math::min (46 bytes)
+  13452  866    b  4       java.lang.Math::min (46 bytes)
+  13454  865       3       java.lang.Math::min (46 bytes)   made not entrant
+  13455  867    b  3       sun.net.www.URLConnection::<clinit> (11 bytes)
+  13458  868    b  4       sun.net.www.URLConnection::<clinit> (11 bytes)
+  13459  867       3       sun.net.www.URLConnection::<clinit> (11 bytes)   made not entrant
+  13465  869    b  3       sun.net.www.protocol.file.FileURLConnection::<clinit> (21 bytes)
+  13467  870    b  4       sun.net.www.protocol.file.FileURLConnection::<clinit> (21 bytes)
+  13469  869       3       sun.net.www.protocol.file.FileURLConnection::<clinit> (21 bytes)   made not entrant
+  13469  871    b  3       sun.net.www.protocol.file.FileURLConnection::<init> (38 bytes)
+  13473  872    b  4       sun.net.www.protocol.file.FileURLConnection::<init> (38 bytes)
+  13476  871       3       sun.net.www.protocol.file.FileURLConnection::<init> (38 bytes)   made not entrant
+  13477  873    b  3       java.net.URLConnection::<init> (44 bytes)
+  13479  874    b  4       java.net.URLConnection::<init> (44 bytes)
+  13482  873       3       java.net.URLConnection::<init> (44 bytes)   made not entrant
+  13484  875    b  3       sun.net.www.MessageHeader::<init> (9 bytes)
+  13486  876    b  4       sun.net.www.MessageHeader::<init> (9 bytes)
+  13487  875       3       sun.net.www.MessageHeader::<init> (9 bytes)   made not entrant
+  13487  877    b  3       sun.net.www.MessageHeader::grow (92 bytes)
+  13495  878    b  4       sun.net.www.MessageHeader::grow (92 bytes)
+  13512  877       3       sun.net.www.MessageHeader::grow (92 bytes)   made not entrant
+  13513  879    b  3       sun.net.www.protocol.file.FileURLConnection::getPermission (70 bytes)
+  13517  880    b  4       sun.net.www.protocol.file.FileURLConnection::getPermission (70 bytes)
+  13521  879       3       sun.net.www.protocol.file.FileURLConnection::getPermission (70 bytes)   made not entrant
+  13522  881    b  3       java.io.FilePermission::<clinit> (15 bytes)
+  13525  882    b  4       java.io.FilePermission::<clinit> (15 bytes)
+  13526  881       3       java.io.FilePermission::<clinit> (15 bytes)   made not entrant
+  13527  883    b  3       sun.nio.fs.DefaultFileSystemProvider::create (86 bytes)
+  13543  884    b  4       sun.nio.fs.DefaultFileSystemProvider::create (86 bytes)
+  13544  883       3       sun.nio.fs.DefaultFileSystemProvider::create (86 bytes)   made not entrant
+  13544  885   !b  3       sun.nio.fs.DefaultFileSystemProvider::createProvider (36 bytes)
+  13551  886   !b  4       sun.nio.fs.DefaultFileSystemProvider::createProvider (36 bytes)
+  13555  885   !   3       sun.nio.fs.DefaultFileSystemProvider::createProvider (36 bytes)   made not entrant
+  13557  886   !   4       sun.nio.fs.DefaultFileSystemProvider::createProvider (36 bytes)   made not entrant
+  13561  887    b  3       java.nio.file.spi.FileSystemProvider::<clinit> (15 bytes)
+  13569  888    b  4       java.nio.file.spi.FileSystemProvider::<clinit> (15 bytes)
+  13570  887       3       java.nio.file.spi.FileSystemProvider::<clinit> (15 bytes)   made not entrant
+  13570  889    b  3       sun.nio.fs.LinuxFileSystemProvider::<init> (5 bytes)
+  13591  890    b  4       sun.nio.fs.LinuxFileSystemProvider::<init> (5 bytes)
+  13593  889       3       sun.nio.fs.LinuxFileSystemProvider::<init> (5 bytes)   made not entrant
+  13597  891    b  3       sun.nio.fs.LinuxFileSystem::<init> (7 bytes)
+  13601  892    b  4       sun.nio.fs.LinuxFileSystem::<init> (7 bytes)
+  13602  891       3       sun.nio.fs.LinuxFileSystem::<init> (7 bytes)   made not entrant
+  13602  893    b  3       sun.nio.fs.UnixFileSystem::<init> (187 bytes)
+  13628  894    b  4       sun.nio.fs.UnixFileSystem::<init> (187 bytes)
+  13631  893       3       sun.nio.fs.UnixFileSystem::<init> (187 bytes)   made not entrant
+  13636  895    b  3       sun.nio.fs.UnixPath::<clinit> (27 bytes)
+  13642  896    b  4       sun.nio.fs.UnixPath::<clinit> (27 bytes)
+  13644  895       3       sun.nio.fs.UnixPath::<clinit> (27 bytes)   made not entrant
+  13644  897    b  3       sun.nio.fs.UnixPath::normalizeAndCheck (75 bytes)
+  13656  898    b  4       sun.nio.fs.UnixPath::normalizeAndCheck (75 bytes)
+  13663  897       3       sun.nio.fs.UnixPath::normalizeAndCheck (75 bytes)   made not entrant
+  13665  899    b  3       sun.nio.fs.Util::<clinit> (22 bytes)
+  13670  900    b  4       sun.nio.fs.Util::<clinit> (22 bytes)
+  13672  899       3       sun.nio.fs.Util::<clinit> (22 bytes)   made not entrant
+  13672  901    b  3       sun.nio.fs.Util::toBytes (8 bytes)
+  13680  902    b  4       sun.nio.fs.Util::toBytes (8 bytes)
+  13682  901       3       sun.nio.fs.Util::toBytes (8 bytes)   made not entrant
+  13682  903   !b  3       java.lang.StringCoding::encode (216 bytes)
+  13753  904   !b  4       java.lang.StringCoding::encode (216 bytes)
+  13776  903   !   3       java.lang.StringCoding::encode (216 bytes)   made not entrant
+  13779  905    b  3       sun.nio.fs.UnixNativeDispatcher::<clinit> (18 bytes)
+  13781  906    b  4       sun.nio.fs.UnixNativeDispatcher::<clinit> (18 bytes)
+  13782  905       3       sun.nio.fs.UnixNativeDispatcher::<clinit> (18 bytes)   made not entrant
+  13784  907    b  3       sun.nio.fs.UnixNativeDispatcher$1::<init> (5 bytes)
+  13785  908    b  4       sun.nio.fs.UnixNativeDispatcher$1::<init> (5 bytes)
+  13787  907       3       sun.nio.fs.UnixNativeDispatcher$1::<init> (5 bytes)   made not entrant
+  13787  909    b  3       sun.nio.fs.UnixNativeDispatcher$1::run (5 bytes)
+  13791  910    b  4       sun.nio.fs.UnixNativeDispatcher$1::run (5 bytes)
+  13792  909       3       sun.nio.fs.UnixNativeDispatcher$1::run (5 bytes)   made not entrant
+  13792  911  s b  3       java.lang.Runtime::loadLibrary0 (58 bytes)
+  13807  912  s b  4       java.lang.Runtime::loadLibrary0 (58 bytes)
+  13815  911  s    3       java.lang.Runtime::loadLibrary0 (58 bytes)   made not entrant
+  13816  913    b  3       java.lang.ClassLoader::loadLibrary (357 bytes)
+  13977  914    b  4       java.lang.ClassLoader::loadLibrary (357 bytes)
+  14064  913       3       java.lang.ClassLoader::loadLibrary (357 bytes)   made not entrant
+  14065  915     n 0       java.lang.System::mapLibraryName (native)   (static)
+  14068  916    b  3       java.io.File::<init> (113 bytes)
+  14098  917    b  4       java.io.File::<init> (113 bytes)
+  14114  916       3       java.io.File::<init> (113 bytes)   made not entrant
+  14115  918   !b  3       java.lang.ClassLoader::loadLibrary0 (407 bytes)
+  14466  919   !b  4       java.lang.ClassLoader::loadLibrary0 (407 bytes)
+  14555  918   !   3       java.lang.ClassLoader::loadLibrary0 (407 bytes)   made not entrant
+  14556  920     n 0       java.lang.ClassLoader::findBuiltinLib (native)   (static)
+  14556  921    b  3       java.lang.ClassLoader$3::run (18 bytes)
+  14559  922    b  4       java.lang.ClassLoader$3::run (18 bytes)
+  14561  921       3       java.lang.ClassLoader$3::run (18 bytes)   made not entrant
+  14562  760       4       java.io.ExpiringCache::entryFor (57 bytes)   made not entrant
+  14562  923    b  3       java.io.UnixFileSystem::parentOrNull (118 bytes)
+  14581  924    b  4       java.io.UnixFileSystem::parentOrNull (118 bytes)
+  14589  923       3       java.io.UnixFileSystem::parentOrNull (118 bytes)   made not entrant
+  14589  925    b  2       java.io.ExpiringCache::entryFor (57 bytes)
+  14601  926  s b  3       java.io.ExpiringCache::put (70 bytes)
+  14610  927  s b  4       java.io.ExpiringCache::put (70 bytes)
+  14623  926  s    3       java.io.ExpiringCache::put (70 bytes)   made not entrant
+  14625  928    b  3       java.util.LinkedHashMap::newNode (23 bytes)
+  14632  929    b  4       java.util.LinkedHashMap::newNode (23 bytes)
+  14637  928       3       java.util.LinkedHashMap::newNode (23 bytes)   made not entrant
+  14638  930    b  3       java.util.LinkedHashMap::afterNodeInsertion (40 bytes)
+  14644  931    b  4       java.util.LinkedHashMap::afterNodeInsertion (40 bytes)
+  14660  930       3       java.util.LinkedHashMap::afterNodeInsertion (40 bytes)   made not entrant
+  14660  932    b  3       java.io.ExpiringCache$1::removeEldestEntry (20 bytes)
+  14665  933    b  4       java.io.ExpiringCache$1::removeEldestEntry (20 bytes)
+  14667  932       3       java.io.ExpiringCache$1::removeEldestEntry (20 bytes)   made not entrant
+  14671  934  s b  3       java.util.Vector::indexOf (67 bytes)
+  14679  935  s b  4       java.util.Vector::indexOf (67 bytes)
+  14710  934  s    3       java.util.Vector::indexOf (67 bytes)   made not entrant
+  14711  936  s b  3       java.util.Vector::addElement (38 bytes)
+  14716  937  s b  4       java.util.Vector::addElement (38 bytes)
+  14724  936  s    3       java.util.Vector::addElement (38 bytes)   made not entrant
+  14724  938     n 0       java.lang.ClassLoader$NativeLibrary::load (native)   
+  14725  939    b  2       java.util.Vector::ensureCapacityHelper (16 bytes)
+  14728  940     n 0       sun.nio.fs.UnixNativeDispatcher::init (native)   (static)
+  14734  941     n 0       sun.nio.fs.UnixNativeDispatcher::getcwd (native)   (static)
+  14734  942    b  3       sun.nio.fs.UnixPath::<init> (14 bytes)
+  14746  943    b  4       sun.nio.fs.UnixPath::<init> (14 bytes)
+  14750  942       3       sun.nio.fs.UnixPath::<init> (14 bytes)   made not entrant
+  14751  944    b  2       sun.nio.fs.UnixPath::checkNotNul (16 bytes)
+  14753  945    b  3       sun.nio.fs.UnixPath::normalize (133 bytes)
+  14807  946    b  4       sun.nio.fs.UnixPath::normalize (133 bytes)
+  14812  945       3       sun.nio.fs.UnixPath::normalize (133 bytes)   made not entrant
+  14812  947    b  3       sun.nio.fs.UnixPath::encode (198 bytes)
+  14896  948    b  4       sun.nio.fs.UnixPath::encode (198 bytes)
+  14907  947       3       sun.nio.fs.UnixPath::encode (198 bytes)   made not entrant
+  14908  949    b  3       java.lang.ThreadLocal$ThreadLocalMap::getEntryAfterMiss (63 bytes)
+  14916  950    b  4       java.lang.ThreadLocal$ThreadLocalMap::getEntryAfterMiss (63 bytes)
+  14922  949       3       java.lang.ThreadLocal$ThreadLocalMap::getEntryAfterMiss (63 bytes)   made not entrant
+  14923  951    b  3       java.lang.ThreadLocal::setInitialValue (36 bytes)
+  14930  952    b  4       java.lang.ThreadLocal::setInitialValue (36 bytes)
+  14933  951       3       java.lang.ThreadLocal::setInitialValue (36 bytes)   made not entrant
+  14933  953    b  3       java.lang.ThreadLocal$ThreadLocalMap::set (136 bytes)
+  14954  954    b  4       java.lang.ThreadLocal$ThreadLocalMap::set (136 bytes)
+  14977  953       3       java.lang.ThreadLocal$ThreadLocalMap::set (136 bytes)   made not entrant
+  14978  955    b  2       java.lang.ref.Reference::<init> (25 bytes)
+  14981  956    b  3       java.lang.ThreadLocal$ThreadLocalMap::cleanSomeSlots (60 bytes)
+  14988  957    b  4       java.lang.ThreadLocal$ThreadLocalMap::cleanSomeSlots (60 bytes)
+  14996  956       3       java.lang.ThreadLocal$ThreadLocalMap::cleanSomeSlots (60 bytes)   made not entrant
+  15000  958    b  3       java.nio.CharBuffer::wrap (8 bytes)
+  15003  959    b  4       java.nio.CharBuffer::wrap (8 bytes)
+  15005  958       3       java.nio.CharBuffer::wrap (8 bytes)   made not entrant
+  15006  960    b  3       java.nio.HeapCharBuffer::<init> (14 bytes)
+  15010  961    b  4       java.nio.HeapCharBuffer::<init> (14 bytes)
+  15013  960       3       java.nio.HeapCharBuffer::<init> (14 bytes)   made not entrant
+  15013  962   !b  3       java.nio.charset.CharsetEncoder::encode (285 bytes)
+  15050  963   !b  4       java.nio.charset.CharsetEncoder::encode (285 bytes)
+  15061  962   !   3       java.nio.charset.CharsetEncoder::encode (285 bytes)   made not entrant
+  15061  964    b  3       sun.nio.cs.UTF_8$Encoder::encodeLoop (28 bytes)
+  15069  965    b  4       sun.nio.cs.UTF_8$Encoder::encodeLoop (28 bytes)
+  15075  964       3       sun.nio.cs.UTF_8$Encoder::encodeLoop (28 bytes)   made not entrant
+  15075  966    b  3       sun.nio.cs.UTF_8$Encoder::encodeArrayLoop (489 bytes)
+  15244  967    b  4       sun.nio.cs.UTF_8$Encoder::encodeArrayLoop (489 bytes)
+  15295  966       3       sun.nio.cs.UTF_8$Encoder::encodeArrayLoop (489 bytes)   made not entrant
+  15296  968    b  2       java.nio.CharBuffer::arrayOffset (35 bytes)
+  15298  969    b  2       java.nio.ByteBuffer::arrayOffset (35 bytes)
+  15301  970    b  3       java.nio.charset.CoderResult::<clinit> (88 bytes)
+  15311  971    b  4       java.nio.charset.CoderResult::<clinit> (88 bytes)
+  15316  970       3       java.nio.charset.CoderResult::<clinit> (88 bytes)   made not entrant
+  15316  972    b  3       java.nio.charset.CoderResult::<init> (15 bytes)
+  15318  973    b  4       java.nio.charset.CoderResult::<init> (15 bytes)
+  15320  972       3       java.nio.charset.CoderResult::<init> (15 bytes)   made not entrant
+  15322  974    b  3       java.nio.charset.CoderResult$1::<init> (6 bytes)
+  15324  975    b  4       java.nio.charset.CoderResult$1::<init> (6 bytes)
+  15332  974       3       java.nio.charset.CoderResult$1::<init> (6 bytes)   made not entrant
+  15334  975       4       java.nio.charset.CoderResult$1::<init> (6 bytes)   made not entrant
+  15334  976    b  3       java.nio.charset.CoderResult$2::<init> (6 bytes)
+  15339  977    b  4       java.nio.charset.CoderResult$2::<init> (6 bytes)
+  15341  976       3       java.nio.charset.CoderResult$2::<init> (6 bytes)   made not entrant
+  15341  978    b  3       java.nio.charset.CoderResult::isOverflow (14 bytes)
+  15343  979    b  4       java.nio.charset.CoderResult::isOverflow (14 bytes)
+  15344  978       3       java.nio.charset.CoderResult::isOverflow (14 bytes)   made not entrant
+  15344  980    b  3       java.nio.charset.CoderResult::isUnderflow (13 bytes)
+  15346  981    b  4       java.nio.charset.CoderResult::isUnderflow (13 bytes)
+  15347  980       3       java.nio.charset.CoderResult::isUnderflow (13 bytes)   made not entrant
+  15348  982    b  3       java.nio.charset.CharsetEncoder::flush (49 bytes)
+  15352  983    b  4       java.nio.charset.CharsetEncoder::flush (49 bytes)
+  15355  982       3       java.nio.charset.CharsetEncoder::flush (49 bytes)   made not entrant
+  15361  984    b  3       java.net.URI::<clinit> (546 bytes)
+  15423  985    b  4       java.net.URI::<clinit> (546 bytes)
+  15457  984       3       java.net.URI::<clinit> (546 bytes)   made not entrant
+  15458  986    b  3       java.net.URI::lowMask (52 bytes)
+  15465  987    b  4       java.net.URI::lowMask (52 bytes)
+  15475  986       3       java.net.URI::lowMask (52 bytes)   made not entrant
+  15475  988    b  3       java.net.URI::highMask (60 bytes)
+  15482  989    b  4       java.net.URI::highMask (60 bytes)
+  15494  988       3       java.net.URI::highMask (60 bytes)   made not entrant
+  15494  990    b  3       java.net.URI::lowMask (46 bytes)
+  15502  991    b  4       java.net.URI::lowMask (46 bytes)
+  15506  990       3       java.net.URI::lowMask (46 bytes)   made not entrant
+  15507  992    b  3       java.net.URI::highMask (57 bytes)
+  15515  993    b  4       java.net.URI::highMask (57 bytes)
+  15520  992       3       java.net.URI::highMask (57 bytes)   made not entrant
+  15523  994   !b  3       java.net.URI::create (23 bytes)
+  15526  995   !b  4       java.net.URI::create (23 bytes)
+  15532  994   !   3       java.net.URI::create (23 bytes)   made not entrant
+  15532  996    b  3       java.net.URI::<init> (53 bytes)
+  15537  997    b  4       java.net.URI::<init> (53 bytes)
+  15540  996       3       java.net.URI::<init> (53 bytes)   made not entrant
+  15546  998    b  3       java.net.URI$Parser::<init> (31 bytes)
+  15549  999    b  4       java.net.URI$Parser::<init> (31 bytes)
+  15552  998       3       java.net.URI$Parser::<init> (31 bytes)   made not entrant
+  15553 1000    b  3       java.net.URI$Parser::parse (265 bytes)
+  15672 1001    b  4       java.net.URI$Parser::parse (265 bytes)
+  15694 1000       3       java.net.URI$Parser::parse (265 bytes)   made not entrant
+  15695 1002    b  3       java.net.URI$Parser::scan (50 bytes)
+  15707 1003    b  4       java.net.URI$Parser::scan (50 bytes)
+  15713 1002       3       java.net.URI$Parser::scan (50 bytes)   made not entrant
+  15713 1004    b  3       java.net.URI$Parser::checkChars (44 bytes)
+  15726 1005    b  4       java.net.URI$Parser::checkChars (44 bytes)
+  15729 1004       3       java.net.URI$Parser::checkChars (44 bytes)   made not entrant
+  15729 1006    b  3       java.net.URI$Parser::scan (73 bytes)
+  15742 1007    b  4       java.net.URI$Parser::scan (73 bytes)
+  15748 1006       3       java.net.URI$Parser::scan (73 bytes)   made not entrant
+  15748 1008    b  3       java.net.URI::match (56 bytes)
+  15752 1009    b  4       java.net.URI::match (56 bytes)
+  15755 1008       3       java.net.URI::match (56 bytes)   made not entrant
+  15755 1010    b  2       java.net.URI$Parser::charAt (9 bytes)
+  15758 1011    b  2       java.net.URI::access$300 (7 bytes)
+  15760 1012    b  3       java.net.URI$Parser::parseHierarchical (180 bytes)
+  15818 1013    b  4       java.net.URI$Parser::parseHierarchical (180 bytes)
+  15829 1012       3       java.net.URI$Parser::parseHierarchical (180 bytes)   made not entrant
+  15832 1014    b  3       sun.nio.fs.UnixFileSystemProvider::getFileSystem (10 bytes)
+  15834 1015    b  4       sun.nio.fs.UnixFileSystemProvider::getFileSystem (10 bytes)
+  15836 1014       3       sun.nio.fs.UnixFileSystemProvider::getFileSystem (10 bytes)   made not entrant
+  15836 1016    b  3       sun.nio.fs.UnixFileSystemProvider::checkUri (115 bytes)
+  15868 1017    b  4       sun.nio.fs.UnixFileSystemProvider::checkUri (115 bytes)
+  15876 1016       3       sun.nio.fs.UnixFileSystemProvider::checkUri (115 bytes)   made not entrant
+  15876 1018    b  3       java.net.URI::decode (370 bytes)
+  16073 1019    b  4       java.net.URI::decode (370 bytes)
+  16076 1018       3       java.net.URI::decode (370 bytes)   made not entrant
+  16076 1020    b  3       java.io.FilePermission::<init> (14 bytes)
+  16081 1021    b  4       java.io.FilePermission::<init> (14 bytes)
+  16084 1020       3       java.io.FilePermission::<init> (14 bytes)   made not entrant
+  16084 1022    b  3       java.io.FilePermission::getMask (948 bytes)
+  16329 1023    b  4       java.io.FilePermission::getMask (948 bytes)
+  16417 1022       3       java.io.FilePermission::getMask (948 bytes)   made not entrant
+  16417 1024   !b  3       java.io.FilePermission::init (321 bytes)
+  16480 1025   !b  4       java.io.FilePermission::init (321 bytes)
+  16488 1024   !   3       java.io.FilePermission::init (321 bytes)   made not entrant
+  16488 1026    b  4       java.lang.String::charAt (29 bytes)
+  16490  177       2       java.lang.String::charAt (29 bytes)   made not entrant
+  16491 1027    b  3       sun.nio.fs.UnixFileSystem::getPath (105 bytes)
+  16530 1028    b  4       sun.nio.fs.UnixFileSystem::getPath (105 bytes)
+  16602 1027       3       sun.nio.fs.UnixFileSystem::getPath (105 bytes)   made not entrant
+  16603 1029    b  2       java.lang.ref.SoftReference::get (29 bytes)
+  16605 1030    b  2       sun.nio.fs.UnixFileSystem::normalizeNativePath (2 bytes)
+  16612 1031    b  2       java.nio.ByteBuffer::wrap (8 bytes)
+  16614  948       4       sun.nio.fs.UnixPath::encode (198 bytes)   made not entrant
+  16615 1032   !b  2       java.nio.CharBuffer::wrap (20 bytes)
+  16618 1033    b  2       java.nio.CharBuffer::hasArray (20 bytes)
+  16620 1034    b  2       java.nio.ByteBuffer::hasArray (20 bytes)
+  16621 1035    b  2       java.nio.CharBuffer::array (35 bytes)
+  16624 1036    b  3       java.nio.Buffer::position (5 bytes)
+  16624 1037    b  3       java.nio.Buffer::limit (5 bytes)
+  16625 1038    b  2       java.nio.ByteBuffer::array (35 bytes)
+  16628 1039    b  2       sun.nio.cs.UTF_8::access$200 (8 bytes)
+  16631  967       4       sun.nio.cs.UTF_8$Encoder::encodeArrayLoop (489 bytes)   made not entrant
+  16632  963   !   4       java.nio.charset.CharsetEncoder::encode (285 bytes)   made not entrant
+  16632 1040    b  2       java.nio.Buffer::hasRemaining (17 bytes)
+  16635 1041    b  3       java.io.FilePermission$1::<init> (10 bytes)
+  16637 1042    b  4       java.io.FilePermission$1::<init> (10 bytes)
+  16638 1041       3       java.io.FilePermission$1::<init> (10 bytes)   made not entrant
+  16639 1043    b  3       java.io.FilePermission$1::run (5 bytes)
+  16640 1044    b  4       java.io.FilePermission$1::run (5 bytes)
+  16641 1043       3       java.io.FilePermission$1::run (5 bytes)   made not entrant
+  16642 1045   !b  3       java.io.FilePermission$1::run (116 bytes)
+  16725 1046   !b  4       java.io.FilePermission$1::run (116 bytes)
+  16730 1045   !   3       java.io.FilePermission$1::run (116 bytes)   made not entrant
+  16730 1047    b  2       java.security.Permission::<init> (10 bytes)
+  16731 1025   !   4       java.io.FilePermission::init (321 bytes)   made not entrant
+  16732 1048   !b  3       java.nio.charset.CharsetEncoder::encode (285 bytes)
+  16791 1049   !b  4       java.nio.charset.CharsetEncoder::encode (285 bytes)
+  16840 1048   !   3       java.nio.charset.CharsetEncoder::encode (285 bytes)   made not entrant
+  16840 1050    b  3       sun.nio.cs.UTF_8$Encoder::encodeArrayLoop (489 bytes)
+  17009 1051    b  4       sun.nio.cs.UTF_8$Encoder::encodeArrayLoop (489 bytes)
+  17062 1050       3       sun.nio.cs.UTF_8$Encoder::encodeArrayLoop (489 bytes)   made not entrant
+  17063 1052    b  2       sun.nio.fs.AbstractPath::<init> (5 bytes)
+  17064 1053    b  3       java.io.FilePermission::access$000 (5 bytes)
+  17065 1046   !   4       java.io.FilePermission$1::run (116 bytes)   made not entrant
+  17065 1054    b  2       java.io.File::getCanonicalPath (31 bytes)
+  17071 1055     n 0       java.io.UnixFileSystem::canonicalize0 (native)   
+  17071 1056    b  2       java.lang.String::<init> (10 bytes)
+  17073 1057   !b  2       java.lang.StringCoding::decode (120 bytes)
+  17094 1058   !b  2       java.lang.StringCoding$StringDecoder::decode (179 bytes)
+  17120 1059    b  2       java.util.LinkedHashMap::linkNodeLast (33 bytes)
+  17123 1060   !b  3       java.security.Permissions::add (70 bytes)
+  17131 1061   !b  4       java.security.Permissions::add (70 bytes)
+  17139 1060   !   3       java.security.Permissions::add (70 bytes)   made not entrant
+  17139 1062    b  3       java.security.Permissions::getPermissionCollection (107 bytes)
+  17150 1063    b  4       java.security.Permissions::getPermissionCollection (107 bytes)
+  17154 1062       3       java.security.Permissions::getPermissionCollection (107 bytes)   made not entrant
+  17154 1064    b  3       java.io.FilePermission::newPermissionCollection (8 bytes)
+  17156 1065    b  4       java.io.FilePermission::newPermissionCollection (8 bytes)
+  17157 1064       3       java.io.FilePermission::newPermissionCollection (8 bytes)   made not entrant
+  17159  852       4       java.security.Permissions::<init> (28 bytes)   made not entrant
+  17159 1065       4       java.io.FilePermission::newPermissionCollection (8 bytes)   made not entrant
+  17160 1061   !   4       java.security.Permissions::add (70 bytes)   made not entrant
+  17160 1063       4       java.security.Permissions::getPermissionCollection (107 bytes)   made not entrant
+  17160 1066    b  3       java.io.FilePermissionCollection::<clinit> (22 bytes)
+  17164    1   !   3       java.lang.invoke.MethodHandle::<clinit> (45 bytes)   made zombie
+  17164 1067    b  4       java.io.FilePermissionCollection::<clinit> (22 bytes)
+  17164    9       3       java.lang.invoke.MethodHandleImpl$1::<init> (10 bytes)   made zombie
+  17164    3   !   3       java.lang.Class::desiredAssertionStatus (54 bytes)   made zombie
+  17164   19       3       java.lang.AbstractStringBuilder::newCapacity (39 bytes)   made zombie
+  17164   12       3       java.lang.invoke.MethodHandleImpl$1::run (5 bytes)   made zombie
+  17164    6       3       java.lang.invoke.MethodHandleImpl::<clinit> (110 bytes)   made zombie
+  17164   14       3       java.lang.invoke.MethodHandleImpl$1::run (37 bytes)   made zombie
+  17164   39       3       java.lang.invoke.MethodHandleImpl$2::<init> (5 bytes)   made zombie
+  17164   34  s    3       java.util.Hashtable::get (69 bytes)   made zombie
+  17164   17       3       java.lang.AbstractStringBuilder::append (50 bytes)   made zombie
+  17164   21       3       java.lang.String::getChars (62 bytes)   made zombie
+  17164   24       3       java.lang.String::<init> (82 bytes)   made zombie
+  17164   26       3       java.util.Arrays::copyOfRange (63 bytes)   made zombie
+  17164   30       3       java.lang.String::equals (81 bytes)   made zombie
+  17164   28       3       java.lang.System::checkKey (34 bytes)   made zombie
+  17164   33       4       java.util.Properties::getProperty (46 bytes)   made zombie
+  17164   32       3       java.util.Properties::getProperty (46 bytes)   made zombie
+  17164   49       3       java.lang.ClassValue$Identity::<init> (5 bytes)   made zombie
+  17164   41       3       java.lang.invoke.MethodHandleImpl$3::<init> (5 bytes)   made zombie
+  17164   45       3       java.lang.invoke.MethodHandleImpl$4::<init> (5 bytes)   made zombie
+  17164   43       3       java.lang.ClassValue::<clinit> (32 bytes)   made zombie
+  17164   36       3       java.lang.String::hashCode (55 bytes)   made zombie
+  17164   55       3       java.lang.ClassValue$Entry::<init> (11 bytes)   made zombie
+  17165   63       3       java.lang.invoke.MemberName$Factory::<init> (5 bytes)   made zombie
+  17165   61       3       java.lang.invoke.MemberName$Factory::<clinit> (32 bytes)   made zombie
+  17165   47       3       java.lang.ClassValue::<init> (43 bytes)   made zombie
+  17165   53       3       java.lang.ClassValue$Entry::<clinit> (29 bytes)   made zombie
+  17165   51       3       java.lang.ClassValue$Version::<init> (22 bytes)   made zombie
+  17165   59       3       java.lang.invoke.MethodHandleImpl::initStatics (8 bytes)   made zombie
+  17165   57       3       java.lang.ClassValue$Entry::<init> (11 bytes)   made zombie
+  17165 1066       3       java.io.FilePermissionCollection::<clinit> (22 bytes)   made not entrant
+  17165   81       3       java.lang.Class::reflectionData (49 bytes)   made zombie
+  17165   86       3       java.util.HashMap::get (23 bytes)   made zombie
+  17165   65       3       java.lang.invoke.MethodHandleStatics::<clinit> (157 bytes)   made zombie
+  17165   70       3       java.lang.invoke.MethodHandleStatics$1::run (5 bytes)   made zombie
+  17165   68       3       java.lang.invoke.MethodHandleStatics$1::<init> (10 bytes)   made zombie
+  17165   75       3       java.lang.String::equalsIgnoreCase (48 bytes)   made zombie
+  17165   72       3       java.lang.invoke.MethodHandleStatics$1::run (130 bytes)   made zombie
+  17166   77       3       java.lang.Class::checkMemberAccess (49 bytes)   made zombie
+  17166   79       3       java.lang.Class::privateGetDeclaredFields (67 bytes)   made zombie
+  17166   83       3       java.lang.Class::newReflectionData (74 bytes)   made zombie
+  17166   89       3       java.util.HashMap::getNode (148 bytes)   made zombie
+  17166   98       3       java.lang.reflect.Field::<init> (44 bytes)   made zombie
+  17166   91       3       sun.reflect.Reflection::filter (220 bytes)   made zombie
+  17166 1068    b  3       java.io.FilePermissionCollection::<init> (16 bytes)
+  17169   93       3       java.lang.Class::searchFields (41 bytes)   made zombie
+  17169  111   !   3       java.lang.ThreadGroup::addUnstarted (40 bytes)   made zombie
+  17169  121       3       java.lang.Thread::setPriority (56 bytes)   made zombie
+  17169   96       3       java.lang.reflect.Field::copy (76 bytes)   made zombie
+  17169  101       3       java.lang.invoke.MemberName::<clinit> (17 bytes)   made zombie
+  17169  103       3       java.lang.invoke.MethodHandleNatives::<clinit> (115 bytes)   made zombie
+  17169  117       3       java.security.AccessControlContext::calculateFields (89 bytes)   made zombie
+  17169  107       3       java.lang.Thread::<init> (49 bytes)   made zombie
+  17169  109       3       java.lang.Thread::init (214 bytes)   made zombie
+  17169  114       3       java.security.AccessControlContext::optimize (318 bytes)   made zombie
+  17169  119       3       java.security.AccessControlContext::combine (205 bytes)   made zombie
+  17169  129  s!   3       java.lang.ClassLoader::initSystemClassLoader (109 bytes)   made zombie
+  17169  127       3       sun.launcher.LauncherHelper::<init> (7 bytes)   made zombie
+  17171  125       3       sun.launcher.LauncherHelper::<clinit> (67 bytes)   made zombie
+  17171 1069    b  4       java.io.FilePermissionCollection::<init> (16 bytes)
+  17171  133       3       java.nio.charset.Charset::lookup (44 bytes)   made zombie
+  17171  131   !   3       sun.launcher.LauncherHelper::makePlatformString (70 bytes)   made zombie
+  17171  137       3       java.lang.String::checkBounds (46 bytes)   made zombie
+  17171  135       3       java.lang.String::<init> (38 bytes)   made zombie
+  17171  141       3       java.lang.ThreadLocal::get (38 bytes)   made zombie
+  17171  143       3       java.lang.ThreadLocal$ThreadLocalMap::getEntry (42 bytes)   made zombie
+  17171  139   !   3       java.lang.StringCoding::decode (120 bytes)   made zombie
+  17171  163       3       java.util.concurrent.ConcurrentHashMap::addCount (292 bytes)   made zombie
+  17171  145   !   3       java.lang.StringCoding$StringDecoder::decode (179 bytes)   made zombie
+  17172  151       3       java.lang.String::replace (127 bytes)   made zombie
+  17172  147       3       sun.nio.cs.UTF_8$Decoder::decode (779 bytes)   made zombie
+  17172  155       3       java.lang.String::lastIndexOf (52 bytes)   made zombie
+  17172  161   !   3       java.util.concurrent.ConcurrentHashMap::initTable (115 bytes)   made zombie
+  17172  159   !   3       java.util.concurrent.ConcurrentHashMap::putVal (362 bytes)   made zombie
+  17172  165       3       java.lang.ClassLoader::checkName (43 bytes)   made zombie
+  17172 1068       3       java.io.FilePermissionCollection::<init> (16 bytes)   made not entrant
+  17172  167       3       java.lang.String::indexOf (70 bytes)   made zombie
+  17173  178       3       java.lang.ClassLoader::findBootstrapClassOrNull (16 bytes)   made zombie
+  17173  185   !   3       java.lang.ClassLoader::findNative (86 bytes)   made zombie
+  17173  183       3       java.net.URLClassLoader$1::<init> (15 bytes)   made zombie
+  17173  187  s    3       java.util.Vector::elementAt (48 bytes)   made zombie
+  17173 1070   !b  3       java.io.FilePermissionCollection::add (77 bytes)
+  17190  199  s    3       sun.misc.URLClassPath::getLookupCache (98 bytes)   made zombie
+  17191 1071   !b  4       java.io.FilePermissionCollection::add (77 bytes)
+  17191  195       3       java.lang.String::concat (47 bytes)   made zombie
+  17191  223       3       java.lang.String::startsWith (72 bytes)   made zombie
+  17191  217       3       sun.misc.URLClassPath$3::<init> (15 bytes)   made zombie
+  17191  206  s    3       java.util.Vector::removeElementAt (115 bytes)   made zombie
+  17191  214       3       java.lang.CharacterDataLatin1::toLowerCase (39 bytes)   made zombie
+  17191  212       3       java.lang.CharacterData::of (120 bytes)   made zombie
+  17191  208       3       sun.net.util.URLUtil::urlNoFragString (114 bytes)   made zombie
+  17191  210       3       java.lang.String::toLowerCase (439 bytes)   made zombie
+  17198 1070   !   3       java.io.FilePermissionCollection::add (77 bytes)   made not entrant
+  17198 1072    b  2       java.util.ArrayList::add (29 bytes)
+  17210 1073    b  3       java.security.BasicPermission::init (132 bytes)
+  17228 1074    b  4       java.security.BasicPermission::init (132 bytes)
+  17238 1073       3       java.security.BasicPermission::init (132 bytes)   made not entrant
+  17238 1075   !b  2       java.security.Permissions::add (70 bytes)
+  17244 1076    b  2       java.security.Permissions::getPermissionCollection (107 bytes)
+  17250 1077    b  3       java.security.BasicPermission::newPermissionCollection (12 bytes)
+  17253 1078    b  4       java.security.BasicPermission::newPermissionCollection (12 bytes)
+  17254 1077       3       java.security.BasicPermission::newPermissionCollection (12 bytes)   made not entrant
+  17255 1079    b  3       java.security.BasicPermissionCollection::<clinit> (51 bytes)
+  17263 1080    b  4       java.security.BasicPermissionCollection::<clinit> (51 bytes)
+  17265 1079       3       java.security.BasicPermissionCollection::<clinit> (51 bytes)   made not entrant
+  17265 1081    b  3       java.security.BasicPermissionCollection::<init> (28 bytes)
+  17271 1082    b  4       java.security.BasicPermissionCollection::<init> (28 bytes)
+  17273 1081       3       java.security.BasicPermissionCollection::<init> (28 bytes)   made not entrant
+  17274 1083   !b  3       java.security.BasicPermissionCollection::add (168 bytes)
+  17328 1084   !b  4       java.security.BasicPermissionCollection::add (168 bytes)
+  17348 1083   !   3       java.security.BasicPermissionCollection::add (168 bytes)   made not entrant
+  17349 1085    b  3       java.security.ProtectionDomain::<init> (99 bytes)
+  17359 1086    b  4       java.security.ProtectionDomain::<init> (99 bytes)
+  17379 1085       3       java.security.ProtectionDomain::<init> (99 bytes)   made not entrant
+  17379 1087  s b  2       java.net.URL::hashCode (30 bytes)
+  17382 1088    b  3       java.lang.ClassLoader::defineClass (43 bytes)
+  17397 1089    b  4       java.lang.ClassLoader::defineClass (43 bytes)
+  17402 1088       3       java.lang.ClassLoader::defineClass (43 bytes)   made not entrant
+  17402 1090    b  3       java.lang.ClassLoader::preDefineClass (109 bytes)
+  17434 1091    b  4       java.lang.ClassLoader::preDefineClass (109 bytes)
+  17440 1090       3       java.lang.ClassLoader::preDefineClass (109 bytes)   made not entrant
+  17441 1092   !b  3       java.lang.ClassLoader::checkCerts (195 bytes)
+  17479 1093   !b  4       java.lang.ClassLoader::checkCerts (195 bytes)
+  17501 1092   !   3       java.lang.ClassLoader::checkCerts (195 bytes)   made not entrant
+  17503 1094    b  3       java.security.CodeSource::getCertificates (98 bytes)
+  17519 1095    b  4       java.security.CodeSource::getCertificates (98 bytes)
+  17524 1094       3       java.security.CodeSource::getCertificates (98 bytes)   made not entrant
+  17525 1096     n 0       java.lang.ClassLoader::defineClass1 (native)   
+  17525 1097    b  2       java.lang.ClassLoader::loadClass (7 bytes)
+  17527 1098  s b  2       sun.misc.URLClassPath::knownToNotExist (24 bytes)
+  17530 1099    b  3       java.lang.ClassLoader::checkPackageAccess (111 bytes)
+  17551 1100    b  4       java.lang.ClassLoader::checkPackageAccess (111 bytes)
+  17565 1099       3       java.lang.ClassLoader::checkPackageAccess (111 bytes)   made not entrant
+  17566 1101    b  3       java.lang.ClassLoader::addClass (9 bytes)
+  17571 1102    b  4       java.lang.ClassLoader::addClass (9 bytes)
+  17572 1101       3       java.lang.ClassLoader::addClass (9 bytes)   made not entrant
+  17574 1103    b  3       sun.misc.PerfCounter::getParentDelegationTime (4 bytes)
+  17574 1104    b  1       sun.misc.PerfCounter::getParentDelegationTime (4 bytes)
+  17575 1103       3       sun.misc.PerfCounter::getParentDelegationTime (4 bytes)   made not entrant
+  17575 1105    b  3       sun.misc.PerfCounter::addTime (6 bytes)
+  17582 1106    b  4       sun.misc.PerfCounter::addTime (6 bytes)
+  17584 1105       3       sun.misc.PerfCounter::addTime (6 bytes)   made not entrant
+  17584 1107    b  3       sun.misc.PerfCounter::getFindClassTime (4 bytes)
+  17585 1108    b  1       sun.misc.PerfCounter::getFindClassTime (4 bytes)
+  17585 1107       3       sun.misc.PerfCounter::getFindClassTime (4 bytes)   made not entrant
+  17585 1109    b  3       sun.misc.PerfCounter::getFindClasses (4 bytes)
+  17586 1110    b  1       sun.misc.PerfCounter::getFindClasses (4 bytes)
+  17587 1109       3       sun.misc.PerfCounter::getFindClasses (4 bytes)   made not entrant
+  17588 1111    b  3       java.lang.Object::equals (11 bytes)
+  17590 1112    b  4       java.lang.Object::equals (11 bytes)
+  17591 1111       3       java.lang.Object::equals (11 bytes)   made not entrant
+  17592 1113    b  3       sun.launcher.LauncherHelper$FXHelper::<clinit> (17 bytes)
+  17593 1114    b  4       sun.launcher.LauncherHelper$FXHelper::<clinit> (17 bytes)
+  17595 1113       3       sun.launcher.LauncherHelper$FXHelper::<clinit> (17 bytes)   made not entrant
+  17596 1115    b  3       sun.launcher.LauncherHelper$FXHelper::access$100 (5 bytes)
+  17602 1116    b  4       sun.launcher.LauncherHelper$FXHelper::access$100 (5 bytes)
+  17604 1115       3       sun.launcher.LauncherHelper$FXHelper::access$100 (5 bytes)   made not entrant
+  17606 1117   !b  3       sun.launcher.LauncherHelper::validateMainClass (111 bytes)
+  17632 1118   !b  4       sun.launcher.LauncherHelper::validateMainClass (111 bytes)
+  17645 1117   !   3       sun.launcher.LauncherHelper::validateMainClass (111 bytes)   made not entrant
+  17646 1119    b  3       java.lang.Class::getMethod (64 bytes)
+  17666 1120    b  4       java.lang.Class::getMethod (64 bytes)
+  17673 1119       3       java.lang.Class::getMethod (64 bytes)   made not entrant
+  17674 1121    b  3       java.lang.Class::getMethod0 (40 bytes)
+  17678 1122    b  4       java.lang.Class::getMethod0 (40 bytes)
+  17679 1121       3       java.lang.Class::getMethod0 (40 bytes)   made not entrant
+  17681 1123    b  3       java.lang.Class$MethodArray::<init> (38 bytes)
+  17685 1124    b  4       java.lang.Class$MethodArray::<init> (38 bytes)
+  17689 1123       3       java.lang.Class$MethodArray::<init> (38 bytes)   made not entrant
+  17689 1125    b  3       java.lang.Class::privateGetMethodRecursive (130 bytes)
+  17706 1126    b  4       java.lang.Class::privateGetMethodRecursive (130 bytes)
+  17722 1125       3       java.lang.Class::privateGetMethodRecursive (130 bytes)   made not entrant
+  17722 1127    b  3       java.lang.Class::privateGetDeclaredMethods (67 bytes)
+  17736 1128    b  4       java.lang.Class::privateGetDeclaredMethods (67 bytes)
+  17742 1127       3       java.lang.Class::privateGetDeclaredMethods (67 bytes)   made not entrant
+  17742 1129     n 0       java.lang.Class::getDeclaredMethods0 (native)   
+  17742 1130    b  3       java.lang.Class::searchMethods (90 bytes)
+  17771 1131    b  4       java.lang.Class::searchMethods (90 bytes)
+  17789 1130       3       java.lang.Class::searchMethods (90 bytes)   made not entrant
+  17789 1132    b  3       java.lang.reflect.Method::copy (84 bytes)
+  17796 1133    b  4       java.lang.reflect.Method::copy (84 bytes)
+  17798 1132       3       java.lang.reflect.Method::copy (84 bytes)   made not entrant
+  17798 1134    b  3       java.lang.reflect.Method::<init> (68 bytes)
+  17804 1135    b  4       java.lang.reflect.Method::<init> (68 bytes)
+  17808 1134       3       java.lang.reflect.Method::<init> (68 bytes)   made not entrant
+  17809 1136    b  3       java.lang.Void::<clinit> (9 bytes)
+  17813 1137    b  4       java.lang.Void::<clinit> (9 bytes)
+  17815 1136       3       java.lang.Void::<clinit> (9 bytes)   made not entrant
+  17816 1138     n 0       java.lang.Class::getPrimitiveClass (native)   (static)
+  17816 1139    b  3       sun.launcher.LauncherHelper::getApplicationClass (4 bytes)
+  17817 1140    b  1       sun.launcher.LauncherHelper::getApplicationClass (4 bytes)
+  17818 1139       3       sun.launcher.LauncherHelper::getApplicationClass (4 bytes)   made not entrant
+  17822 1141    b  3       Hello::main (9 bytes)
+  17824 1142    b  4       Hello::main (9 bytes)
+  17825 1141       3       Hello::main (9 bytes)   made not entrant
+  17825 1143   !b  3       java.io.PrintStream::println (24 bytes)
+  17830 1144   !b  4       java.io.PrintStream::println (24 bytes)
+  17837 1143   !   3       java.io.PrintStream::println (24 bytes)   made not entrant
+  17841 1145   !b  3       java.io.PrintStream::write (83 bytes)
+  17858 1146   !b  4       java.io.PrintStream::write (83 bytes)
+  17881 1145   !   3       java.io.PrintStream::write (83 bytes)   made not entrant
+  17882 1147   !b  3       java.io.BufferedWriter::write (117 bytes)
+  17895 1148   !b  4       java.io.BufferedWriter::write (117 bytes)
+  17911 1147   !   3       java.io.BufferedWriter::write (117 bytes)   made not entrant
+  17911 1149   !b  3       java.io.BufferedWriter::flushBuffer (53 bytes)
+  17919 1150   !b  4       java.io.BufferedWriter::flushBuffer (53 bytes)
+  17927 1149   !   3       java.io.BufferedWriter::flushBuffer (53 bytes)   made not entrant
+  17927 1151    b  3       java.io.OutputStreamWriter::write (11 bytes)
+  17930 1152    b  4       java.io.OutputStreamWriter::write (11 bytes)
+  17932 1151       3       java.io.OutputStreamWriter::write (11 bytes)   made not entrant
+  17932 1153   !b  3       sun.nio.cs.StreamEncoder::write (78 bytes)
+  17942 1154   !b  4       sun.nio.cs.StreamEncoder::write (78 bytes)
+  17959 1153   !   3       sun.nio.cs.StreamEncoder::write (78 bytes)   made not entrant
+  17960 1155    b  3       sun.nio.cs.StreamEncoder::implWrite (156 bytes)
+  17989 1156    b  4       sun.nio.cs.StreamEncoder::implWrite (156 bytes)
+  18009 1155       3       sun.nio.cs.StreamEncoder::implWrite (156 bytes)   made not entrant
+  18010 1157    b  2       sun.nio.cs.UTF_8::updatePositions (23 bytes)
+  18012 1158   !b  3       sun.nio.cs.StreamEncoder::flushBuffer (42 bytes)
+  18020 1159   !b  4       sun.nio.cs.StreamEncoder::flushBuffer (42 bytes)
+  18027 1158   !   3       sun.nio.cs.StreamEncoder::flushBuffer (42 bytes)   made not entrant
+  18027 1160    b  3       sun.nio.cs.StreamEncoder::writeBytes (132 bytes)
+  18047 1161    b  4       sun.nio.cs.StreamEncoder::writeBytes (132 bytes)
+  18056 1160       3       sun.nio.cs.StreamEncoder::writeBytes (132 bytes)   made not entrant
+  18056 1162   !b  3       java.io.PrintStream::write (69 bytes)
+  18064 1163   !b  4       java.io.PrintStream::write (69 bytes)
+  18073 1162   !   3       java.io.PrintStream::write (69 bytes)   made not entrant
+  18073 1164  s b  3       java.io.BufferedOutputStream::write (67 bytes)
+  18085 1165  s b  4       java.io.BufferedOutputStream::write (67 bytes)
+  18105 1164  s    3       java.io.BufferedOutputStream::write (67 bytes)   made not entrant
+  18106 1166  s b  3       java.io.BufferedOutputStream::flush (12 bytes)
+  18110 1167  s b  4       java.io.BufferedOutputStream::flush (12 bytes)
+  18115 1166  s    3       java.io.BufferedOutputStream::flush (12 bytes)   made not entrant
+  18115 1168    b  3       java.io.FileOutputStream::write (12 bytes)
+  18119 1169    b  4       java.io.FileOutputStream::write (12 bytes)
+  18121 1168       3       java.io.FileOutputStream::write (12 bytes)   made not entrant
+  18121 1170     n 0       java.io.FileOutputStream::writeBytes (native)   
+hello world!  18121 1171    b  3       java.io.OutputStream::flush (1 bytes)
+  18122 1172    b  1       java.io.OutputStream::flush (1 bytes)
+  18123 1171       3       java.io.OutputStream::flush (1 bytes)   made not entrant
+  18123 1173   !b  3       java.io.PrintStream::newLine (73 bytes)
+  18136 1174   !b  4       java.io.PrintStream::newLine (73 bytes)
+  18147 1173   !   3       java.io.PrintStream::newLine (73 bytes)   made not entrant
+  18147 1175    b  2       java.io.BufferedWriter::ensureOpen (18 bytes)
+  18150 1176    b  2       java.io.BufferedWriter::min (9 bytes)
+  18151 1177    b  2       sun.nio.cs.StreamEncoder::ensureOpen (18 bytes)
+  18153 1178    b  2       java.nio.Buffer::remaining (10 bytes)
+  18154 1179    b  2       sun.nio.cs.StreamEncoder::implFlushBuffer (15 bytes)
+  18156 1180    b  2       java.nio.Buffer::flip (20 bytes)
+  18157 1181    b  2       java.io.PrintStream::ensureOpen (18 bytes)
+  18159 1182    b  2       java.io.BufferedOutputStream::flushBuffer (29 bytes)
+
+  18161 1183    b  2       java.nio.Buffer::clear (20 bytes)
+  18163 1184    b  3       java.lang.Thread::exit (51 bytes)
+  18168 1185    b  4       java.lang.Thread::exit (51 bytes)
+  18172 1184       3       java.lang.Thread::exit (51 bytes)   made not entrant
+  18172 1186   !b  3       java.lang.ThreadGroup::threadTerminated (63 bytes)
+  18178 1187   !b  4       java.lang.ThreadGroup::threadTerminated (63 bytes)
+  18187 1186   !   3       java.lang.ThreadGroup::threadTerminated (63 bytes)   made not entrant
+  18187 1188   !b  3       java.lang.ThreadGroup::remove (94 bytes)
+  18199 1189   !b  4       java.lang.ThreadGroup::remove (94 bytes)
+  18227 1188   !   3       java.lang.ThreadGroup::remove (94 bytes)   made not entrant
+  18227 1190     n 0       java.lang.Object::notifyAll (native)   
+  18228 1191    b  2       java.lang.Thread::init (12 bytes)
+  18230 1192    b  2       java.lang.ThreadGroup::checkAccess (14 bytes)
+  18233  202  s    4       sun.misc.URLClassPath::getNextLoader (88 bytes)   made zombie
+  18233  204  s!   4       sun.misc.URLClassPath::getLoader (243 bytes)   made zombie
+  18233 1193    b  2       java.lang.Thread::getContextClassLoader (32 bytes)
+  18240  241       3       java.net.Parts::<init> (87 bytes)   made zombie
+  18240  225       3       sun.misc.URLClassPath$JarLoader::<clinit> (7 bytes)   made zombie
+  18240  231       3       java.util.zip.ZipFile$1::<init> (5 bytes)   made zombie
+  18240  228       3       java.util.zip.ZipFile::<clinit> (75 bytes)   made zombie
+  18240  237  s    3       java.lang.StringBuffer::toString (36 bytes)   made zombie
+  18240  235       3       java.net.URLStreamHandler::toExternalForm (219 bytes)   made zombie
+  18240  243       3       sun.net.util.IPAddressUtil::checkExternalForm (69 bytes)   made zombie
+  18240  239       3       java.net.URL::<init> (386 bytes)   made zombie
+  18240  259       3       java.io.UnixFileSystem::normalize (75 bytes)   made zombie
+  18240  245       3       sun.net.util.IPAddressUtil::scan (62 bytes)   made zombie
+  18240  247       3       sun.net.util.IPAddressUtil::checkHostString (53 bytes)   made zombie
+  18240  249       3       sun.net.util.IPAddressUtil::scan (92 bytes)   made zombie
+  18240  253       3       java.lang.CharacterDataLatin1::toUpperCase (53 bytes)   made zombie
+  18240  251       3       java.lang.String::regionMatches (149 bytes)   made zombie
+  18240  257       3       java.io.File::<init> (47 bytes)   made zombie
+  18240  255   !   3       sun.net.www.ParseUtil::decode (316 bytes)   made zombie
+  18240  268       3       sun.misc.URLClassPath$JarLoader$1::<init> (10 bytes)   made zombie
+  18240  261   !   3       sun.misc.MetaIndex::getJarMap (61 bytes)   made zombie
+  18240  264       3       java.io.File::hashCode (8 bytes)   made zombie
+  18241 1194    b  2       java.security.AccessController::getContext (23 bytes)
+  18250 1195    b  2       java.lang.Thread::checkAccess (14 bytes)
+  18253 1196  s b  2       java.lang.Thread::nextThreadID (10 bytes)
+  18255 1197   !b  3       java.lang.ThreadGroup::add (110 bytes)
+  18266 1198   !b  4       java.lang.ThreadGroup::add (110 bytes)
+  18282 1197   !   3       java.lang.ThreadGroup::add (110 bytes)   made not entrant
+  18284 1199    b  3       java.lang.Shutdown::<clinit> (43 bytes)
+  18289 1200    b  4       java.lang.Shutdown::<clinit> (43 bytes)
+  18293 1199       3       java.lang.Shutdown::<clinit> (43 bytes)   made not entrant
+  18295 1201    b  3       java.lang.Shutdown$Lock::<init> (5 bytes)
+  18300 1202    b  4       java.lang.Shutdown$Lock::<init> (5 bytes)
+  18301 1201       3       java.lang.Shutdown$Lock::<init> (5 bytes)   made not entrant
+  18303 1203    b  2       java.lang.Shutdown$Lock::<init> (5 bytes)
+  18305 1204   !b  3       java.lang.Shutdown::shutdown (72 bytes)
+  18310 1205   !b  4       java.lang.Shutdown::shutdown (72 bytes)
+  18323 1204   !   3       java.lang.Shutdown::shutdown (72 bytes)   made not entrant
+  18323 1206   !b  3       java.lang.Shutdown::sequence (61 bytes)
+  18329 1207   !b  4       java.lang.Shutdown::sequence (61 bytes)
+  18338 1206   !   3       java.lang.Shutdown::sequence (61 bytes)   made not entrant
+  18339 1208   !b  3       java.lang.Shutdown::runHooks (69 bytes)
+  18350 1209   !b  4       java.lang.Shutdown::runHooks (69 bytes)
+  18361 1208   !   3       java.lang.Shutdown::runHooks (69 bytes)   made not entrant
+
+RUN FINISHED; exit value 0; real time: 18s; user: 490ms; system: 16s
