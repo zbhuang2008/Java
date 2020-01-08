@@ -1,0 +1,142 @@
+"${OUTPUT_PATH}" -cp "/home/zbhuang/OpenJDK/javaapps/" -XX:+UnlockDiagnosticVMOptions -XX:+PrintStubCode Hello
+
+"${OUTPUT_PATH}" -cp "/home/zbhuang/OpenJDK/javaapps/" Hello
+
+StubGenerator::generate_call_stub (this=0x7ffff5ad8980, return_address=@0x7ffff73aa680: 0x0) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/cpu/x86/vm/stubGenerator_x86_64.cpp:221
+StubGenerator::generate_initial (this=0x7ffff5ad8980) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/cpu/x86/vm/stubGenerator_x86_64.cpp:4047
+StubGenerator::StubGenerator (this=0x7ffff5ad8980, code=0x7ffff5ad8a30, all=false) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/cpu/x86/vm/stubGenerator_x86_64.cpp:4172
+StubGenerator_generate (code=0x7ffff5ad8a30, all=false) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/cpu/x86/vm/stubGenerator_x86_64.cpp:4178
+StubRoutines::initialize1 () at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/stubRoutines.cpp:176
+stubRoutines_init1 () at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/stubRoutines.cpp:316
+init_globals () at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/init.cpp:103
+Threads::create_vm (args=0x7ffff5ad8e80, canTryAgain=0x7ffff5ad8e03) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/thread.cpp:3434
+JNI_CreateJavaVM (vm=0x7ffff5ad8ed8, penv=0x7ffff5ad8ee0, args=0x7ffff5ad8e80) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/prims/jni.cpp:5229
+InitializeJVM (pvm=0x7ffff5ad8ed8, penv=0x7ffff5ad8ee0, ifn=0x7ffff5ad8f30) at /home/zbhuang/OpenJDK/jdk8u/jdk/src/share/bin/java.c:1240
+JavaMain (_args=0x7fffffffadf0) at /home/zbhuang/OpenJDK/jdk8u/jdk/src/share/bin/java.c:376
+start_thread (arg=0x7ffff5ad9700) at /build/glibc-Cl5G7W/glibc-2.23/nptl/pthread_create.c:333
+clone () at /build/glibc-Cl5G7W/glibc-2.23/misc/../sysdeps/unix/sysv/linux/x86_64/clone.S:109
+
+Parameter value - kind=
+AbstractInterpreter::zerolocals
+AbstractInterpreter::zerolocals_synchronized
+AbstractInterpreter::empty
+AbstractInterpreter::accessor
+AbstractInterpreter::abstract
+AbstractInterpreter::java_lang_math_sin
+AbstractInterpreter::java_lang_math_cos
+AbstractInterpreter::java_lang_math_tan
+AbstractInterpreter::java_lang_math_abs
+AbstractInterpreter::java_lang_math_sqrt
+AbstractInterpreter::java_lang_math_log
+AbstractInterpreter::java_lang_math_log10
+AbstractInterpreter::java_lang_math_exp
+AbstractInterpreter::java_lang_math_pow
+AbstractInterpreter::java_lang_ref_reference_get
+AbstractInterpreter::java_util_zip_CRC32_update
+AbstractInterpreter::java_util_zip_CRC32_updateBytes
+AbstractInterpreter::native
+AbstractInterpreter::native_synchronized
+
+InterpreterGenerator::generate_normal_entry (this=0x7ffff5ad8b40, synchronized=false) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/cpu/x86/vm/templateInterpreter_x86_64.cpp:1412
+AbstractInterpreterGenerator::generate_method_entry (this=0x7ffff5ad8b40, kind=AbstractInterpreter::zerolocals) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/cpu/x86/vm/templateInterpreter_x86_64.cpp:1667
+TemplateInterpreterGenerator::generate_all (this=0x7ffff5ad8b40) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/interpreter/templateInterpreter.cpp:382
+InterpreterGenerator::InterpreterGenerator (this=0x7ffff5ad8b40, code=0x7ffff00312c0) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/cpu/x86/vm/templateInterpreter_x86_64.cpp:1977
+TemplateInterpreter::initialize () at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/interpreter/templateInterpreter.cpp:52
+interpreter_init () at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/interpreter/interpreter.cpp:118
+init_globals () at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/init.cpp:109
+Threads::create_vm (args=0x7ffff5ad8e80, canTryAgain=0x7ffff5ad8e03) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/thread.cpp:3434
+JNI_CreateJavaVM (vm=0x7ffff5ad8ed8, penv=0x7ffff5ad8ee0, args=0x7ffff5ad8e80) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/prims/jni.cpp:5229
+InitializeJVM (pvm=0x7ffff5ad8ed8, penv=0x7ffff5ad8ee0, ifn=0x7ffff5ad8f30) at /home/zbhuang/OpenJDK/jdk8u/jdk/src/share/bin/java.c:1240
+JavaMain (_args=0x7fffffffadf0) at /home/zbhuang/OpenJDK/jdk8u/jdk/src/share/bin/java.c:376
+start_thread (arg=0x7ffff5ad9700) at /build/glibc-Cl5G7W/glibc-2.23/nptl/pthread_create.c:333
+clone () at /build/glibc-Cl5G7W/glibc-2.23/misc/../sysdeps/unix/sysv/linux/x86_64/clone.S:109
+
+Method::link_method (this=0x7fffd3800580, h_method={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd3800580, _thread = 0x7ffff000d800}, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/method.cpp:902
+InstanceKlass::link_methods (this=0x100000f30, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:786
+InstanceKlass::link_class_impl (this_oop={<KlassHandle> = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72da438 <vtable for instanceKlassHandle+16>}, <No data fields>}, _value = 0x100000f30}, <No data fields>}, throw_verifyerror=false, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:727
+InstanceKlass::link_class_impl (this_oop={<KlassHandle> = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72da438 <vtable for instanceKlassHandle+16>}, <No data fields>}, _value = 0x100002870}, <No data fields>}, throw_verifyerror=false, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:654
+InstanceKlass::link_class_impl (this_oop={<KlassHandle> = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72da438 <vtable for instanceKlassHandle+16>}, <No data fields>}, _value = 0x100002b00}, <No data fields>}, throw_verifyerror=false, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:654
+InstanceKlass::link_class_impl (this_oop={<KlassHandle> = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72da438 <vtable for instanceKlassHandle+16>}, <No data fields>}, _value = 0x100004f38}, <No data fields>}, throw_verifyerror=false, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:654
+InstanceKlass::link_class_or_fail (this=0x100004f38, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:612
+universe_post_init () at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/memory/universe.cpp:1068
+init_globals () at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/init.cpp:130
+Threads::create_vm (args=0x7ffff5ad8e80, canTryAgain=0x7ffff5ad8e03) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/thread.cpp:3434
+JNI_CreateJavaVM (vm=0x7ffff5ad8ed8, penv=0x7ffff5ad8ee0, args=0x7ffff5ad8e80) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/prims/jni.cpp:5229
+InitializeJVM (pvm=0x7ffff5ad8ed8, penv=0x7ffff5ad8ee0, ifn=0x7ffff5ad8f30) at /home/zbhuang/OpenJDK/jdk8u/jdk/src/share/bin/java.c:1240
+JavaMain (_args=0x7fffffffadf0) at /home/zbhuang/OpenJDK/jdk8u/jdk/src/share/bin/java.c:376
+start_thread (arg=0x7ffff5ad9700) at /build/glibc-Cl5G7W/glibc-2.23/nptl/pthread_create.c:333
+clone () at /build/glibc-Cl5G7W/glibc-2.23/misc/../sysdeps/unix/sysv/linux/x86_64/clone.S:109
+
+JavaCalls::call_helper (result=0x7ffff5ad8690, m=0x7ffff5ad86c0, args=0x7ffff5ad86e0, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/javaCalls.cpp:397
+os::os_exception_wrapper (f=0x7ffff664ac74 <JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)>, value=0x7ffff5ad8690, method=0x7ffff5ad86c0, args=0x7ffff5ad86e0, thread=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/os/linux/vm/os_linux.cpp:5451
+JavaCalls::call (result=0x7ffff5ad8690, method={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd3800e40, _thread = 0x7ffff000d800}, args=0x7ffff5ad86e0, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/javaCalls.cpp:307
+InstanceKlass::call_class_initializer_impl (this_oop={<KlassHandle> = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72da438 <vtable for instanceKlassHandle+16>}, <No data fields>}, _value = 0x100000f30}, <No data fields>}, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:1239
+InstanceKlass::call_class_initializer (this=0x100000f30, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:1207
+InstanceKlass::initialize_impl (this_oop={<KlassHandle> = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72da438 <vtable for instanceKlassHandle+16>}, <No data fields>}, _value = 0x100000f30}, <No data fields>}, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:932
+InstanceKlass::initialize (this=0x100000f30, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:569
+InstanceKlass::initialize_impl (this_oop={<KlassHandle> = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72da438 <vtable for instanceKlassHandle+16>}, <No data fields>}, _value = 0x1000016d8}, <No data fields>}, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:894
+InstanceKlass::initialize (this=0x1000016d8, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:569
+initialize_class (class_name=0x7ffff4023130, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/thread.cpp:993
+Threads::create_vm (args=0x7ffff5ad8e80, canTryAgain=0x7ffff5ad8e03) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/thread.cpp:3504
+JNI_CreateJavaVM (vm=0x7ffff5ad8ed8, penv=0x7ffff5ad8ee0, args=0x7ffff5ad8e80) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/prims/jni.cpp:5229
+InitializeJVM (pvm=0x7ffff5ad8ed8, penv=0x7ffff5ad8ee0, ifn=0x7ffff5ad8f30) at /home/zbhuang/OpenJDK/jdk8u/jdk/src/share/bin/java.c:1240
+JavaMain (_args=0x7fffffffadf0) at /home/zbhuang/OpenJDK/jdk8u/jdk/src/share/bin/java.c:376
+start_thread (arg=0x7ffff5ad9700) at /build/glibc-Cl5G7W/glibc-2.23/nptl/pthread_create.c:333
+clone () at /build/glibc-Cl5G7W/glibc-2.23/misc/../sysdeps/unix/sysv/linux/x86_64/clone.S:109
+
+JavaCalls::call_helper (result=0x7ffff5ad6600, m=0x7ffff5ad6630, args=0x7ffff5ad6650, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/javaCalls.cpp:397
+os::os_exception_wrapper (f=0x7ffff664ac74 <JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)>, value=0x7ffff5ad6600, method=0x7ffff5ad6630, args=0x7ffff5ad6650, thread=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/os/linux/vm/os_linux.cpp:5451
+JavaCalls::call (result=0x7ffff5ad6600, method={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd3901110, _thread = 0x7ffff000d800}, args=0x7ffff5ad6650, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/javaCalls.cpp:307
+InstanceKlass::call_class_initializer_impl (this_oop={<KlassHandle> = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72da438 <vtable for instanceKlassHandle+16>}, <No data fields>}, _value = 0x100018120}, <No data fields>}, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:1239
+InstanceKlass::call_class_initializer (this=0x100018120, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:1207
+InstanceKlass::initialize_impl (this_oop={<KlassHandle> = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72da438 <vtable for instanceKlassHandle+16>}, <No data fields>}, _value = 0x100018120}, <No data fields>}, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:932
+InstanceKlass::initialize (this=0x100018120, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:569
+LinkResolver::resolve_static_call (result=@0x7ffff5ad6c10: {_resolved_klass = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d9fd8 <vtable for KlassHandle+16>}, <No data fields>}, _value = 0x0}, _selected_klass = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d9fd8 <vtable for KlassHandle+16>}, <No data fields>}, _value = 0x0}, _resolved_method = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x0, _thread = 0x0}, _selected_method = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x0, _thread = 0x0}, _call_kind = CallInfo::unknown_kind, _call_index = -3, _resolved_appendix = {_handle = 0x0}, _resolved_method_type = {_handle = 0x0}}, resolved_klass=@0x7ffff5ad6a60: {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d9fd8 <vtable for KlassHandle+16>}, <No data fields>}, _value = 0x100018120}, method_name=0x7ffff40364a0, method_signature=0x7ffff40364c0, current_klass={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d9fd8 <vtable for KlassHandle+16>}, <No data fields>}, _value = 0x100002870}, check_access=true, initialize_class=true, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/interpreter/linkResolver.cpp:868
+LinkResolver::resolve_invokestatic (result=@0x7ffff5ad6c10: {_resolved_klass = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d9fd8 <vtable for KlassHandle+16>}, <No data fields>}, _value = 0x0}, _selected_klass = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d9fd8 <vtable for KlassHandle+16>}, <No data fields>}, _value = 0x0}, _resolved_method = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x0, _thread = 0x0}, _selected_method = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x0, _thread = 0x0}, _call_kind = CallInfo::unknown_kind, _call_index = -3, _resolved_appendix = {_handle = 0x0}, _resolved_method_type = {_handle = 0x0}}, pool={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72dbb38 <vtable for constantPoolHandle+16>}, <No data fields>}, _value = 0x7fffd38201b0, _thread = 0x7ffff000d800}, index=65603, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/interpreter/linkResolver.cpp:1532
+LinkResolver::resolve_invoke (result=@0x7ffff5ad6c10: {_resolved_klass = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d9fd8 <vtable for KlassHandle+16>}, <No data fields>}, _value = 0x0}, _selected_klass = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d9fd8 <vtable for KlassHandle+16>}, <No data fields>}, _value = 0x0}, _resolved_method = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x0, _thread = 0x0}, _selected_method = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x0, _thread = 0x0}, _call_kind = CallInfo::unknown_kind, _call_index = -3, _resolved_appendix = {_handle = 0x0}, _resolved_method_type = {_handle = 0x0}}, recv={_handle = 0x0}, pool={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72dbb38 <vtable for constantPoolHandle+16>}, <No data fields>}, _value = 0x7fffd38201b0, _thread = 0x7ffff000d800}, index=65603, byte=Bytecodes::_invokestatic, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/interpreter/linkResolver.cpp:1504
+InterpreterRuntime::resolve_invoke (thread=0x7ffff000d800, bytecode=Bytecodes::_invokestatic) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/interpreter/interpreterRuntime.cpp:717
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+
+JavaCalls::call_helper (result=0x7ffff5ad6d10, m=0x7ffff5ad6d40, args=0x7ffff5ad6d60, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/javaCalls.cpp:397
+os::os_exception_wrapper (f=0x7ffff664ac74 <JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)>, value=0x7ffff5ad6d10, method=0x7ffff5ad6d40, args=0x7ffff5ad6d60, thread=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/os/linux/vm/os_linux.cpp:5451
+JavaCalls::call (result=0x7ffff5ad6d10, method={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd38346f8, _thread = 0x7ffff000d800}, args=0x7ffff5ad6d60, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/javaCalls.cpp:307
+InstanceKlass::call_class_initializer_impl (this_oop={<KlassHandle> = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72da438 <vtable for instanceKlassHandle+16>}, <No data fields>}, _value = 0x100006838}, <No data fields>}, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:1239
+InstanceKlass::call_class_initializer (this=0x100006838, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:1207
+InstanceKlass::initialize_impl (this_oop={<KlassHandle> = {<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72da438 <vtable for instanceKlassHandle+16>}, <No data fields>}, _value = 0x100006838}, <No data fields>}, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:932
+InstanceKlass::initialize (this=0x100006838, __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/oops/instanceKlass.cpp:569
+InterpreterRuntime::_new (thread=0x7ffff000d800, pool=0x7fffd3831b60, index=16) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/interpreter/interpreterRuntime.cpp:158
+?? () at null:
+TemplateInterpreter::_active_table () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+
+SharedRuntime::generate_native_wrapper (masm=0x7ffff5ad5fd0, method={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd381ecb0, _thread = 0x7ffff000d800}, compile_id=2, in_sig_bt=0x7ffff000df70, in_regs=0x7ffff000df90, ret_type=T_VOID) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/cpu/x86/vm/sharedRuntime_x86_64.cpp:1758
+AdapterHandlerLibrary::create_native_wrapper (method={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd381ecb0, _thread = 0x7ffff000d800}) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/sharedRuntime.cpp:2660
+CompileBroker::compile_method (method={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd381ecb0, _thread = 0x7ffff000d800}, osr_bci=-1, comp_level=3, hot_method={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd381ecb0, _thread = 0x7ffff000d800}, hot_count=256, comment=0x7ffff6b1e12d \"tiered\", __the_thread__=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/compiler/compileBroker.cpp:1424
+AdvancedThresholdPolicy::submit_compile (this=0x7ffff0074dc0, mh={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd381ecb0, _thread = 0x7ffff000d800}, bci=-1, level=CompLevel_full_profile, thread=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/advancedThresholdPolicy.cpp:456
+SimpleThresholdPolicy::compile (this=0x7ffff0074dc0, mh={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd381ecb0, _thread = 0x7ffff000d800}, bci=-1, level=CompLevel_full_profile, thread=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/simpleThresholdPolicy.cpp:247
+AdvancedThresholdPolicy::method_invocation_event (this=0x7ffff0074dc0, mh={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd381ecb0, _thread = 0x7ffff000d800}, imh={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd381ecb0, _thread = 0x7ffff000d800}, level=CompLevel_none, nm=0x0, thread=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/advancedThresholdPolicy.cpp:468
+SimpleThresholdPolicy::event (this=0x7ffff0074dc0, method={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd381ecb0, _thread = 0x7ffff000d800}, inlinee={<StackObj> = {<AllocatedObj> = {_vptr.AllocatedObj = 0x7ffff72d99f0 <vtable for methodHandle+16>}, <No data fields>}, _value = 0x7fffd381ecb0, _thread = 0x7ffff000d800}, branch_bci=-1, bci=-1, comp_level=CompLevel_none, nm=0x0, thread=0x7ffff000d800) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/runtime/simpleThresholdPolicy.cpp:210
+InterpreterRuntime::frequency_counter_overflow_inner (thread=0x7ffff000d800, branch_bcp=0x0) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/interpreter/interpreterRuntime.cpp:887
+InterpreterRuntime::frequency_counter_overflow (thread=0x7ffff000d800, branch_bcp=0x0) at /home/zbhuang/OpenJDK/jdk8u/hotspot/src/share/vm/interpreter/interpreterRuntime.cpp:850
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+?? () at null:
+
+
