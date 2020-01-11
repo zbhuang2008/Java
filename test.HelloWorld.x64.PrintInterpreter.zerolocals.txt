@@ -1,0 +1,830 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hotspot_log version='160 1' process='3805' time_ms='1578109306909'>
+<vm_version>
+<name>
+OpenJDK 64-Bit Server VM
+</name>
+<release>
+25.71-b00-debug
+</release>
+<info>
+OpenJDK 64-Bit Server VM (25.71-b00-debug) for linux-amd64 JRE (1.8.0-internal-zbhuang_2019_11_03_07_31-b00), built on Jan  2 2020 22:16:34 by &quot;zbhuang&quot; with gcc 5.4.0 20160609
+</info>
+</vm_version>
+<vm_arguments>
+<args>
+-XX:+UnlockDiagnosticVMOptions -XX:+PrintInterpreter -XX:+LogCompilation -XX:LogFile=Hello.PrintInterpreter.txt 
+</args>
+<command>
+Hello
+</command>
+<launcher>
+SUN_STANDARD
+</launcher>
+<properties>
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.version=25.71-b00-debug
+java.vm.name=OpenJDK 64-Bit Server VM
+java.vm.info=mixed mode, sharing
+java.ext.dirs=/home/zbhuang/OpenJDK/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/lib/ext:/usr/java/packages/lib/ext
+java.endorsed.dirs=/home/zbhuang/OpenJDK/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/lib/endorsed
+sun.boot.library.path=/home/zbhuang/OpenJDK/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/lib/amd64
+java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+java.home=/home/zbhuang/OpenJDK/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk
+java.class.path=.:/usr/local/java/jdk1.8.0_181/lib:/usr/local/java/jdk1.8.0_181/jre/lib:
+sun.boot.class.path=/home/zbhuang/OpenJDK/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/lib/resources.jar:/home/zbhuang/OpenJDK/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/lib/rt.jar:/home/zbhuang/OpenJDK/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/lib/sunrsasign.jar:/home/zbhuang/OpenJDK/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/lib/jsse.jar:/home/zbhuang/OpenJDK/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/lib/jce.jar:/home/zbhuang/OpenJDK/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/lib/charsets.jar:/home/zbhuang/OpenJDK/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/lib/jfr.jar:/home/zbhuang/OpenJDK/jdk8u/build/linux-x86_64-normal-server-slowdebug/jdk/classes
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=1.8
+java.vm.vendor=Oracle Corporation
+sun.java.command=Hello
+sun.java.launcher=SUN_STANDARD
+</properties>
+</vm_arguments>
+<tty>
+<writer thread='139642484700928'/>
+
+----------------------------------------------------------------------
+Interpreter
+
+code size        =    320K bytes
+total space      =   1023K bytes
+wasted space     =    703K bytes
+
+# of codelets    =    266
+avg codelet size =   1234 bytes
+
+----------------------------------------------------------------------
+method entry point (kind = zerolocals)  [0x00007f00f5023be0, 0x00007f00f5024a00]  3616 bytes
+
+  0x00007f00f5023be0: mov    0x10(%rbx),%rdx
+  0x00007f00f5023be4: movzwl 0x2c(%rdx),%ecx
+  0x00007f00f5023be8: movzwl 0x2a(%rdx),%edx
+  0x00007f00f5023bec: sub    %ecx,%edx
+  0x00007f00f5023bee: cmp    $0x1f6,%edx
+  0x00007f00f5023bf4: jbe    0x00007f00f5023d3d
+  0x00007f00f5023bfa: mov    %rdx,%rax
+  0x00007f00f5023bfd: shl    $0x3,%rax
+  0x00007f00f5023c01: add    $0x50,%rax
+  0x00007f00f5023c05: cmpq   $0x0,0x158(%r15)
+  0x00007f00f5023c10: jne    0x00007f00f5023c8d
+  0x00007f00f5023c16: mov    %rsp,-0x28(%rsp)
+  0x00007f00f5023c1b: sub    $0x80,%rsp
+  0x00007f00f5023c22: mov    %rax,0x78(%rsp)
+  0x00007f00f5023c27: mov    %rcx,0x70(%rsp)
+  0x00007f00f5023c2c: mov    %rdx,0x68(%rsp)
+  0x00007f00f5023c31: mov    %rbx,0x60(%rsp)
+  0x00007f00f5023c36: mov    %rbp,0x50(%rsp)
+  0x00007f00f5023c3b: mov    %rsi,0x48(%rsp)
+  0x00007f00f5023c40: mov    %rdi,0x40(%rsp)
+  0x00007f00f5023c45: mov    %r8,0x38(%rsp)
+  0x00007f00f5023c4a: mov    %r9,0x30(%rsp)
+  0x00007f00f5023c4f: mov    %r10,0x28(%rsp)
+  0x00007f00f5023c54: mov    %r11,0x20(%rsp)
+  0x00007f00f5023c59: mov    %r12,0x18(%rsp)
+  0x00007f00f5023c5e: mov    %r13,0x10(%rsp)
+  0x00007f00f5023c63: mov    %r14,0x8(%rsp)
+  0x00007f00f5023c68: mov    %r15,(%rsp)
+  0x00007f00f5023c6c: movabs $0x7f010b9187cc,%rdi
+  0x00007f00f5023c76: movabs $0x7f00f5023c16,%rsi
+  0x00007f00f5023c80: mov    %rsp,%rdx
+  0x00007f00f5023c83: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f5023c87: callq  0x00007f010b33b9fa
+  0x00007f00f5023c8c: hlt    
+  0x00007f00f5023c8d: cmpq   $0x0,0x160(%r15)
+  0x00007f00f5023c98: jne    0x00007f00f5023d15
+  0x00007f00f5023c9e: mov    %rsp,-0x28(%rsp)
+  0x00007f00f5023ca3: sub    $0x80,%rsp
+  0x00007f00f5023caa: mov    %rax,0x78(%rsp)
+  0x00007f00f5023caf: mov    %rcx,0x70(%rsp)
+  0x00007f00f5023cb4: mov    %rdx,0x68(%rsp)
+  0x00007f00f5023cb9: mov    %rbx,0x60(%rsp)
+  0x00007f00f5023cbe: mov    %rbp,0x50(%rsp)
+  0x00007f00f5023cc3: mov    %rsi,0x48(%rsp)
+  0x00007f00f5023cc8: mov    %rdi,0x40(%rsp)
+  0x00007f00f5023ccd: mov    %r8,0x38(%rsp)
+  0x00007f00f5023cd2: mov    %r9,0x30(%rsp)
+  0x00007f00f5023cd7: mov    %r10,0x28(%rsp)
+  0x00007f00f5023cdc: mov    %r11,0x20(%rsp)
+  0x00007f00f5023ce1: mov    %r12,0x18(%rsp)
+  0x00007f00f5023ce6: mov    %r13,0x10(%rsp)
+  0x00007f00f5023ceb: mov    %r14,0x8(%rsp)
+  0x00007f00f5023cf0: mov    %r15,(%rsp)
+  0x00007f00f5023cf4: movabs $0x7f010b9187df,%rdi
+  0x00007f00f5023cfe: movabs $0x7f00f5023c9e,%rsi
+  0x00007f00f5023d08: mov    %rsp,%rdx
+  0x00007f00f5023d0b: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f5023d0f: callq  0x00007f010b33b9fa
+  0x00007f00f5023d14: hlt    
+  0x00007f00f5023d15: add    0x158(%r15),%rax
+  0x00007f00f5023d1c: sub    0x160(%r15),%rax
+  0x00007f00f5023d23: add    $0x16000,%rax
+  0x00007f00f5023d2a: cmp    %rax,%rsp
+  0x00007f00f5023d2d: ja     0x00007f00f5023d3d
+  0x00007f00f5023d33: pop    %rax
+  0x00007f00f5023d34: mov    %r13,%rsp
+  0x00007f00f5023d37: push   %rax
+  0x00007f00f5023d38: jmpq   0x00007f00f5005280
+  0x00007f00f5023d3d: pop    %rax
+  0x00007f00f5023d3e: lea    -0x8(%rsp,%rcx,8),%r14
+  0x00007f00f5023d43: test   %edx,%edx
+  0x00007f00f5023d45: jle    0x00007f00f5023d54
+  0x00007f00f5023d4b: pushq  $0x0
+  0x00007f00f5023d50: dec    %edx
+  0x00007f00f5023d52: jg     0x00007f00f5023d4b
+  0x00007f00f5023d54: push   %rax
+  0x00007f00f5023d55: push   %rbp
+  0x00007f00f5023d56: mov    %rsp,%rbp
+  0x00007f00f5023d59: push   %r13
+  0x00007f00f5023d5b: pushq  $0x0
+  0x00007f00f5023d60: mov    0x10(%rbx),%r13
+  0x00007f00f5023d64: lea    0x30(%r13),%r13
+  0x00007f00f5023d68: push   %rbx
+  0x00007f00f5023d69: mov    0x18(%rbx),%rdx
+  0x00007f00f5023d6d: test   %rdx,%rdx
+  0x00007f00f5023d70: je     0x00007f00f5023d7d
+  0x00007f00f5023d76: add    $0x128,%rdx
+  0x00007f00f5023d7d: push   %rdx
+  0x00007f00f5023d7e: mov    0x10(%rbx),%rdx
+  0x00007f00f5023d82: mov    0x8(%rdx),%rdx
+  0x00007f00f5023d86: mov    0x18(%rdx),%rdx
+  0x00007f00f5023d8a: push   %rdx
+  0x00007f00f5023d8b: push   %r14
+  0x00007f00f5023d8d: push   %r13
+  0x00007f00f5023d8f: pushq  $0x0
+  0x00007f00f5023d94: mov    %rsp,(%rsp)
+  0x00007f00f5023d98: mov    0x28(%rbx),%eax
+  0x00007f00f5023d9b: test   $0x100,%eax
+  0x00007f00f5023da0: je     0x00007f00f5023e1d
+  0x00007f00f5023da6: mov    %rsp,-0x28(%rsp)
+  0x00007f00f5023dab: sub    $0x80,%rsp
+  0x00007f00f5023db2: mov    %rax,0x78(%rsp)
+  0x00007f00f5023db7: mov    %rcx,0x70(%rsp)
+  0x00007f00f5023dbc: mov    %rdx,0x68(%rsp)
+  0x00007f00f5023dc1: mov    %rbx,0x60(%rsp)
+  0x00007f00f5023dc6: mov    %rbp,0x50(%rsp)
+  0x00007f00f5023dcb: mov    %rsi,0x48(%rsp)
+  0x00007f00f5023dd0: mov    %rdi,0x40(%rsp)
+  0x00007f00f5023dd5: mov    %r8,0x38(%rsp)
+  0x00007f00f5023dda: mov    %r9,0x30(%rsp)
+  0x00007f00f5023ddf: mov    %r10,0x28(%rsp)
+  0x00007f00f5023de4: mov    %r11,0x20(%rsp)
+  0x00007f00f5023de9: mov    %r12,0x18(%rsp)
+  0x00007f00f5023dee: mov    %r13,0x10(%rsp)
+  0x00007f00f5023df3: mov    %r14,0x8(%rsp)
+  0x00007f00f5023df8: mov    %r15,(%rsp)
+  0x00007f00f5023dfc: movabs $0x7f010b918b30,%rdi
+  0x00007f00f5023e06: movabs $0x7f00f5023da6,%rsi
+  0x00007f00f5023e10: mov    %rsp,%rdx
+  0x00007f00f5023e13: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f5023e17: callq  0x00007f010b33b9fa
+  0x00007f00f5023e1c: hlt    
+  0x00007f00f5023e1d: test   $0x400,%eax
+  0x00007f00f5023e22: je     0x00007f00f5023e9f
+  0x00007f00f5023e28: mov    %rsp,-0x28(%rsp)
+  0x00007f00f5023e2d: sub    $0x80,%rsp
+  0x00007f00f5023e34: mov    %rax,0x78(%rsp)
+  0x00007f00f5023e39: mov    %rcx,0x70(%rsp)
+  0x00007f00f5023e3e: mov    %rdx,0x68(%rsp)
+  0x00007f00f5023e43: mov    %rbx,0x60(%rsp)
+  0x00007f00f5023e48: mov    %rbp,0x50(%rsp)
+  0x00007f00f5023e4d: mov    %rsi,0x48(%rsp)
+  0x00007f00f5023e52: mov    %rdi,0x40(%rsp)
+  0x00007f00f5023e57: mov    %r8,0x38(%rsp)
+  0x00007f00f5023e5c: mov    %r9,0x30(%rsp)
+  0x00007f00f5023e61: mov    %r10,0x28(%rsp)
+  0x00007f00f5023e66: mov    %r11,0x20(%rsp)
+  0x00007f00f5023e6b: mov    %r12,0x18(%rsp)
+  0x00007f00f5023e70: mov    %r13,0x10(%rsp)
+  0x00007f00f5023e75: mov    %r14,0x8(%rsp)
+  0x00007f00f5023e7a: mov    %r15,(%rsp)
+  0x00007f00f5023e7e: movabs $0x7f010b918980,%rdi
+  0x00007f00f5023e88: movabs $0x7f00f5023e28,%rsi
+  0x00007f00f5023e92: mov    %rsp,%rdx
+  0x00007f00f5023e95: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f5023e99: callq  0x00007f010b33b9fa
+  0x00007f00f5023e9e: hlt    
+  0x00007f00f5023e9f: movb   $0x1,0x2bd(%r15)
+  0x00007f00f5023ea7: mov    -0x20(%rbp),%rax
+  0x00007f00f5023eab: test   %rax,%rax
+  0x00007f00f5023eae: je     0x00007f00f5023f3e
+  0x00007f00f5023eb4: mov    -0x4(%rax),%ecx
+  0x00007f00f5023eb7: test   %ecx,%ecx
+  0x00007f00f5023eb9: js     0x00007f00f5023f3e
+  0x00007f00f5023ebf: add    %rcx,%rax
+  0x00007f00f5023ec2: mov    0x8(%rax),%rcx
+  0x00007f00f5023ec6: sub    $0x2,%rcx
+  0x00007f00f5023eca: mov    0x10(%rax,%rcx,8),%rdx
+  0x00007f00f5023ecf: neg    %rdx
+  0x00007f00f5023ed2: mov    (%r14,%rdx,8),%rdx
+  0x00007f00f5023ed6: test   %rdx,%rdx
+  0x00007f00f5023ed9: jne    0x00007f00f5023ee6
+  0x00007f00f5023edb: orq    $0x1,0x18(%rax,%rcx,8)
+  0x00007f00f5023ee4: jmp    0x00007f00f5023f38
+  0x00007f00f5023ee6: mov    0x8(%rdx),%edx
+  0x00007f00f5023ee9: shl    $0x3,%rdx
+  0x00007f00f5023eed: xor    0x18(%rax,%rcx,8),%rdx
+  0x00007f00f5023ef2: test   $0xfffffffffffffffc,%rdx
+  0x00007f00f5023ef9: je     0x00007f00f5023f38
+  0x00007f00f5023efb: test   $0x2,%rdx
+  0x00007f00f5023f02: jne    0x00007f00f5023f38
+  0x00007f00f5023f04: cmpq   $0x0,0x18(%rax,%rcx,8)
+  0x00007f00f5023f0d: je     0x00007f00f5023f33
+  0x00007f00f5023f0f: cmpq   $0x1,0x18(%rax,%rcx,8)
+  0x00007f00f5023f18: je     0x00007f00f5023f33
+  0x00007f00f5023f1a: xor    0x18(%rax,%rcx,8),%rdx
+  0x00007f00f5023f1f: test   $0xfffffffffffffffc,%rdx
+  0x00007f00f5023f26: je     0x00007f00f5023f38
+  0x00007f00f5023f28: orq    $0x2,0x18(%rax,%rcx,8)
+  0x00007f00f5023f31: jmp    0x00007f00f5023f38
+  0x00007f00f5023f33: mov    %rdx,0x18(%rax,%rcx,8)
+  0x00007f00f5023f38: sub    $0x2,%rcx
+  0x00007f00f5023f3c: jns    0x00007f00f5023eca
+  0x00007f00f5023f3e: mov    0x18(%rbx),%rax
+  0x00007f00f5023f42: test   %rax,%rax
+  0x00007f00f5023f45: je     0x00007f00f5023f67
+  0x00007f00f5023f47: mov    0x104(%rax),%ecx
+  0x00007f00f5023f4d: add    $0x8,%ecx
+  0x00007f00f5023f50: mov    %ecx,0x104(%rax)
+  0x00007f00f5023f56: and    $0x3f8,%ecx
+  0x00007f00f5023f5c: je     0x00007f00f5024793
+  0x00007f00f5023f62: jmpq   0x00007f00f50241ea
+  0x00007f00f5023f67: mov    0x20(%rbx),%rax
+  0x00007f00f5023f6b: test   %rax,%rax
+  0x00007f00f5023f6e: jne    0x00007f00f50241d5
+  0x00007f00f5023f74: callq  0x00007f00f5023f7e
+  0x00007f00f5023f79: jmpq   0x00007f00f50241c8
+  0x00007f00f5023f7e: mov    %rbx,%rsi
+  0x00007f00f5023f81: lea    0x8(%rsp),%rax
+  0x00007f00f5023f86: mov    %r13,-0x38(%rbp)
+  0x00007f00f5023f8a: cmpq   $0x0,-0x10(%rbp)
+  0x00007f00f5023f92: je     0x00007f00f502400f
+  0x00007f00f5023f98: mov    %rsp,-0x28(%rsp)
+  0x00007f00f5023f9d: sub    $0x80,%rsp
+  0x00007f00f5023fa4: mov    %rax,0x78(%rsp)
+  0x00007f00f5023fa9: mov    %rcx,0x70(%rsp)
+  0x00007f00f5023fae: mov    %rdx,0x68(%rsp)
+  0x00007f00f5023fb3: mov    %rbx,0x60(%rsp)
+  0x00007f00f5023fb8: mov    %rbp,0x50(%rsp)
+  0x00007f00f5023fbd: mov    %rsi,0x48(%rsp)
+  0x00007f00f5023fc2: mov    %rdi,0x40(%rsp)
+  0x00007f00f5023fc7: mov    %r8,0x38(%rsp)
+  0x00007f00f5023fcc: mov    %r9,0x30(%rsp)
+  0x00007f00f5023fd1: mov    %r10,0x28(%rsp)
+  0x00007f00f5023fd6: mov    %r11,0x20(%rsp)
+  0x00007f00f5023fdb: mov    %r12,0x18(%rsp)
+  0x00007f00f5023fe0: mov    %r13,0x10(%rsp)
+  0x00007f00f5023fe5: mov    %r14,0x8(%rsp)
+  0x00007f00f5023fea: mov    %r15,(%rsp)
+  0x00007f00f5023fee: movabs $0x7f010b7e62e8,%rdi
+  0x00007f00f5023ff8: movabs $0x7f00f5023f98,%rsi
+  0x00007f00f5024002: mov    %rsp,%rdx
+  0x00007f00f5024005: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f5024009: callq  0x00007f010b33b9fa
+  0x00007f00f502400e: hlt    
+  0x00007f00f502400f: push   %r10
+  0x00007f00f5024011: cmp    0x16eea1c8(%rip),%r12        # 0x00007f010bf0e1e0
+  0x00007f00f5024018: je     0x00007f00f5024095
+  ;; call_VM_base: heap base corrupted?
+  0x00007f00f502401e: mov    %rsp,-0x28(%rsp)
+  0x00007f00f5024023: sub    $0x80,%rsp
+  0x00007f00f502402a: mov    %rax,0x78(%rsp)
+  0x00007f00f502402f: mov    %rcx,0x70(%rsp)
+  0x00007f00f5024034: mov    %rdx,0x68(%rsp)
+  0x00007f00f5024039: mov    %rbx,0x60(%rsp)
+  0x00007f00f502403e: mov    %rbp,0x50(%rsp)
+  0x00007f00f5024043: mov    %rsi,0x48(%rsp)
+  0x00007f00f5024048: mov    %rdi,0x40(%rsp)
+  0x00007f00f502404d: mov    %r8,0x38(%rsp)
+  0x00007f00f5024052: mov    %r9,0x30(%rsp)
+  0x00007f00f5024057: mov    %r10,0x28(%rsp)
+  0x00007f00f502405c: mov    %r11,0x20(%rsp)
+  0x00007f00f5024061: mov    %r12,0x18(%rsp)
+  0x00007f00f5024066: mov    %r13,0x10(%rsp)
+  0x00007f00f502406b: mov    %r14,0x8(%rsp)
+  0x00007f00f5024070: mov    %r15,(%rsp)
+  0x00007f00f5024074: movabs $0x7f010b851078,%rdi
+  0x00007f00f502407e: movabs $0x7f00f502401e,%rsi
+  0x00007f00f5024088: mov    %rsp,%rdx
+  0x00007f00f502408b: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f502408f: callq  0x00007f010b33b9fa
+  0x00007f00f5024094: hlt    
+  0x00007f00f5024095: pop    %r10
+  0x00007f00f5024097: mov    %r15,%rdi
+  0x00007f00f502409a: mov    %rbp,0x210(%r15)
+  0x00007f00f50240a1: mov    %rax,0x200(%r15)
+  0x00007f00f50240a8: test   $0xf,%esp
+  0x00007f00f50240ae: je     0x00007f00f50240c6
+  0x00007f00f50240b4: sub    $0x8,%rsp
+  0x00007f00f50240b8: callq  0x00007f010b185330
+  0x00007f00f50240bd: add    $0x8,%rsp
+  0x00007f00f50240c1: jmpq   0x00007f00f50240cb
+  0x00007f00f50240c6: callq  0x00007f010b185330
+  0x00007f00f50240cb: push   %rax
+  0x00007f00f50240cc: push   %rdi
+  0x00007f00f50240cd: push   %rsi
+  0x00007f00f50240ce: push   %rdx
+  0x00007f00f50240cf: push   %rcx
+  0x00007f00f50240d0: push   %r8
+  0x00007f00f50240d2: push   %r9
+  0x00007f00f50240d4: push   %r10
+  0x00007f00f50240d6: mov    %rsp,%r10
+  0x00007f00f50240d9: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f50240dd: push   %r10
+  0x00007f00f50240df: push   %r11
+  0x00007f00f50240e1: mov    $0x1,%edi
+  0x00007f00f50240e6: callq  0x00007f010bf232d0
+  0x00007f00f50240eb: pop    %r11
+  0x00007f00f50240ed: pop    %rsp
+  0x00007f00f50240ee: pop    %r10
+  0x00007f00f50240f0: pop    %r9
+  0x00007f00f50240f2: pop    %r8
+  0x00007f00f50240f4: pop    %rcx
+  0x00007f00f50240f5: pop    %rdx
+  0x00007f00f50240f6: pop    %rsi
+  0x00007f00f50240f7: pop    %rdi
+  0x00007f00f50240f8: cmp    %rax,%r15
+  0x00007f00f50240fb: je     0x00007f00f5024178
+  ;; MacroAssembler::call_VM_base: rdi not callee saved?
+  0x00007f00f5024101: mov    %rsp,-0x28(%rsp)
+  0x00007f00f5024106: sub    $0x80,%rsp
+  0x00007f00f502410d: mov    %rax,0x78(%rsp)
+  0x00007f00f5024112: mov    %rcx,0x70(%rsp)
+  0x00007f00f5024117: mov    %rdx,0x68(%rsp)
+  0x00007f00f502411c: mov    %rbx,0x60(%rsp)
+  0x00007f00f5024121: mov    %rbp,0x50(%rsp)
+  0x00007f00f5024126: mov    %rsi,0x48(%rsp)
+  0x00007f00f502412b: mov    %rdi,0x40(%rsp)
+  0x00007f00f5024130: mov    %r8,0x38(%rsp)
+  0x00007f00f5024135: mov    %r9,0x30(%rsp)
+  0x00007f00f502413a: mov    %r10,0x28(%rsp)
+  0x00007f00f502413f: mov    %r11,0x20(%rsp)
+  0x00007f00f5024144: mov    %r12,0x18(%rsp)
+  0x00007f00f5024149: mov    %r13,0x10(%rsp)
+  0x00007f00f502414e: mov    %r14,0x8(%rsp)
+  0x00007f00f5024153: mov    %r15,(%rsp)
+  0x00007f00f5024157: movabs $0x7f010b8511f0,%rdi
+  0x00007f00f5024161: movabs $0x7f00f5024101,%rsi
+  0x00007f00f502416b: mov    %rsp,%rdx
+  0x00007f00f502416e: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f5024172: callq  0x00007f010b33b9fa
+  0x00007f00f5024177: hlt    
+  0x00007f00f5024178: pop    %rax
+  0x00007f00f5024179: movabs $0x0,%r10
+  0x00007f00f5024183: mov    %r10,0x200(%r15)
+  0x00007f00f502418a: movabs $0x0,%r10
+  0x00007f00f5024194: mov    %r10,0x210(%r15)
+  0x00007f00f502419b: movabs $0x0,%r10
+  0x00007f00f50241a5: mov    %r10,0x208(%r15)
+  0x00007f00f50241ac: cmpq   $0x0,0x8(%r15)
+  0x00007f00f50241b4: je     0x00007f00f50241bf
+  0x00007f00f50241ba: jmpq   0x00007f00f5000420
+  0x00007f00f50241bf: mov    -0x38(%rbp),%r13
+  0x00007f00f50241c3: mov    -0x30(%rbp),%r14
+  0x00007f00f50241c7: retq   
+  0x00007f00f50241c8: mov    0x20(%rbx),%rax
+  0x00007f00f50241cc: test   %rax,%rax
+  0x00007f00f50241cf: je     0x00007f00f50241ea
+  0x00007f00f50241d5: mov    0x8(%rax),%ecx
+  0x00007f00f50241d8: add    $0x8,%ecx
+  0x00007f00f50241db: mov    %ecx,0x8(%rax)
+  0x00007f00f50241de: and    $0x3f8,%ecx
+  0x00007f00f50241e4: je     0x00007f00f5024793
+  0x00007f00f50241ea: mov    %eax,-0x1000(%rsp)
+  0x00007f00f50241f1: mov    %eax,-0x2000(%rsp)
+  0x00007f00f50241f8: mov    %eax,-0x3000(%rsp)
+  0x00007f00f50241ff: mov    %eax,-0x4000(%rsp)
+  0x00007f00f5024206: mov    %eax,-0x5000(%rsp)
+  0x00007f00f502420d: mov    %eax,-0x6000(%rsp)
+  0x00007f00f5024214: mov    %eax,-0x7000(%rsp)
+  0x00007f00f502421b: mov    %eax,-0x8000(%rsp)
+  0x00007f00f5024222: mov    %eax,-0x9000(%rsp)
+  0x00007f00f5024229: mov    %eax,-0xa000(%rsp)
+  0x00007f00f5024230: mov    %eax,-0xb000(%rsp)
+  0x00007f00f5024237: mov    %eax,-0xc000(%rsp)
+  0x00007f00f502423e: mov    %eax,-0xd000(%rsp)
+  0x00007f00f5024245: mov    %eax,-0xe000(%rsp)
+  0x00007f00f502424c: mov    %eax,-0xf000(%rsp)
+  0x00007f00f5024253: mov    %eax,-0x10000(%rsp)
+  0x00007f00f502425a: mov    %eax,-0x11000(%rsp)
+  0x00007f00f5024261: mov    %eax,-0x12000(%rsp)
+  0x00007f00f5024268: mov    %eax,-0x13000(%rsp)
+  0x00007f00f502426f: mov    %eax,-0x14000(%rsp)
+  0x00007f00f5024276: mov    %eax,-0x15000(%rsp)
+  0x00007f00f502427d: mov    %eax,-0x16000(%rsp)
+  0x00007f00f5024284: movb   $0x0,0x2bd(%r15)
+  0x00007f00f502428c: mov    0x28(%rbx),%eax
+  0x00007f00f502428f: test   $0x20,%eax
+  0x00007f00f5024294: je     0x00007f00f5024311
+  0x00007f00f502429a: mov    %rsp,-0x28(%rsp)
+  0x00007f00f502429f: sub    $0x80,%rsp
+  0x00007f00f50242a6: mov    %rax,0x78(%rsp)
+  0x00007f00f50242ab: mov    %rcx,0x70(%rsp)
+  0x00007f00f50242b0: mov    %rdx,0x68(%rsp)
+  0x00007f00f50242b5: mov    %rbx,0x60(%rsp)
+  0x00007f00f50242ba: mov    %rbp,0x50(%rsp)
+  0x00007f00f50242bf: mov    %rsi,0x48(%rsp)
+  0x00007f00f50242c4: mov    %rdi,0x40(%rsp)
+  0x00007f00f50242c9: mov    %r8,0x38(%rsp)
+  0x00007f00f50242ce: mov    %r9,0x30(%rsp)
+  0x00007f00f50242d3: mov    %r10,0x28(%rsp)
+  0x00007f00f50242d8: mov    %r11,0x20(%rsp)
+  0x00007f00f50242dd: mov    %r12,0x18(%rsp)
+  0x00007f00f50242e2: mov    %r13,0x10(%rsp)
+  0x00007f00f50242e7: mov    %r14,0x8(%rsp)
+  0x00007f00f50242ec: mov    %r15,(%rsp)
+  0x00007f00f50242f0: movabs $0x7f010b9189b0,%rdi
+  0x00007f00f50242fa: movabs $0x7f00f502429a,%rsi
+  0x00007f00f5024304: mov    %rsp,%rdx
+  0x00007f00f5024307: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f502430b: callq  0x00007f010b33b9fa
+  0x00007f00f5024310: hlt    
+  0x00007f00f5024311: mov    -0x40(%rbp),%rax
+  0x00007f00f5024315: cmp    %rsp,%rax
+  0x00007f00f5024318: je     0x00007f00f5024395
+  0x00007f00f502431e: mov    %rsp,-0x28(%rsp)
+  0x00007f00f5024323: sub    $0x80,%rsp
+  0x00007f00f502432a: mov    %rax,0x78(%rsp)
+  0x00007f00f502432f: mov    %rcx,0x70(%rsp)
+  0x00007f00f5024334: mov    %rdx,0x68(%rsp)
+  0x00007f00f5024339: mov    %rbx,0x60(%rsp)
+  0x00007f00f502433e: mov    %rbp,0x50(%rsp)
+  0x00007f00f5024343: mov    %rsi,0x48(%rsp)
+  0x00007f00f5024348: mov    %rdi,0x40(%rsp)
+  0x00007f00f502434d: mov    %r8,0x38(%rsp)
+  0x00007f00f5024352: mov    %r9,0x30(%rsp)
+  0x00007f00f5024357: mov    %r10,0x28(%rsp)
+  0x00007f00f502435c: mov    %r11,0x20(%rsp)
+  0x00007f00f5024361: mov    %r12,0x18(%rsp)
+  0x00007f00f5024366: mov    %r13,0x10(%rsp)
+  0x00007f00f502436b: mov    %r14,0x8(%rsp)
+  0x00007f00f5024370: mov    %r15,(%rsp)
+  0x00007f00f5024374: movabs $0x7f010b9189d0,%rdi
+  0x00007f00f502437e: movabs $0x7f00f502431e,%rsi
+  0x00007f00f5024388: mov    %rsp,%rdx
+  0x00007f00f502438b: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f502438f: callq  0x00007f010b33b9fa
+  0x00007f00f5024394: hlt    
+  0x00007f00f5024395: cmpb   $0x0,0x16eb729e(%rip)        # 0x00007f010bedb63a
+  0x00007f00f502439c: je     0x00007f00f5024451
+  0x00007f00f50243a2: mov    -0x18(%rbp),%rsi
+  0x00007f00f50243a6: mov    %r15,%rdi
+  0x00007f00f50243a9: cmpq   $0x0,-0x10(%rbp)
+  0x00007f00f50243b1: je     0x00007f00f502442e
+  0x00007f00f50243b7: mov    %rsp,-0x28(%rsp)
+  0x00007f00f50243bc: sub    $0x80,%rsp
+  0x00007f00f50243c3: mov    %rax,0x78(%rsp)
+  0x00007f00f50243c8: mov    %rcx,0x70(%rsp)
+  0x00007f00f50243cd: mov    %rdx,0x68(%rsp)
+  0x00007f00f50243d2: mov    %rbx,0x60(%rsp)
+  0x00007f00f50243d7: mov    %rbp,0x50(%rsp)
+  0x00007f00f50243dc: mov    %rsi,0x48(%rsp)
+  0x00007f00f50243e1: mov    %rdi,0x40(%rsp)
+  0x00007f00f50243e6: mov    %r8,0x38(%rsp)
+  0x00007f00f50243eb: mov    %r9,0x30(%rsp)
+  0x00007f00f50243f0: mov    %r10,0x28(%rsp)
+  0x00007f00f50243f5: mov    %r11,0x20(%rsp)
+  0x00007f00f50243fa: mov    %r12,0x18(%rsp)
+  0x00007f00f50243ff: mov    %r13,0x10(%rsp)
+  0x00007f00f5024404: mov    %r14,0x8(%rsp)
+  0x00007f00f5024409: mov    %r15,(%rsp)
+  0x00007f00f502440d: movabs $0x7f010b7e62e8,%rdi
+  0x00007f00f5024417: movabs $0x7f00f50243b7,%rsi
+  0x00007f00f5024421: mov    %rsp,%rdx
+  0x00007f00f5024424: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f5024428: callq  0x00007f010b33b9fa
+  0x00007f00f502442d: hlt    
+  0x00007f00f502442e: test   $0xf,%esp
+  0x00007f00f5024434: je     0x00007f00f502444c
+  0x00007f00f502443a: sub    $0x8,%rsp
+  0x00007f00f502443e: callq  0x00007f010b4e8092
+  0x00007f00f5024443: add    $0x8,%rsp
+  0x00007f00f5024447: jmpq   0x00007f00f5024451
+  0x00007f00f502444c: callq  0x00007f010b4e8092
+  0x00007f00f5024451: movzbl 0x0(%r13),%ebx
+  0x00007f00f5024456: movabs $0x7f010befeae0,%r10
+  0x00007f00f5024460: jmpq   *(%r10,%rbx,8)
+  0x00007f00f5024464: callq  0x00007f00f502446e
+  0x00007f00f5024469: jmpq   0x00007f00f50246b5
+  0x00007f00f502446e: lea    0x8(%rsp),%rax
+  0x00007f00f5024473: mov    %r13,-0x38(%rbp)
+  0x00007f00f5024477: cmpq   $0x0,-0x10(%rbp)
+  0x00007f00f502447f: je     0x00007f00f50244fc
+  0x00007f00f5024485: mov    %rsp,-0x28(%rsp)
+  0x00007f00f502448a: sub    $0x80,%rsp
+  0x00007f00f5024491: mov    %rax,0x78(%rsp)
+  0x00007f00f5024496: mov    %rcx,0x70(%rsp)
+  0x00007f00f502449b: mov    %rdx,0x68(%rsp)
+  0x00007f00f50244a0: mov    %rbx,0x60(%rsp)
+  0x00007f00f50244a5: mov    %rbp,0x50(%rsp)
+  0x00007f00f50244aa: mov    %rsi,0x48(%rsp)
+  0x00007f00f50244af: mov    %rdi,0x40(%rsp)
+  0x00007f00f50244b4: mov    %r8,0x38(%rsp)
+  0x00007f00f50244b9: mov    %r9,0x30(%rsp)
+  0x00007f00f50244be: mov    %r10,0x28(%rsp)
+  0x00007f00f50244c3: mov    %r11,0x20(%rsp)
+  0x00007f00f50244c8: mov    %r12,0x18(%rsp)
+  0x00007f00f50244cd: mov    %r13,0x10(%rsp)
+  0x00007f00f50244d2: mov    %r14,0x8(%rsp)
+  0x00007f00f50244d7: mov    %r15,(%rsp)
+  0x00007f00f50244db: movabs $0x7f010b7e62e8,%rdi
+  0x00007f00f50244e5: movabs $0x7f00f5024485,%rsi
+  0x00007f00f50244ef: mov    %rsp,%rdx
+  0x00007f00f50244f2: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f50244f6: callq  0x00007f010b33b9fa
+  0x00007f00f50244fb: hlt    
+  0x00007f00f50244fc: push   %r10
+  0x00007f00f50244fe: cmp    0x16ee9cdb(%rip),%r12        # 0x00007f010bf0e1e0
+  0x00007f00f5024505: je     0x00007f00f5024582
+  ;; call_VM_base: heap base corrupted?
+  0x00007f00f502450b: mov    %rsp,-0x28(%rsp)
+  0x00007f00f5024510: sub    $0x80,%rsp
+  0x00007f00f5024517: mov    %rax,0x78(%rsp)
+  0x00007f00f502451c: mov    %rcx,0x70(%rsp)
+  0x00007f00f5024521: mov    %rdx,0x68(%rsp)
+  0x00007f00f5024526: mov    %rbx,0x60(%rsp)
+  0x00007f00f502452b: mov    %rbp,0x50(%rsp)
+  0x00007f00f5024530: mov    %rsi,0x48(%rsp)
+  0x00007f00f5024535: mov    %rdi,0x40(%rsp)
+  0x00007f00f502453a: mov    %r8,0x38(%rsp)
+  0x00007f00f502453f: mov    %r9,0x30(%rsp)
+  0x00007f00f5024544: mov    %r10,0x28(%rsp)
+  0x00007f00f5024549: mov    %r11,0x20(%rsp)
+  0x00007f00f502454e: mov    %r12,0x18(%rsp)
+  0x00007f00f5024553: mov    %r13,0x10(%rsp)
+  0x00007f00f5024558: mov    %r14,0x8(%rsp)
+  0x00007f00f502455d: mov    %r15,(%rsp)
+  0x00007f00f5024561: movabs $0x7f010b851078,%rdi
+  0x00007f00f502456b: movabs $0x7f00f502450b,%rsi
+  0x00007f00f5024575: mov    %rsp,%rdx
+  0x00007f00f5024578: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f502457c: callq  0x00007f010b33b9fa
+  0x00007f00f5024581: hlt    
+  0x00007f00f5024582: pop    %r10
+  0x00007f00f5024584: mov    %r15,%rdi
+  0x00007f00f5024587: mov    %rbp,0x210(%r15)
+  0x00007f00f502458e: mov    %rax,0x200(%r15)
+  0x00007f00f5024595: test   $0xf,%esp
+  0x00007f00f502459b: je     0x00007f00f50245b3
+  0x00007f00f50245a1: sub    $0x8,%rsp
+  0x00007f00f50245a5: callq  0x00007f010b1848ea
+  0x00007f00f50245aa: add    $0x8,%rsp
+  0x00007f00f50245ae: jmpq   0x00007f00f50245b8
+  0x00007f00f50245b3: callq  0x00007f010b1848ea
+  0x00007f00f50245b8: push   %rax
+  0x00007f00f50245b9: push   %rdi
+  0x00007f00f50245ba: push   %rsi
+  0x00007f00f50245bb: push   %rdx
+  0x00007f00f50245bc: push   %rcx
+  0x00007f00f50245bd: push   %r8
+  0x00007f00f50245bf: push   %r9
+  0x00007f00f50245c1: push   %r10
+  0x00007f00f50245c3: mov    %rsp,%r10
+  0x00007f00f50245c6: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f50245ca: push   %r10
+  0x00007f00f50245cc: push   %r11
+  0x00007f00f50245ce: mov    $0x1,%edi
+  0x00007f00f50245d3: callq  0x00007f010bf232d0
+  0x00007f00f50245d8: pop    %r11
+  0x00007f00f50245da: pop    %rsp
+  0x00007f00f50245db: pop    %r10
+  0x00007f00f50245dd: pop    %r9
+  0x00007f00f50245df: pop    %r8
+  0x00007f00f50245e1: pop    %rcx
+  0x00007f00f50245e2: pop    %rdx
+  0x00007f00f50245e3: pop    %rsi
+  0x00007f00f50245e4: pop    %rdi
+  0x00007f00f50245e5: cmp    %rax,%r15
+  0x00007f00f50245e8: je     0x00007f00f5024665
+  ;; MacroAssembler::call_VM_base: rdi not callee saved?
+  0x00007f00f50245ee: mov    %rsp,-0x28(%rsp)
+  0x00007f00f50245f3: sub    $0x80,%rsp
+  0x00007f00f50245fa: mov    %rax,0x78(%rsp)
+  0x00007f00f50245ff: mov    %rcx,0x70(%rsp)
+  0x00007f00f5024604: mov    %rdx,0x68(%rsp)
+  0x00007f00f5024609: mov    %rbx,0x60(%rsp)
+  0x00007f00f502460e: mov    %rbp,0x50(%rsp)
+  0x00007f00f5024613: mov    %rsi,0x48(%rsp)
+  0x00007f00f5024618: mov    %rdi,0x40(%rsp)
+  0x00007f00f502461d: mov    %r8,0x38(%rsp)
+  0x00007f00f5024622: mov    %r9,0x30(%rsp)
+  0x00007f00f5024627: mov    %r10,0x28(%rsp)
+  0x00007f00f502462c: mov    %r11,0x20(%rsp)
+  0x00007f00f5024631: mov    %r12,0x18(%rsp)
+  0x00007f00f5024636: mov    %r13,0x10(%rsp)
+  0x00007f00f502463b: mov    %r14,0x8(%rsp)
+  0x00007f00f5024640: mov    %r15,(%rsp)
+  0x00007f00f5024644: movabs $0x7f010b8511f0,%rdi
+  0x00007f00f502464e: movabs $0x7f00f50245ee,%rsi
+  0x00007f00f5024658: mov    %rsp,%rdx
+  0x00007f00f502465b: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f502465f: callq  0x00007f010b33b9fa
+  0x00007f00f5024664: hlt    
+  0x00007f00f5024665: pop    %rax
+  0x00007f00f5024666: movabs $0x0,%r10
+  0x00007f00f5024670: mov    %r10,0x200(%r15)
+  0x00007f00f5024677: movabs $0x0,%r10
+  0x00007f00f5024681: mov    %r10,0x210(%r15)
+  0x00007f00f5024688: movabs $0x0,%r10
+  0x00007f00f5024692: mov    %r10,0x208(%r15)
+  0x00007f00f5024699: cmpq   $0x0,0x8(%r15)
+  0x00007f00f50246a1: je     0x00007f00f50246ac
+  0x00007f00f50246a7: jmpq   0x00007f00f5000420
+  0x00007f00f50246ac: mov    -0x38(%rbp),%r13
+  0x00007f00f50246b0: mov    -0x30(%rbp),%r14
+  0x00007f00f50246b4: retq   
+  0x00007f00f50246b5: push   %rax
+  0x00007f00f50246b6: push   %rbx
+  0x00007f00f50246b7: mov    -0x18(%rbp),%rbx
+  0x00007f00f50246bb: mov    0x18(%rbx),%rax
+  0x00007f00f50246bf: test   %rax,%rax
+  0x00007f00f50246c2: je     0x00007f00f5024784
+  0x00007f00f50246c8: mov    %r13,%rsi
+  0x00007f00f50246cb: mov    %rbx,%rdi
+  0x00007f00f50246ce: cmpq   $0x0,-0x10(%rbp)
+  0x00007f00f50246d6: je     0x00007f00f5024753
+  0x00007f00f50246dc: mov    %rsp,-0x28(%rsp)
+  0x00007f00f50246e1: sub    $0x80,%rsp
+  0x00007f00f50246e8: mov    %rax,0x78(%rsp)
+  0x00007f00f50246ed: mov    %rcx,0x70(%rsp)
+  0x00007f00f50246f2: mov    %rdx,0x68(%rsp)
+  0x00007f00f50246f7: mov    %rbx,0x60(%rsp)
+  0x00007f00f50246fc: mov    %rbp,0x50(%rsp)
+  0x00007f00f5024701: mov    %rsi,0x48(%rsp)
+  0x00007f00f5024706: mov    %rdi,0x40(%rsp)
+  0x00007f00f502470b: mov    %r8,0x38(%rsp)
+  0x00007f00f5024710: mov    %r9,0x30(%rsp)
+  0x00007f00f5024715: mov    %r10,0x28(%rsp)
+  0x00007f00f502471a: mov    %r11,0x20(%rsp)
+  0x00007f00f502471f: mov    %r12,0x18(%rsp)
+  0x00007f00f5024724: mov    %r13,0x10(%rsp)
+  0x00007f00f5024729: mov    %r14,0x8(%rsp)
+  0x00007f00f502472e: mov    %r15,(%rsp)
+  0x00007f00f5024732: movabs $0x7f010b7e62e8,%rdi
+  0x00007f00f502473c: movabs $0x7f00f50246dc,%rsi
+  0x00007f00f5024746: mov    %rsp,%rdx
+  0x00007f00f5024749: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f502474d: callq  0x00007f010b33b9fa
+  0x00007f00f5024752: hlt    
+  0x00007f00f5024753: test   $0xf,%esp
+  0x00007f00f5024759: je     0x00007f00f5024771
+  0x00007f00f502475f: sub    $0x8,%rsp
+  0x00007f00f5024763: callq  0x00007f010b184742
+  0x00007f00f5024768: add    $0x8,%rsp
+  0x00007f00f502476c: jmpq   0x00007f00f5024776
+  0x00007f00f5024771: callq  0x00007f010b184742
+  0x00007f00f5024776: mov    0x18(%rbx),%rbx
+  0x00007f00f502477a: add    $0x128,%rbx
+  0x00007f00f5024781: add    %rbx,%rax
+  0x00007f00f5024784: mov    %rax,-0x20(%rbp)
+  0x00007f00f5024788: pop    %rbx
+  0x00007f00f5024789: pop    %rax
+  0x00007f00f502478a: mov    -0x18(%rbp),%rbx
+  0x00007f00f502478e: jmpq   0x00007f00f50241ea
+  0x00007f00f5024793: mov    $0x0,%esi
+  0x00007f00f5024798: callq  0x00007f00f50247a2
+  0x00007f00f502479d: jmpq   0x00007f00f50249e9
+  0x00007f00f50247a2: lea    0x8(%rsp),%rax
+  0x00007f00f50247a7: mov    %r13,-0x38(%rbp)
+  0x00007f00f50247ab: cmpq   $0x0,-0x10(%rbp)
+  0x00007f00f50247b3: je     0x00007f00f5024830
+  0x00007f00f50247b9: mov    %rsp,-0x28(%rsp)
+  0x00007f00f50247be: sub    $0x80,%rsp
+  0x00007f00f50247c5: mov    %rax,0x78(%rsp)
+  0x00007f00f50247ca: mov    %rcx,0x70(%rsp)
+  0x00007f00f50247cf: mov    %rdx,0x68(%rsp)
+  0x00007f00f50247d4: mov    %rbx,0x60(%rsp)
+  0x00007f00f50247d9: mov    %rbp,0x50(%rsp)
+  0x00007f00f50247de: mov    %rsi,0x48(%rsp)
+  0x00007f00f50247e3: mov    %rdi,0x40(%rsp)
+  0x00007f00f50247e8: mov    %r8,0x38(%rsp)
+  0x00007f00f50247ed: mov    %r9,0x30(%rsp)
+  0x00007f00f50247f2: mov    %r10,0x28(%rsp)
+  0x00007f00f50247f7: mov    %r11,0x20(%rsp)
+  0x00007f00f50247fc: mov    %r12,0x18(%rsp)
+  0x00007f00f5024801: mov    %r13,0x10(%rsp)
+  0x00007f00f5024806: mov    %r14,0x8(%rsp)
+  0x00007f00f502480b: mov    %r15,(%rsp)
+  0x00007f00f502480f: movabs $0x7f010b7e62e8,%rdi
+  0x00007f00f5024819: movabs $0x7f00f50247b9,%rsi
+  0x00007f00f5024823: mov    %rsp,%rdx
+  0x00007f00f5024826: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f502482a: callq  0x00007f010b33b9fa
+  0x00007f00f502482f: hlt    
+  0x00007f00f5024830: push   %r10
+  0x00007f00f5024832: cmp    0x16ee99a7(%rip),%r12        # 0x00007f010bf0e1e0
+  0x00007f00f5024839: je     0x00007f00f50248b6
+  ;; call_VM_base: heap base corrupted?
+  0x00007f00f502483f: mov    %rsp,-0x28(%rsp)
+  0x00007f00f5024844: sub    $0x80,%rsp
+  0x00007f00f502484b: mov    %rax,0x78(%rsp)
+  0x00007f00f5024850: mov    %rcx,0x70(%rsp)
+  0x00007f00f5024855: mov    %rdx,0x68(%rsp)
+  0x00007f00f502485a: mov    %rbx,0x60(%rsp)
+  0x00007f00f502485f: mov    %rbp,0x50(%rsp)
+  0x00007f00f5024864: mov    %rsi,0x48(%rsp)
+  0x00007f00f5024869: mov    %rdi,0x40(%rsp)
+  0x00007f00f502486e: mov    %r8,0x38(%rsp)
+  0x00007f00f5024873: mov    %r9,0x30(%rsp)
+  0x00007f00f5024878: mov    %r10,0x28(%rsp)
+  0x00007f00f502487d: mov    %r11,0x20(%rsp)
+  0x00007f00f5024882: mov    %r12,0x18(%rsp)
+  0x00007f00f5024887: mov    %r13,0x10(%rsp)
+  0x00007f00f502488c: mov    %r14,0x8(%rsp)
+  0x00007f00f5024891: mov    %r15,(%rsp)
+  0x00007f00f5024895: movabs $0x7f010b851078,%rdi
+  0x00007f00f502489f: movabs $0x7f00f502483f,%rsi
+  0x00007f00f50248a9: mov    %rsp,%rdx
+  0x00007f00f50248ac: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f50248b0: callq  0x00007f010b33b9fa
+  0x00007f00f50248b5: hlt    
+  0x00007f00f50248b6: pop    %r10
+  0x00007f00f50248b8: mov    %r15,%rdi
+  0x00007f00f50248bb: mov    %rbp,0x210(%r15)
+  0x00007f00f50248c2: mov    %rax,0x200(%r15)
+  0x00007f00f50248c9: test   $0xf,%esp
+  0x00007f00f50248cf: je     0x00007f00f50248e7
+  0x00007f00f50248d5: sub    $0x8,%rsp
+  0x00007f00f50248d9: callq  0x00007f010b18415a
+  0x00007f00f50248de: add    $0x8,%rsp
+  0x00007f00f50248e2: jmpq   0x00007f00f50248ec
+  0x00007f00f50248e7: callq  0x00007f010b18415a
+  0x00007f00f50248ec: push   %rax
+  0x00007f00f50248ed: push   %rdi
+  0x00007f00f50248ee: push   %rsi
+  0x00007f00f50248ef: push   %rdx
+  0x00007f00f50248f0: push   %rcx
+  0x00007f00f50248f1: push   %r8
+  0x00007f00f50248f3: push   %r9
+  0x00007f00f50248f5: push   %r10
+  0x00007f00f50248f7: mov    %rsp,%r10
+  0x00007f00f50248fa: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f50248fe: push   %r10
+  0x00007f00f5024900: push   %r11
+  0x00007f00f5024902: mov    $0x1,%edi
+  0x00007f00f5024907: callq  0x00007f010bf232d0
+  0x00007f00f502490c: pop    %r11
+  0x00007f00f502490e: pop    %rsp
+  0x00007f00f502490f: pop    %r10
+  0x00007f00f5024911: pop    %r9
+  0x00007f00f5024913: pop    %r8
+  0x00007f00f5024915: pop    %rcx
+  0x00007f00f5024916: pop    %rdx
+  0x00007f00f5024917: pop    %rsi
+  0x00007f00f5024918: pop    %rdi
+  0x00007f00f5024919: cmp    %rax,%r15
+  0x00007f00f502491c: je     0x00007f00f5024999
+  ;; MacroAssembler::call_VM_base: rdi not callee saved?
+  0x00007f00f5024922: mov    %rsp,-0x28(%rsp)
+  0x00007f00f5024927: sub    $0x80,%rsp
+  0x00007f00f502492e: mov    %rax,0x78(%rsp)
+  0x00007f00f5024933: mov    %rcx,0x70(%rsp)
+  0x00007f00f5024938: mov    %rdx,0x68(%rsp)
+  0x00007f00f502493d: mov    %rbx,0x60(%rsp)
+  0x00007f00f5024942: mov    %rbp,0x50(%rsp)
+  0x00007f00f5024947: mov    %rsi,0x48(%rsp)
+  0x00007f00f502494c: mov    %rdi,0x40(%rsp)
+  0x00007f00f5024951: mov    %r8,0x38(%rsp)
+  0x00007f00f5024956: mov    %r9,0x30(%rsp)
+  0x00007f00f502495b: mov    %r10,0x28(%rsp)
+  0x00007f00f5024960: mov    %r11,0x20(%rsp)
+  0x00007f00f5024965: mov    %r12,0x18(%rsp)
+  0x00007f00f502496a: mov    %r13,0x10(%rsp)
+  0x00007f00f502496f: mov    %r14,0x8(%rsp)
+  0x00007f00f5024974: mov    %r15,(%rsp)
+  0x00007f00f5024978: movabs $0x7f010b8511f0,%rdi
+  0x00007f00f5024982: movabs $0x7f00f5024922,%rsi
+  0x00007f00f502498c: mov    %rsp,%rdx
+  0x00007f00f502498f: and    $0xfffffffffffffff0,%rsp
+  0x00007f00f5024993: callq  0x00007f010b33b9fa
+  0x00007f00f5024998: hlt    
+  0x00007f00f5024999: pop    %rax
+  0x00007f00f502499a: movabs $0x0,%r10
+  0x00007f00f50249a4: mov    %r10,0x200(%r15)
+  0x00007f00f50249ab: movabs $0x0,%r10
+  0x00007f00f50249b5: mov    %r10,0x210(%r15)
+  0x00007f00f50249bc: movabs $0x0,%r10
+  0x00007f00f50249c6: mov    %r10,0x208(%r15)
+  0x00007f00f50249cd: cmpq   $0x0,0x8(%r15)
+  0x00007f00f50249d5: je     0x00007f00f50249e0
+  0x00007f00f50249db: jmpq   0x00007f00f5000420
+  0x00007f00f50249e0: mov    -0x38(%rbp),%r13
+  0x00007f00f50249e4: mov    -0x30(%rbp),%r14
+  0x00007f00f50249e8: retq   
+  0x00007f00f50249e9: mov    -0x18(%rbp),%rbx
+  0x00007f00f50249ed: jmpq   0x00007f00f50241ea
+  0x00007f00f50249f2: nop
+  0x00007f00f50249f3: nop
+  0x00007f00f50249f4: nop
+  0x00007f00f50249f5: nop
+  0x00007f00f50249f6: nop
+  0x00007f00f50249f7: nop
+  0x00007f00f50249f8: int3   
+  0x00007f00f50249f9: int3   
+  0x00007f00f50249fa: int3   
+  0x00007f00f50249fb: int3   
+  0x00007f00f50249fc: int3   
+  0x00007f00f50249fd: int3   
+  0x00007f00f50249fe: int3   
+  0x00007f00f50249ff: int3   
+
+----------------------------------------------------------------------
