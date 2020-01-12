@@ -1,0 +1,327 @@
+command_prompt_1
+----------------
+D:\test>jdb -XX:+UseSerialGC -Xmx10m -J-Duser.country=en.US
+Initializing jdb ...
+> stop in Test.fn
+Deferring breakpoint Test.fn.
+It will be set after the class is loaded.
+> run Main
+run  Main
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+>
+VM Started: Set deferred breakpoint Test.fn
+
+Breakpoint hit: "thread=main", Test.fn(), line=5 bci=0
+5            Test2 t3 = new Test2();
+
+main[1] next
+
+Step completed: > "thread=main", Test.fn(), line=6 bci=8
+6        }
+
+main[1] 
+
+command_prompt_2
+----------------
+D:\test>jps
+4328 Main
+9064 Jps
+7716 TTY
+
+D:\test>java -cp .;%JAVA_HOME%/lib/sa-jdi.jar sun.jvm.hotspot.HSDB
+
+hsdb_session
+------------
+  hsdb> universe
+  Heap Parameters:
+  Gen 0:   eden [0x00000000fa400000,0x00000000fa4aad68,0x00000000fa6b0000) space capacity = 2818048, 24.831088753633722 used
+    from [0x00000000fa6b0000,0x00000000fa6b0000,0x00000000fa700000) space capacity = 327680, 0.0 used
+    to   [0x00000000fa700000,0x00000000fa700000,0x00000000fa750000) space capacity = 327680, 0.0 usedInvocations: 0
+
+  Gen 1:   old  [0x00000000fa750000,0x00000000fa750000,0x00000000fae00000) space capacity = 7012352, 0.0 usedInvocations: 0
+
+    perm [0x00000000fae00000,0x00000000fb078898,0x00000000fc2c0000) space capacity = 21757952, 11.90770160721009 usedInvocations: 0
+  hsdb> scanoops 0x00000000fa400000 0x00000000fc2c0000 Test2
+  0x00000000fa49a710 Test2
+  0x00000000fa49a730 Test2
+  0x00000000fa49a740 Test2
+  Error: sun.jvm.hotspot.debugger.DebuggerException: Windbg Error: ReadVirtual failed!
+  hsdb> revptrs 0x00000000fa49a710
+  Computing reverse pointers...
+  Done.
+  null
+  Oop for java/lang/Class @ 0x00000000fa499b00
+  hsdb> whatis 0x00000000fa499b00
+  Address 0x00000000fa499b00: In thread-local allocation buffer for thread "main" (1)  [0x00000000fa48f490,0x00000000fa49a750,0x00000000fa49d118)
+   
+  hsdb> inspect 0x00000000fa499b00
+  instance of Oop for java/lang/Class @ 0x00000000fa499b00 @ 0x00000000fa499b00 (size = 120)
+  <<Reverse pointers>>: 
+  t1: Oop for Test2 @ 0x00000000fa49a710 Oop for Test2 @ 0x00000000fa49a710
+  hsdb> revptrs 0x00000000fa49a730
+  Oop for Test @ 0x00000000fa49a720
+  hsdb> whatis 0x00000000fa49a720
+  Address 0x00000000fa49a720: In thread-local allocation buffer for thread "main" (1)  [0x00000000fa48f490,0x00000000fa49a750,0x00000000fa49d118)
+   
+  hsdb> inspect 0x00000000fa49a720
+  instance of Oop for Test @ 0x00000000fa49a720 @ 0x00000000fa49a720 (size = 16)
+  <<Reverse pointers>>: 
+  _mark: 1
+  t2: Oop for Test2 @ 0x00000000fa49a730 Oop for Test2 @ 0x00000000fa49a730
+  hsdb> revptrs 0x00000000fa49a740
+  null
+  hsdb> mem 0x000000000287f7f0 30
+  0x000000000287f7f0: 0x0000000002886298 
+  0x000000000287f7f8: 0x0000000002893ca5 
+  0x000000000287f800: 0x0000000002893ca5 
+  0x000000000287f808: 0x000000000287f808 
+  0x000000000287f810: 0x00000000fb077f58 
+  0x000000000287f818: 0x000000000287f860 
+  0x000000000287f820: 0x00000000fb078360 
+  0x000000000287f828: 0x0000000000000000 
+  0x000000000287f830: 0x00000000fb077f78 
+  0x000000000287f838: 0x0000000000000000 
+  0x000000000287f840: 0x000000000287f860 
+  0x000000000287f848: 0x000000000287f8a8 
+  0x000000000287f850: 0x0000000002886298 
+  0x000000000287f858: 0x00000000fa49a740 
+  0x000000000287f860: 0x00000000fa49a720 
+  0x000000000287f868: 0x000000000287f868 
+  0x000000000287f870: 0x00000000fb077039 
+  0x000000000287f878: 0x000000000287f8c0 
+  0x000000000287f880: 0x00000000fb077350 
+  0x000000000287f888: 0x0000000000000000 
+  0x000000000287f890: 0x00000000fb077060 
+  0x000000000287f898: 0x000000000287f860 
+  0x000000000287f8a0: 0x000000000287f8c0 
+  0x000000000287f8a8: 0x000000000287f9a0 
+  0x000000000287f8b0: 0x000000000288062a 
+  0x000000000287f8b8: 0x00000000fa49a720 
+  0x000000000287f8c0: 0x00000000fa498ea8 
+  0x000000000287f8c8: 0x0000000000000000 
+  0x000000000287f8d0: 0x0000000000000000 
+  0x000000000287f8d8: 0x0000000000000000 
+
+  hsdb> jstack -v
+  Deadlock Detection:
+
+  No deadlocks found.
+
+  Thread 6: (state = BLOCKED, current Java SP = null
+  )
+
+  Locked ownable synchronizers:
+      - None
+
+  Thread 5: (state = BLOCKED, current Java SP = null
+  )
+
+  Locked ownable synchronizers:
+      - None
+
+  Thread 4: (state = BLOCKED, current Java SP = 0x0000000005f6ef50
+  )
+   - java.lang.Object.wait(long) @bci=0, pc=0x0000000002898c61, methodOop=0x00000000fae02958 (Interpreted frame)
+   - java.lang.ref.ReferenceQueue.remove(long) @bci=44, line=135, pc=0x0000000002886298, methodOop=0x00000000faed0a60 (Interpreted frame)
+   - java.lang.ref.ReferenceQueue.remove() @bci=2, line=151, pc=0x0000000002886473, methodOop=0x00000000faed0b40 (Interpreted frame)
+   - java.lang.ref.Finalizer$FinalizerThread.run() @bci=3, line=177, pc=0x0000000002886473, methodOop=0x00000000faed21d8 (Interpreted frame)
+
+  Locked ownable synchronizers:
+      - None
+
+  Thread 3: (state = BLOCKED, current Java SP = 0x0000000005a1f730
+  )
+   - java.lang.Object.wait(long) @bci=0, pc=0x0000000002898c61, methodOop=0x00000000fae02958 (Interpreted frame)
+   - java.lang.Object.wait() @bci=2, line=503, pc=0x0000000002886298, methodOop=0x00000000fae02b68 (Interpreted frame)
+   - java.lang.ref.Reference$ReferenceHandler.run() @bci=46, line=133, pc=0x0000000002886298, methodOop=0x00000000faecf620 (Interpreted frame)
+
+  Locked ownable synchronizers:
+      - None
+
+  Thread 1: (state = BLOCKED, current Java SP = 0x000000000287f808
+  )
+   - Test.fn() @bci=8, line=6, pc=0x0000000002893ca5, methodOop=0x00000000fb077f78 (Interpreted frame)
+   - Main.main(java.lang.String[]) @bci=9, line=4, pc=0x0000000002886298, methodOop=0x00000000fb077060 (Interpreted frame)
+
+  Locked ownable synchronizers:
+      - None
+
+  hsdb> inspect 0x00000000fb077f58
+  Error: sun.jvm.hotspot.debugger.UnalignedAddressException: 100011
+  hsdb> inspect 0x00000000fb077f78
+  instance of Method fn()V@0x00000000fb077f78 @ 0x00000000fb077f78 @ 0x00000000fb077f78 (size = 136)
+  _mark: 1
+  _constMethod: ConstMethod fn()V@0x00000000fb077f08 @ 0x00000000fb077f08 Oop @ 0x00000000fb077f08
+  _constants: ConstantPool for Test @ 0x00000000fb077c68 Oop @ 0x00000000fb077c68
+  _method_size: 17
+  _max_stack: 2
+  _max_locals: 2
+  _size_of_parameters: 1
+  _access_flags: 1
+  hsdb> inspect 0x00000000fb077f08
+  instance of ConstMethod fn()V@0x00000000fb077f08 @ 0x00000000fb077f08 @ 0x00000000fb077f08 (size = 112)
+  _mark: 1
+  _method: Method fn()V@0x00000000fb077f78 @ 0x00000000fb077f78 Oop @ 0x00000000fb077f78
+  _exception_table: [I @ 0x00000000fae01d50 Oop for [I @ 0x00000000fae01d50
+  _constMethod_size: 14
+  _flags: 5
+  _code_size: 9
+  _name_index: 18
+  _signature_index: 12
+  _generic_signature_index: 0
+  _code_size: 9
+  hsdb> whatis 0x00000000fb077f58
+  Address 0x00000000fb077f58: In perm generation   perm [0x00000000fae00000,0x00000000fb078898,0x00000000fc2c0000) space capacity = 21757952, 11.90770160721009 used 
+  hsdb> print 0x00000000fb077f78
+
+  public void fn() @0x00000000fb077f78
+
+  Holder Class
+  public class Test @0x00000000fb078100
+  Bytecode
+  line bci   bytecode 
+  5   0   new #2 [Class Test2] 
+  5   3   dup 
+  5   4   invokespecial #1 [Method Test2.<init>()V]
+  5   7   astore_1 
+  6   8   return 
+
+
+  Constant Pool
+  Constant Pool of [public class Test @0x00000000fb078100] @0x00000000fb077c68
+
+  hsdb> mem 0x00000000fb077f50 2
+  0x00000000fb077f50: 0x4c0001b7590200ca 
+  0x00000000fb077f58: 0x00000000004105b1 
+
+  hsdb> class Test
+Test @0x00000000fb078100 
+hsdb> print 0x00000000fb078100
+
+public class Test @0x00000000fb078100
+
+
+
+Super Class
+public class java.lang.Object @0x00000000fae02df8
+Fields
+
+static  Test2 t1; (offset = 112)
+ Test2 t2; (offset = 12)
+
+
+Methods
+public void <init>() @0x00000000fb077e80;
+static void <clinit>() @0x00000000fb078058;
+public void fn() @0x00000000fb077f78;
+
+Constant Pool
+Constant Pool of [public class Test @0x00000000fb078100] @0x00000000fb077c68
+hsdb> 
+
+Main.java
+---------
+public class Main {
+    public static void main(String[] args) {
+        Test test = new Test();
+        test.fn();
+    }
+}
+
+Main_main_bytecode
+------------------
+hsdb> mem 0x00000000fb077030 2
+0x00000000fb077030: 0x4c0001b7590200bb 
+0x00000000fb077038: 0x214103b10002b62b 
+
+0x00000000fb077030:  bb 00 02  new <cp index #2> [Class Test]
+0x00000000fb077033:  59        dup
+0x00000000fb077034:  b7 01 00  invokespecial <cp cache index #1> [Method Test.<init>()V]
+0x00000000fb077037:  4c        astore_1
+0x00000000fb077038:  2b        aload_1
+0x00000000fb077039:  b6 02 00  invokevirtual <cp cache index #2> [Method Test.fn()V]
+0x00000000fb07703c:  b1        return
+
+stack_frame_layout
+------------------
+0x000000000287f7f0: 0x0000000002886298 
+0x000000000287f7f8: 0x0000000002893ca5 
+0x000000000287f800: 0x0000000002893ca5 
+-------------------------------------------------------------------------------------------------------------
+Stack frame for Test.fn() @bci=8, line=6, pc=0x0000000002893ca5, methodOop=0x00000000fb077f78 (Interpreted frame)
+0x000000000287f808: 0x000000000287f808 expression stack bottom          <- rsp
+0x000000000287f810: 0x00000000fb077f58 bytecode pointer    = 0x00000000fb077f50 (base) + 8 (bytecode index) in PermGen
+0x000000000287f818: 0x000000000287f860 pointer to locals
+0x000000000287f820: 0x00000000fb078360 constant pool cache = ConstantPoolCache for Test in PermGen
+0x000000000287f828: 0x0000000000000000 method data oop     = null
+0x000000000287f830: 0x00000000fb077f78 method oop          = Method for Test.fn()V in PermGen
+0x000000000287f838: 0x0000000000000000 last Java stack pointer (not set)
+0x000000000287f840: 0x000000000287f860 old stack pointer (saved rsp)
+0x000000000287f848: 0x000000000287f8a8 old frame pointer (saved rbp)    <- rbp
+0x000000000287f850: 0x0000000002886298 return address      = in interpreter codelet "return entry points" [0x00000000028858b8, 0x00000000028876c0)  7688 bytes
+0x000000000287f858: 0x00000000fa49a740 local[1] "t3"       = Oop for Test2 in NewGen
+0x000000000287f860: 0x00000000fa49a720 local[0] "this"     = Oop for Test in NewGen
+-------------------------------------------------------------------------------------------------------------
+0x000000000287f868: 0x000000000287f868 
+0x000000000287f870: 0x00000000fb077039 
+0x000000000287f878: 0x000000000287f8c0 
+0x000000000287f880: 0x00000000fb077350 
+0x000000000287f888: 0x0000000000000000 
+0x000000000287f890: 0x00000000fb077060 
+0x000000000287f898: 0x000000000287f860 
+0x000000000287f8a0: 0x000000000287f8c0 
+0x000000000287f8a8: 0x000000000287f9a0 
+0x000000000287f8b0: 0x000000000288062a 
+0x000000000287f8b8: 0x00000000fa49a720 
+0x000000000287f8c0: 0x00000000fa498ea8 
+0x000000000287f8c8: 0x0000000000000000 
+0x000000000287f8d0: 0x0000000000000000 
+0x000000000287f8d8: 0x0000000000000000 
+
+
+0x000000000287f7f0: 0x0000000002886298 
+0x000000000287f7f8: 0x0000000002893ca5 
+0x000000000287f800: 0x0000000002893ca5 
+0x000000000287f808: 0x000000000287f808 
+0x000000000287f810: 0x00000000fb077f58 
+0x000000000287f818: 0x000000000287f860 
+0x000000000287f820: 0x00000000fb078360 
+0x000000000287f828: 0x0000000000000000 
+0x000000000287f830: 0x00000000fb077f78 
+0x000000000287f838: 0x0000000000000000 
+0x000000000287f840: 0x000000000287f860 
+0x000000000287f848: 0x000000000287f8a8 
+0x000000000287f850: 0x0000000002886298 
+0x000000000287f858: 0x00000000fa49a740 
+-------------------------------------------------------------------------------------------------------------
+Stack frame for Main.main(java.lang.String[]) @bci=9, line=4, pc=0x0000000002886298, methodOop=0x00000000fb077060 (Interpreted frame)
+0x000000000287f860: 0x00000000fa49a720 expression stack[0] = Oop for Test in NewGen
+0x000000000287f868: 0x000000000287f868 expression stack bottom
+0x000000000287f870: 0x00000000fb077039 bytecode pointer    = 0x00000000fb077030 (base) + 9 (bytecode index) in PermGen
+0x000000000287f878: 0x000000000287f8c0 pointer to locals
+0x000000000287f880: 0x00000000fb077350 constant pool cache = ConstantPoolCache for Main in PermGen
+0x000000000287f888: 0x0000000000000000 method data oop     = null
+0x000000000287f890: 0x00000000fb077060 method oop          = Method for Main.main([Ljava/lang/String;)V in PermGen
+0x000000000287f898: 0x000000000287f860 last Java stack pointer
+0x000000000287f8a0: 0x000000000287f8c0 old stack pointer
+0x000000000287f8a8: 0x000000000287f9a0 old frame pointer
+0x000000000287f8b0: 0x000000000288062a return address      = in StubRoutines
+0x000000000287f8b8: 0x00000000fa49a720 local[1] "test"     = Oop for Test in NewGen
+0x000000000287f8c0: 0x00000000fa498ea8 local[0] "args"     = Oop for java.lang.String[] in NewGen
+-------------------------------------------------------------------------------------------------------------
+0x000000000287f8c8: 0x0000000000000000 
+0x000000000287f8d0: 0x0000000000000000 
+0x000000000287f8d8: 0x0000000000000000 
+
+Test.java
+---------
+hsdb> mem 0x00000000fb077f50 2
+0x00000000fb077f50: 0x4c0001b7590200ca 
+0x00000000fb077f58: 0x00000000004105b1 
+
+0x00000000fb077f50:  bb 00 02  new <cp index #2> [Class Test2]
+0x00000000fb077f53:  59        dup
+0x00000000fb077f54:  b7 01 00  invokespecial <cp cache index #1> [Method Test2.<init>()V]
+0x00000000fb077f57:  4c        astore_1
+0x00000000fb077f58:  b1        return
