@@ -1,0 +1,74 @@
+StubRoutines::call_stub [0xa75af477, 0xa75af548[ (209 bytes)
+  0xa75af477: push   %ebp
+  0xa75af478: mov    %esp,%ebp
+  0xa75af47a: mov    0x20(%ebp),%ecx
+  0xa75af47d: shl    $0x2,%ecx
+  0xa75af480: add    $0x10,%ecx
+  0xa75af483: sub    %ecx,%esp
+  0xa75af485: and    $0xfffffff0,%esp
+  0xa75af488: mov    %edi,-0x4(%ebp)
+  0xa75af48b: mov    %esi,-0x8(%ebp)
+  0xa75af48e: mov    %ebx,-0xc(%ebp)
+  0xa75af491: stmxcsr -0x10(%ebp)
+  0xa75af495: mov    -0x10(%ebp),%eax
+  0xa75af498: and    $0xffc0,%eax
+  0xa75af49e: cmp    0xb792d12c,%eax
+  0xa75af4a4: je     0xa75af4b1
+  0xa75af4aa: ldmxcsr 0xb792d12c
+  0xa75af4b1: fldcw  0xb792d11c
+  0xa75af4b7: mov    0x24(%ebp),%ecx
+  0xa75af4ba: cmpl   $0x0,0x4(%ecx)
+  0xa75af4c1: je     0xa75af4d8
+  0xa75af4c7: push   $0xb75ae8b8
+  0xa75af4cc: call   0xa75af4d1
+  0xa75af4d1: pusha  
+  0xa75af4d2: call   0xb7052f32
+  0xa75af4d7: hlt    
+  ;; pass parameters if any
+  0xa75af4d8: mov    0x20(%ebp),%ecx
+  0xa75af4db: test   %ecx,%ecx
+  0xa75af4dd: je     0xa75af4f3
+  0xa75af4e3: mov    0x1c(%ebp),%edx
+  0xa75af4e6: xor    %ebx,%ebx
+  ;; loop:
+  0xa75af4e8: mov    -0x4(%edx,%ecx,4),%eax
+  0xa75af4ec: mov    %eax,(%esp,%ebx,4)
+  0xa75af4ef: inc    %ebx
+  0xa75af4f0: dec    %ecx
+  0xa75af4f1: jne    0xa75af4e8
+  ;; parameters_done:
+  0xa75af4f3: mov    0x14(%ebp),%ebx
+  0xa75af4f6: mov    0x18(%ebp),%eax
+  0xa75af4f9: mov    %esp,%esi
+  ;; call Java function
+  0xa75af4fb: call   *%eax
+  ;; call_stub_return_address:
+  ;; L_skip:
+  0xa75af4fd: mov    0xc(%ebp),%edi
+  0xa75af500: mov    0x10(%ebp),%esi
+  0xa75af503: cmp    $0xb,%esi
+  0xa75af506: je     0xa75af535
+  0xa75af50c: cmp    $0x6,%esi
+  0xa75af50f: je     0xa75af53c
+  0xa75af515: cmp    $0x7,%esi
+  0xa75af518: je     0xa75af542
+  0xa75af51e: mov    %eax,(%edi)
+  ;; exit:
+  0xa75af520: lea    -0x10(%ebp),%esp
+  0xa75af523: ldmxcsr -0x10(%ebp)
+  0xa75af527: mov    -0xc(%ebp),%ebx
+  0xa75af52a: mov    -0x8(%ebp),%esi
+  0xa75af52d: mov    -0x4(%ebp),%edi
+  0xa75af530: add    $0x10,%esp
+  0xa75af533: pop    %ebp
+  0xa75af534: ret    
+  ;; is_long:
+  0xa75af535: mov    %eax,(%edi)
+  0xa75af537: mov    %edx,0x4(%edi)
+  0xa75af53a: jmp    0xa75af520
+  ;; is_float:
+  0xa75af53c: vmovss %xmm0,(%edi)
+  0xa75af540: jmp    0xa75af520
+  ;; is_double:
+  0xa75af542: vmovsd %xmm0,(%edi)
+  0xa75af546: jmp    0xa75af520
