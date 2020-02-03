@@ -1,0 +1,379 @@
+
+----------------------------------------------------------------------
+Interpreter
+
+code size        =    126K bytes
+total space      =    895K bytes
+wasted space     =    769K bytes
+
+# of codelets    =    266
+avg codelet size =    487 bytes
+
+
+----------------------------------------------------------------------
+slow signature handler  [0xa7558ae0, 0xa7558ba0]  192 bytes
+
+Loaded disassembler from /home/zbhuang/OpenJDK/jdk8u/build/linux-x86-normal-server-slowdebug/jdk/lib/i386/hsdis-i386.so
+
+----------------------------------------------------------------------
+method entry point (kind = zerolocals)  [0xa7564380, 0xa75648c0]  1344 bytes
+
+  0xa7564380: mov    0x8(%ebx),%edx
+  0xa7564383: movzwl 0x24(%edx),%ecx
+  0xa7564387: movzwl 0x22(%edx),%edx
+  0xa756438b: sub    %ecx,%edx
+  0xa756438d: cmp    $0x3f6,%edx
+  0xa7564393: jbe    0xa7564414
+  0xa7564399: push   %esi
+  0xa756439a: mov    %esp,%esi
+  0xa756439c: shr    $0xc,%esi
+  0xa756439f: mov    -0x4871aba0(,%esi,4),%esi
+  0xa75643a6: lea    0x28(,%edx,4),%eax
+  0xa75643ad: cmpl   $0x0,0xd8(%esi)
+  0xa75643b7: jne    0xa75643ce
+  0xa75643bd: push   $0xb756221c
+  0xa75643c2: call   0xa75643c7
+  0xa75643c7: pusha  
+  0xa75643c8: call   0xb6ff5f32
+  0xa75643cd: hlt    
+  0xa75643ce: cmpl   $0x0,0xdc(%esi)
+  0xa75643d8: jne    0xa75643ef
+  0xa75643de: push   $0xb756222f
+  0xa75643e3: call   0xa75643e8
+  0xa75643e8: pusha  
+  0xa75643e9: call   0xb6ff5f32
+  0xa75643ee: hlt    
+  0xa75643ef: add    0xd8(%esi),%eax
+  0xa75643f5: sub    0xdc(%esi),%eax
+  0xa75643fb: add    $0x9000,%eax
+  0xa7564401: cmp    %eax,%esp
+  0xa7564403: ja     0xa7564413
+  0xa7564409: pop    %esi
+  0xa756440a: pop    %eax
+  0xa756440b: mov    %esi,%esp
+  0xa756440d: push   %eax
+  0xa756440e: jmp    0xa75589e0
+  0xa7564413: pop    %esi
+  0xa7564414: pop    %eax
+  0xa7564415: lea    -0x4(%esp,%ecx,4),%edi
+  0xa7564419: test   %edx,%edx
+  0xa756441b: jle    0xa7564429
+  0xa7564421: push   $0x0
+  0xa7564426: dec    %edx
+  0xa7564427: jg     0xa7564421
+  0xa7564429: push   %eax
+  0xa756442a: push   %ebp
+  0xa756442b: mov    %esp,%ebp
+  0xa756442d: push   %esi
+  0xa756442e: push   $0x0
+  0xa7564433: mov    0x8(%ebx),%esi
+  0xa7564436: lea    0x28(%esi),%esi
+  0xa7564439: push   %ebx
+  0xa756443a: mov    0xc(%ebx),%edx
+  0xa756443d: test   %edx,%edx
+  0xa756443f: je     0xa756444b
+  0xa7564445: add    $0xe0,%edx
+  0xa756444b: push   %edx
+  0xa756444c: mov    0x8(%ebx),%edx
+  0xa756444f: mov    0x8(%edx),%edx
+  0xa7564452: mov    0xc(%edx),%edx
+  0xa7564455: push   %edx
+  0xa7564456: push   %edi
+  0xa7564457: push   %esi
+  0xa7564458: push   $0x0
+  0xa756445d: mov    %esp,(%esp)
+  0xa7564460: mov    0x14(%ebx),%eax
+  0xa7564463: test   $0x100,%eax
+  0xa7564468: je     0xa756447f
+  0xa756446e: push   $0xb7562538
+  0xa7564473: call   0xa7564478
+  0xa7564478: pusha  
+  0xa7564479: call   0xb6ff5f32
+  0xa756447e: hlt    
+  0xa756447f: test   $0x400,%eax
+  0xa7564484: je     0xa756449b
+  0xa756448a: push   $0xb75623a4
+  0xa756448f: call   0xa7564494
+  0xa7564494: pusha  
+  0xa7564495: call   0xb6ff5f32
+  0xa756449a: hlt    
+  0xa756449b: mov    %esp,%eax
+  0xa756449d: shr    $0xc,%eax
+  0xa75644a0: mov    -0x4871aba0(,%eax,4),%eax
+  0xa75644a7: movb   $0x1,0x1a5(%eax)
+  0xa75644ae: mov    -0x10(%ebp),%eax
+  0xa75644b1: test   %eax,%eax
+  0xa75644b3: je     0xa7564527
+  0xa75644b9: mov    -0x4(%eax),%ecx
+  0xa75644bc: test   %ecx,%ecx
+  0xa75644be: js     0xa7564527
+  0xa75644c4: add    %ecx,%eax
+  0xa75644c6: mov    0x4(%eax),%ecx
+  0xa75644c9: sub    $0x2,%ecx
+  0xa75644cc: mov    0x8(%eax,%ecx,4),%edx
+  0xa75644d0: neg    %edx
+  0xa75644d2: mov    (%edi,%edx,4),%edx
+  0xa75644d5: test   %edx,%edx
+  0xa75644d7: jne    0xa75644e0
+  0xa75644d9: orl    $0x1,0xc(%eax,%ecx,4)
+  0xa75644de: jmp    0xa7564522
+  0xa75644e0: mov    0x4(%edx),%edx
+  0xa75644e3: xor    0xc(%eax,%ecx,4),%edx
+  0xa75644e7: test   $0xfffffffc,%edx
+  0xa75644ed: je     0xa7564522
+  0xa75644ef: test   $0x2,%edx
+  0xa75644f5: jne    0xa7564522
+  0xa75644f7: cmpl   $0x0,0xc(%eax,%ecx,4)
+  0xa75644ff: je     0xa756451e
+  0xa7564501: cmpl   $0x1,0xc(%eax,%ecx,4)
+  0xa7564509: je     0xa756451e
+  0xa756450b: xor    0xc(%eax,%ecx,4),%edx
+  0xa756450f: test   $0xfffffffc,%edx
+  0xa7564515: je     0xa7564522
+  0xa7564517: orl    $0x2,0xc(%eax,%ecx,4)
+  0xa756451c: jmp    0xa7564522
+  0xa756451e: mov    %edx,0xc(%eax,%ecx,4)
+  0xa7564522: sub    $0x2,%ecx
+  0xa7564525: jns    0xa75644cc
+  0xa7564527: mov    0xc(%ebx),%eax
+  0xa756452a: test   %eax,%eax
+  0xa756452c: je     0xa756454e
+  0xa756452e: mov    0xbc(%eax),%ecx
+  0xa7564534: add    $0x8,%ecx
+  0xa7564537: mov    %ecx,0xbc(%eax)
+  0xa756453d: and    $0x3f8,%ecx
+  0xa7564543: je     0xa75647f7
+  0xa7564549: jmp    0xa7564623
+  0xa756454e: mov    0x10(%ebx),%eax
+  0xa7564551: test   %eax,%eax
+  0xa7564553: jne    0xa756460e
+  0xa7564559: call   0xa7564563
+  0xa756455e: jmp    0xa7564603
+  0xa7564563: push   %ebx
+  0xa7564564: lea    0x8(%esp),%eax
+  0xa7564568: cmpl   $0x0,-0x8(%ebp)
+  0xa756456f: je     0xa7564586
+  0xa7564575: push   $0xb7449b58
+  0xa756457a: call   0xa756457f
+  0xa756457f: pusha  
+  0xa7564580: call   0xb6ff5f32
+  0xa7564585: hlt    
+  0xa7564586: mov    %esi,-0x1c(%ebp)
+  0xa7564589: mov    %esp,%edi
+  0xa756458b: shr    $0xc,%edi
+  0xa756458e: mov    -0x4871aba0(,%edi,4),%edi
+  0xa7564595: push   %edi
+  0xa7564596: mov    %ebp,0x148(%edi)
+  0xa756459c: mov    %eax,0x140(%edi)
+  0xa75645a2: call   0xb6e61c92
+  0xa75645a7: add    $0x8,%esp
+  0xa75645aa: push   %eax
+  0xa75645ab: mov    %esp,%eax
+  0xa75645ad: shr    $0xc,%eax
+  0xa75645b0: mov    -0x4871aba0(,%eax,4),%eax
+  0xa75645b7: cmp    %eax,%edi
+  0xa75645b9: je     0xa75645d0
+  ;; MacroAssembler::call_VM_base: rdi not callee saved?
+  0xa75645bf: push   $0xb74acf8c
+  0xa75645c4: call   0xa75645c9
+  0xa75645c9: pusha  
+  0xa75645ca: call   0xb6ff5f32
+  0xa75645cf: hlt    
+  0xa75645d0: pop    %eax
+  0xa75645d1: movl   $0x0,0x140(%edi)
+  0xa75645db: movl   $0x0,0x148(%edi)
+  0xa75645e5: movl   $0x0,0x144(%edi)
+  0xa75645ef: cmpl   $0x0,0x4(%edi)
+  0xa75645f6: jne    0xa7556400
+  0xa75645fc: mov    -0x1c(%ebp),%esi
+  0xa75645ff: mov    -0x18(%ebp),%edi
+  0xa7564602: ret    
+  0xa7564603: mov    0x10(%ebx),%eax
+  0xa7564606: test   %eax,%eax
+  0xa7564608: je     0xa7564623
+  0xa756460e: mov    0x8(%eax),%ecx
+  0xa7564611: add    $0x8,%ecx
+  0xa7564614: mov    %ecx,0x8(%eax)
+  0xa7564617: and    $0x3f8,%ecx
+  0xa756461d: je     0xa75647f7
+  0xa7564623: mov    %eax,-0x1000(%esp)
+  0xa756462a: mov    %eax,-0x2000(%esp)
+  0xa7564631: mov    %eax,-0x3000(%esp)
+  0xa7564638: mov    %eax,-0x4000(%esp)
+  0xa756463f: mov    %eax,-0x5000(%esp)
+  0xa7564646: mov    %eax,-0x6000(%esp)
+  0xa756464d: mov    %eax,-0x7000(%esp)
+  0xa7564654: mov    %eax,-0x8000(%esp)
+  0xa756465b: mov    %eax,-0x9000(%esp)
+  0xa7564662: mov    %esp,%eax
+  0xa7564664: shr    $0xc,%eax
+  0xa7564667: mov    -0x4871aba0(,%eax,4),%eax
+  0xa756466e: movb   $0x0,0x1a5(%eax)
+  0xa7564675: mov    0x14(%ebx),%eax
+  0xa7564678: test   $0x20,%eax
+  0xa756467d: je     0xa7564694
+  0xa7564683: push   $0xb75623d4
+  0xa7564688: call   0xa756468d
+  0xa756468d: pusha  
+  0xa756468e: call   0xb6ff5f32
+  0xa7564693: hlt    
+  0xa7564694: mov    -0x20(%ebp),%eax
+  0xa7564697: cmp    %esp,%eax
+  0xa7564699: je     0xa75646b0
+  0xa756469f: push   $0xb75623f4
+  0xa75646a4: call   0xa75646a9
+  0xa75646a9: pusha  
+  0xa75646aa: call   0xb6ff5f32
+  0xa75646af: hlt    
+  0xa75646b0: cmpb   $0x0,0xb78c1e7e
+  0xa75646b7: je     0xa75646f4
+  0xa75646bd: mov    %esp,%ecx
+  0xa75646bf: shr    $0xc,%ecx
+  0xa75646c2: mov    -0x4871aba0(,%ecx,4),%ecx
+  0xa75646c9: mov    -0xc(%ebp),%ebx
+  0xa75646cc: push   %ebx
+  0xa75646cd: push   %ecx
+  0xa75646ce: cmpl   $0x0,-0x8(%ebp)
+  0xa75646d5: je     0xa75646ec
+  0xa75646db: push   $0xb7449b18
+  0xa75646e0: call   0xa75646e5
+  0xa75646e5: pusha  
+  0xa75646e6: call   0xb6ff5f32
+  0xa75646eb: hlt    
+  0xa75646ec: call   0xb71757d0
+  0xa75646f1: add    $0x8,%esp
+  0xa75646f4: movzbl (%esi),%ebx
+  0xa75646f7: jmp    *-0x48722ae0(,%ebx,4)
+  0xa75646fe: call   0xa7564708
+  0xa7564703: jmp    0xa75647a7
+  0xa7564708: lea    0x4(%esp),%eax
+  0xa756470c: cmpl   $0x0,-0x8(%ebp)
+  0xa7564713: je     0xa756472a
+  0xa7564719: push   $0xb7449b58
+  0xa756471e: call   0xa7564723
+  0xa7564723: pusha  
+  0xa7564724: call   0xb6ff5f32
+  0xa7564729: hlt    
+  0xa756472a: mov    %esi,-0x1c(%ebp)
+  0xa756472d: mov    %esp,%edi
+  0xa756472f: shr    $0xc,%edi
+  0xa7564732: mov    -0x4871aba0(,%edi,4),%edi
+  0xa7564739: push   %edi
+  0xa756473a: mov    %ebp,0x148(%edi)
+  0xa7564740: mov    %eax,0x140(%edi)
+  0xa7564746: call   0xb6e61328
+  0xa756474b: add    $0x4,%esp
+  0xa756474e: push   %eax
+  0xa756474f: mov    %esp,%eax
+  0xa7564751: shr    $0xc,%eax
+  0xa7564754: mov    -0x4871aba0(,%eax,4),%eax
+  0xa756475b: cmp    %eax,%edi
+  0xa756475d: je     0xa7564774
+  ;; MacroAssembler::call_VM_base: rdi not callee saved?
+  0xa7564763: push   $0xb74acf8c
+  0xa7564768: call   0xa756476d
+  0xa756476d: pusha  
+  0xa756476e: call   0xb6ff5f32
+  0xa7564773: hlt    
+  0xa7564774: pop    %eax
+  0xa7564775: movl   $0x0,0x140(%edi)
+  0xa756477f: movl   $0x0,0x148(%edi)
+  0xa7564789: movl   $0x0,0x144(%edi)
+  0xa7564793: cmpl   $0x0,0x4(%edi)
+  0xa756479a: jne    0xa7556400
+  0xa75647a0: mov    -0x1c(%ebp),%esi
+  0xa75647a3: mov    -0x18(%ebp),%edi
+  0xa75647a6: ret    
+  0xa75647a7: push   %eax
+  0xa75647a8: push   %ebx
+  0xa75647a9: mov    -0xc(%ebp),%ebx
+  0xa75647ac: mov    0xc(%ebx),%eax
+  0xa75647af: test   %eax,%eax
+  0xa75647b1: je     0xa75647ea
+  0xa75647b7: push   %esi
+  0xa75647b8: push   %ebx
+  0xa75647b9: cmpl   $0x0,-0x8(%ebp)
+  0xa75647c0: je     0xa75647d7
+  0xa75647c6: push   $0xb7449b18
+  0xa75647cb: call   0xa75647d0
+  0xa75647d0: pusha  
+  0xa75647d1: call   0xb6ff5f32
+  0xa75647d6: hlt    
+  0xa75647d7: call   0xb6e61172
+  0xa75647dc: add    $0x8,%esp
+  0xa75647df: mov    0xc(%ebx),%ebx
+  0xa75647e2: add    $0xe0,%ebx
+  0xa75647e8: add    %ebx,%eax
+  0xa75647ea: mov    %eax,-0x10(%ebp)
+  0xa75647ed: pop    %ebx
+  0xa75647ee: pop    %eax
+  0xa75647ef: mov    -0xc(%ebp),%ebx
+  0xa75647f2: jmp    0xa7564623
+  0xa75647f7: mov    $0x0,%eax
+  0xa75647fc: call   0xa7564806
+  0xa7564801: jmp    0xa75648a6
+  0xa7564806: push   %eax
+  0xa7564807: lea    0x8(%esp),%eax
+  0xa756480b: cmpl   $0x0,-0x8(%ebp)
+  0xa7564812: je     0xa7564829
+  0xa7564818: push   $0xb7449b58
+  0xa756481d: call   0xa7564822
+  0xa7564822: pusha  
+  0xa7564823: call   0xb6ff5f32
+  0xa7564828: hlt    
+  0xa7564829: mov    %esi,-0x1c(%ebp)
+  0xa756482c: mov    %esp,%edi
+  0xa756482e: shr    $0xc,%edi
+  0xa7564831: mov    -0x4871aba0(,%edi,4),%edi
+  0xa7564838: push   %edi
+  0xa7564839: mov    %ebp,0x148(%edi)
+  0xa756483f: mov    %eax,0x140(%edi)
+  0xa7564845: call   0xb6e60bc8
+  0xa756484a: add    $0x8,%esp
+  0xa756484d: push   %eax
+  0xa756484e: mov    %esp,%eax
+  0xa7564850: shr    $0xc,%eax
+  0xa7564853: mov    -0x4871aba0(,%eax,4),%eax
+  0xa756485a: cmp    %eax,%edi
+  0xa756485c: je     0xa7564873
+  ;; MacroAssembler::call_VM_base: rdi not callee saved?
+  0xa7564862: push   $0xb74acf8c
+  0xa7564867: call   0xa756486c
+  0xa756486c: pusha  
+  0xa756486d: call   0xb6ff5f32
+  0xa7564872: hlt    
+  0xa7564873: pop    %eax
+  0xa7564874: movl   $0x0,0x140(%edi)
+  0xa756487e: movl   $0x0,0x148(%edi)
+  0xa7564888: movl   $0x0,0x144(%edi)
+  0xa7564892: cmpl   $0x0,0x4(%edi)
+  0xa7564899: jne    0xa7556400
+  0xa756489f: mov    -0x1c(%ebp),%esi
+  0xa75648a2: mov    -0x18(%ebp),%edi
+  0xa75648a5: ret    
+  0xa75648a6: mov    -0xc(%ebp),%ebx
+  0xa75648a9: jmp    0xa7564623
+  0xa75648ae: nop
+  0xa75648af: nop
+  0xa75648b0: int3   
+  0xa75648b1: int3   
+  0xa75648b2: int3   
+  0xa75648b3: int3   
+  0xa75648b4: int3   
+  0xa75648b5: int3   
+  0xa75648b6: int3   
+  0xa75648b7: int3   
+  0xa75648b8: int3   
+  0xa75648b9: int3   
+  0xa75648ba: int3   
+  0xa75648bb: int3   
+  0xa75648bc: int3   
+  0xa75648bd: int3   
+  0xa75648be: int3   
+  0xa75648bf: int3   
+
+----------------------------------------------------------------------
+
+hello world!
+
+RUN FINISHED; exit value 0; real time: 13s; user: 430ms; system: 970ms
